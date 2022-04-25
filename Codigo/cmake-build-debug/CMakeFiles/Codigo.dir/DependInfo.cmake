@@ -8,12 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj"
   "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/main.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "C:/mingw64/include"
   )
 
 # The set of dependency files which are needed:

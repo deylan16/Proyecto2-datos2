@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj"
+  "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj"
   "CMakeFiles/Codigo.dir/main.cpp.obj"
   "Codigo.exe"
   "Codigo.exe.manifest"

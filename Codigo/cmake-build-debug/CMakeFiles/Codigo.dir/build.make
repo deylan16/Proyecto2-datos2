@@ -66,6 +66,7 @@ include CMakeFiles/Codigo.dir/progress.make
 include CMakeFiles/Codigo.dir/flags.make
 
 CMakeFiles/Codigo.dir/main.cpp.obj: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/main.cpp.obj: CMakeFiles/Codigo.dir/includes_CXX.rsp
 CMakeFiles/Codigo.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Codigo.dir/main.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Codigo.dir\main.cpp.obj -c "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\main.cpp"
@@ -78,19 +79,54 @@ CMakeFiles/Codigo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/main.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\main.cpp" -o CMakeFiles\Codigo.dir\main.cpp.s
 
+CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj: CMakeFiles/Codigo.dir/includes_CXX.rsp
+CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj: ../Interfaz/Ventana.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Codigo.dir\Interfaz\Ventana.cpp.obj -c "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\Interfaz\Ventana.cpp"
+
+CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\Interfaz\Ventana.cpp" > CMakeFiles\Codigo.dir\Interfaz\Ventana.cpp.i
+
+CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\Interfaz\Ventana.cpp" -o CMakeFiles\Codigo.dir\Interfaz\Ventana.cpp.s
+
+CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj: CMakeFiles/Codigo.dir/includes_CXX.rsp
+CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj: ../Interfaz/Componentes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Codigo.dir\Interfaz\Componentes.cpp.obj -c "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\Interfaz\Componentes.cpp"
+
+CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\Interfaz\Componentes.cpp" > CMakeFiles\Codigo.dir\Interfaz\Componentes.cpp.i
+
+CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\Interfaz\Componentes.cpp" -o CMakeFiles\Codigo.dir\Interfaz\Componentes.cpp.s
+
 # Object files for target Codigo
 Codigo_OBJECTS = \
-"CMakeFiles/Codigo.dir/main.cpp.obj"
+"CMakeFiles/Codigo.dir/main.cpp.obj" \
+"CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj" \
+"CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj"
 
 # External object files for target Codigo
 Codigo_EXTERNAL_OBJECTS =
 
 Codigo.exe: CMakeFiles/Codigo.dir/main.cpp.obj
+Codigo.exe: CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj
+Codigo.exe: CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj
 Codigo.exe: CMakeFiles/Codigo.dir/build.make
+Codigo.exe: C:/mingw64/lib/libsfml-graphics-d.a
+Codigo.exe: C:/mingw64/lib/libsfml-window-d.a
+Codigo.exe: C:/mingw64/lib/libsfml-system-d.a
 Codigo.exe: CMakeFiles/Codigo.dir/linklibs.rsp
 Codigo.exe: CMakeFiles/Codigo.dir/objects1.rsp
 Codigo.exe: CMakeFiles/Codigo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Codigo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\deyla\OneDrive\Escritorio\Proyecto 2 Datos 2\Proyecto2-datos2\Codigo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Codigo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Codigo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

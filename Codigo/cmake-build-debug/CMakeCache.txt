@@ -253,6 +253,12 @@ Codigo_BINARY_DIR:STATIC=C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/P
 //Value Computed by CMake
 Codigo_SOURCE_DIR:STATIC=C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=C:/mingw64/lib/cmake/SFML
+
+//Path to a file.
+SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
