@@ -4,23 +4,13 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj"
-  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj"
-  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/main.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/main.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/mingw64/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
+  "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d"
+  "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/main.cpp" "CMakeFiles/Codigo.dir/main.cpp.o" "gcc" "CMakeFiles/Codigo.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

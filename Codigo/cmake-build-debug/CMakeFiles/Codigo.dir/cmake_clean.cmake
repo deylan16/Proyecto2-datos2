@@ -1,11 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj"
-  "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj"
-  "CMakeFiles/Codigo.dir/main.cpp.obj"
-  "Codigo.exe"
-  "Codigo.exe.manifest"
+  "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o"
+  "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
+  "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o"
+  "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d"
+  "CMakeFiles/Codigo.dir/main.cpp.o"
+  "CMakeFiles/Codigo.dir/main.cpp.o.d"
+  "Codigo"
   "Codigo.pdb"
-  "libCodigo.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
