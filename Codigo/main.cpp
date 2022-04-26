@@ -3,6 +3,7 @@
 #include "lista doblemente enlazada/Lista_doble.h"
 #include "lista doblemente enlazada/Matriz.h"
 #include "lista doblemente enlazada/Lista_pixeles.h"
+#include "BMP/Bmp.h"
 
 //#include <SFML/Graphics.hpp>
 
@@ -53,7 +54,54 @@ int main() {
 
     Ventana *ventana = new Ventana(ptrwindow);
     ventana->ventana_principal();*/
-    carro();
+    //carro();
+    //printf("%d",sizeof(unsigned short));
+    //printf("%d",sizeof(unsigned int));
+    //printf("%d",sizeof(unsigned long));
+    //printf("%d",sizeof(unsigned char));
+    Bmp *Abridor = new Bmp();
+
+    FILE* fp = Abridor->Abrir_Bmp("C:\\Users\\deyla\\OneDrive\\Escritorio\\Programacion\\c++\\manejo bmp\\tome.bmp","r");
+    //BITMAPFILEHEADER* fileHead = readBmpFileHead(fp);
+    //BITMAPINFOHEADER* infoHead = readBmpInfoHead(fp);
+    RGBDATA ** data = Abridor->Leer_array_de_pixeles_BMP(fp);
+
+    // Tenga cuidado de evitar subíndices fuera de los límites
+    /*for (int i = 0; i < 512; i++) {
+        for (int j = 0; j < 512; j++) {
+            printf ("El primer píxel (% d,% d): [% d,% d,% d] \n", 511-i, j + 1, data [i] [j] .blue, data [i] [ j] .green, data [i] [j] .red);
+        }
+        printf("\n");
+    }*/
+    //closeBmpImage(fp);
+    sf::RenderWindow window(sf::VideoMode(512, 512), "SFML works!");
+    /*sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
+    /rectangulo.setFillColor(sf::Color(data[0][0].red,data[0][0].green,data[0][0].blue,255));
+    rectangulo.setFillColor(sf::Color(255,0,0,255));*/
+    bool hos = true;
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+
+        for (int i = 0; i < 512; i++) {
+            for (int j = 0; j < 512; j++) {
+                sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
+                rectangulo.setFillColor(sf::Color(data[i][j].red,data[i][j].green,data[i][j].blue,255));
+                rectangulo.setPosition(i,j);
+                window.draw(rectangulo);
+            }
+
+        }
+
+        window.display();
+    }
     return 0;
 }
 //
