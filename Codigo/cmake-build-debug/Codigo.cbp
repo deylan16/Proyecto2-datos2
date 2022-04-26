@@ -96,6 +96,42 @@
 		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Ventana.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_doble.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_doble.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/deylan/Escritorio/Proyecto2-datos2/Codigo/main.cpp">
 			<Option target="Codigo"/>
 		</Unit>

@@ -220,4 +220,12 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Componentes.h
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h

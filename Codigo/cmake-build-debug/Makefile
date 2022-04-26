@@ -177,6 +177,150 @@ Interfaz/Ventana.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s
 .PHONY : Interfaz/Ventana.cpp.s
 
+lista_doblemente_enlazada/Lista_doble.o: lista_doblemente_enlazada/Lista_doble.cpp.o
+.PHONY : lista_doblemente_enlazada/Lista_doble.o
+
+# target to build an object file
+lista_doblemente_enlazada/Lista_doble.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o
+.PHONY : lista_doblemente_enlazada/Lista_doble.cpp.o
+
+lista_doblemente_enlazada/Lista_doble.i: lista_doblemente_enlazada/Lista_doble.cpp.i
+.PHONY : lista_doblemente_enlazada/Lista_doble.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/Lista_doble.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.i
+.PHONY : lista_doblemente_enlazada/Lista_doble.cpp.i
+
+lista_doblemente_enlazada/Lista_doble.s: lista_doblemente_enlazada/Lista_doble.cpp.s
+.PHONY : lista_doblemente_enlazada/Lista_doble.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/Lista_doble.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.s
+.PHONY : lista_doblemente_enlazada/Lista_doble.cpp.s
+
+lista_doblemente_enlazada/Lista_pixeles.o: lista_doblemente_enlazada/Lista_pixeles.cpp.o
+.PHONY : lista_doblemente_enlazada/Lista_pixeles.o
+
+# target to build an object file
+lista_doblemente_enlazada/Lista_pixeles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o
+.PHONY : lista_doblemente_enlazada/Lista_pixeles.cpp.o
+
+lista_doblemente_enlazada/Lista_pixeles.i: lista_doblemente_enlazada/Lista_pixeles.cpp.i
+.PHONY : lista_doblemente_enlazada/Lista_pixeles.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/Lista_pixeles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i
+.PHONY : lista_doblemente_enlazada/Lista_pixeles.cpp.i
+
+lista_doblemente_enlazada/Lista_pixeles.s: lista_doblemente_enlazada/Lista_pixeles.cpp.s
+.PHONY : lista_doblemente_enlazada/Lista_pixeles.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/Lista_pixeles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s
+.PHONY : lista_doblemente_enlazada/Lista_pixeles.cpp.s
+
+lista_doblemente_enlazada/Matriz.o: lista_doblemente_enlazada/Matriz.cpp.o
+.PHONY : lista_doblemente_enlazada/Matriz.o
+
+# target to build an object file
+lista_doblemente_enlazada/Matriz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o
+.PHONY : lista_doblemente_enlazada/Matriz.cpp.o
+
+lista_doblemente_enlazada/Matriz.i: lista_doblemente_enlazada/Matriz.cpp.i
+.PHONY : lista_doblemente_enlazada/Matriz.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/Matriz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i
+.PHONY : lista_doblemente_enlazada/Matriz.cpp.i
+
+lista_doblemente_enlazada/Matriz.s: lista_doblemente_enlazada/Matriz.cpp.s
+.PHONY : lista_doblemente_enlazada/Matriz.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/Matriz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s
+.PHONY : lista_doblemente_enlazada/Matriz.cpp.s
+
+lista_doblemente_enlazada/Nodo.o: lista_doblemente_enlazada/Nodo.cpp.o
+.PHONY : lista_doblemente_enlazada/Nodo.o
+
+# target to build an object file
+lista_doblemente_enlazada/Nodo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o
+.PHONY : lista_doblemente_enlazada/Nodo.cpp.o
+
+lista_doblemente_enlazada/Nodo.i: lista_doblemente_enlazada/Nodo.cpp.i
+.PHONY : lista_doblemente_enlazada/Nodo.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/Nodo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i
+.PHONY : lista_doblemente_enlazada/Nodo.cpp.i
+
+lista_doblemente_enlazada/Nodo.s: lista_doblemente_enlazada/Nodo.cpp.s
+.PHONY : lista_doblemente_enlazada/Nodo.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/Nodo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s
+.PHONY : lista_doblemente_enlazada/Nodo.cpp.s
+
+lista_doblemente_enlazada/Nodo_matriz.o: lista_doblemente_enlazada/Nodo_matriz.cpp.o
+.PHONY : lista_doblemente_enlazada/Nodo_matriz.o
+
+# target to build an object file
+lista_doblemente_enlazada/Nodo_matriz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o
+.PHONY : lista_doblemente_enlazada/Nodo_matriz.cpp.o
+
+lista_doblemente_enlazada/Nodo_matriz.i: lista_doblemente_enlazada/Nodo_matriz.cpp.i
+.PHONY : lista_doblemente_enlazada/Nodo_matriz.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/Nodo_matriz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i
+.PHONY : lista_doblemente_enlazada/Nodo_matriz.cpp.i
+
+lista_doblemente_enlazada/Nodo_matriz.s: lista_doblemente_enlazada/Nodo_matriz.cpp.s
+.PHONY : lista_doblemente_enlazada/Nodo_matriz.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/Nodo_matriz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s
+.PHONY : lista_doblemente_enlazada/Nodo_matriz.cpp.s
+
+lista_doblemente_enlazada/Nodo_pixel.o: lista_doblemente_enlazada/Nodo_pixel.cpp.o
+.PHONY : lista_doblemente_enlazada/Nodo_pixel.o
+
+# target to build an object file
+lista_doblemente_enlazada/Nodo_pixel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o
+.PHONY : lista_doblemente_enlazada/Nodo_pixel.cpp.o
+
+lista_doblemente_enlazada/Nodo_pixel.i: lista_doblemente_enlazada/Nodo_pixel.cpp.i
+.PHONY : lista_doblemente_enlazada/Nodo_pixel.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/Nodo_pixel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i
+.PHONY : lista_doblemente_enlazada/Nodo_pixel.cpp.i
+
+lista_doblemente_enlazada/Nodo_pixel.s: lista_doblemente_enlazada/Nodo_pixel.cpp.s
+.PHONY : lista_doblemente_enlazada/Nodo_pixel.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/Nodo_pixel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s
+.PHONY : lista_doblemente_enlazada/Nodo_pixel.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +360,24 @@ help:
 	@echo "... Interfaz/Ventana.o"
 	@echo "... Interfaz/Ventana.i"
 	@echo "... Interfaz/Ventana.s"
+	@echo "... lista_doblemente_enlazada/Lista_doble.o"
+	@echo "... lista_doblemente_enlazada/Lista_doble.i"
+	@echo "... lista_doblemente_enlazada/Lista_doble.s"
+	@echo "... lista_doblemente_enlazada/Lista_pixeles.o"
+	@echo "... lista_doblemente_enlazada/Lista_pixeles.i"
+	@echo "... lista_doblemente_enlazada/Lista_pixeles.s"
+	@echo "... lista_doblemente_enlazada/Matriz.o"
+	@echo "... lista_doblemente_enlazada/Matriz.i"
+	@echo "... lista_doblemente_enlazada/Matriz.s"
+	@echo "... lista_doblemente_enlazada/Nodo.o"
+	@echo "... lista_doblemente_enlazada/Nodo.i"
+	@echo "... lista_doblemente_enlazada/Nodo.s"
+	@echo "... lista_doblemente_enlazada/Nodo_matriz.o"
+	@echo "... lista_doblemente_enlazada/Nodo_matriz.i"
+	@echo "... lista_doblemente_enlazada/Nodo_matriz.s"
+	@echo "... lista_doblemente_enlazada/Nodo_pixel.o"
+	@echo "... lista_doblemente_enlazada/Nodo_pixel.i"
+	@echo "... lista_doblemente_enlazada/Nodo_pixel.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

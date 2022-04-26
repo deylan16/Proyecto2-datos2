@@ -111,11 +111,101 @@ CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp -o CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s
 
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o: ../lista\ doblemente\ enlazada/Lista_doble.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o -c "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_doble.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_doble.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_doble.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.s
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o: ../lista\ doblemente\ enlazada/Nodo.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o -c "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: ../lista\ doblemente\ enlazada/Matriz.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o -c "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o: ../lista\ doblemente\ enlazada/Nodo_matriz.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o -c "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: ../lista\ doblemente\ enlazada/Lista_pixeles.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o -c "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o: ../lista\ doblemente\ enlazada/Nodo_pixel.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o -c "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s
+
 # Object files for target Codigo
 Codigo_OBJECTS = \
 "CMakeFiles/Codigo.dir/main.cpp.o" \
 "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o" \
-"CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o"
+"CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o"
 
 # External object files for target Codigo
 Codigo_EXTERNAL_OBJECTS =
@@ -123,12 +213,18 @@ Codigo_EXTERNAL_OBJECTS =
 Codigo: CMakeFiles/Codigo.dir/main.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o
 Codigo: CMakeFiles/Codigo.dir/build.make
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Codigo: CMakeFiles/Codigo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Codigo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Codigo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Codigo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
