@@ -3,117 +3,94 @@
 //
 
 #include "Bmp.h"
-#include<stdio.h>
-
-#include<string.h>
-#include<stdlib.h>
-#pragma pack(pop)
-#pragma pack(push)
-#pragma pack (1)
-
-#pragma once
 
 
-FILE *Bmp::Abrir_Bmp(char *Archivo, char *mode) {
-    FILE* fp;
-    if (strcmp(mode, "r") == 0) {
-        mode = "rb";
-    }
-    else if (strcmp(mode,"w") == 0) {
-        mode = "ab";
-    }
-    else {
-        // Mensaje de error de salida
-        fprintf (stderr, "Modo de archivo abierto:% s usa error \n", mode);
-        // Error al abrir el archivo, devolver el puntero nulo
-        return NULL;
-    }
-    if ((fp = fopen(Archivo,mode)) == NULL) {
-        fprintf (stderr, "Abrir archivo:% s fallo \n", Archivo);
-        return NULL;
-    }
-    return fp;
-}
 
-Informacion_array_pixeles *Bmp::Leer_informacion_pixeles(FILE *fp) {
-    // printf ("% d \ n", sizeof (BITMAPFILEHEADER)); // Este tamaño es de 16 Bytes a la derecha
-    Informacion_array_pixeles* fileHead = (Informacion_array_pixeles*)malloc(sizeof(Informacion_array_pixeles));
-    if (fileHead == NULL) {
-        fprintf (stderr, "Falló la asignación de memoria$$$$");
-    }
-    if (fread(fileHead, sizeof(Informacion_array_pixeles), 1, fp) != 1) {
-        fprintf (stderr, "Error al leer el encabezado del archivo");
-    }
-    return fileHead;
-}
+unsigned char *Bmp::LoadBMP(char *filename, bmpInfoHeader *bInfoHeader) {
+    FILE *f;
+    bmpFileHeader header;     /* cabecera */
+    unsigned char *imgdata;   /* datos de imagen */
+    uint16_t type;        /* 2 bytes identificativos */
 
-Informacion_encabezado *Bmp::Leer_informacion_encabezado(FILE *fp) {
-    //printf("%d\n", sizeof(BITMAPINFOHEADER));
-    Informacion_encabezado* Info_encabezado = (Informacion_encabezado*)malloc(sizeof(Informacion_encabezado));
-    if (Info_encabezado == NULL) {
-        fprintf (stderr, "Falló la asignación de memoria######");
-    }
-    if (fread(Info_encabezado, sizeof(Informacion_encabezado), 1, fp) != 1) {
-        fprintf (stderr, "Error al leer el encabezado");
-    }
-    /*printf ("Tamaño del encabezado de informacion:% d bytes \n", Info_encabezado-> bHeaderSize);
-    printf ("Ancho de imagen:% d pixeles \n", Info_encabezado-> bImageWidth);
-    printf ("Altura de la imagen:% d pixeles \n", Info_encabezado-> bImageHeight);
-    printf ("Bits de color:% d bits \n", Info_encabezado-> bBitsPerPixel);
-    printf ("Pixeles horizontales por metro:% d \n", Info_encabezado-> bXpixelsPerMeter);
-    printf ("Pixeles verticales por metro:% d \n", Info_encabezado-> bYpixelsPerMeter);
-    printf ("Tamano del bloque de datos:% d bytes \n", Info_encabezado-> bImageSize);
-    printf ("Numero de planos:% d \n", Info_encabezado-> bPlanes);
-    printf ("Numero total de colores utilizados:% d \n", Info_encabezado-> bTotalColors);
-    printf ("Numero total de colores importantes:% d \n", Info_encabezado-> bImportantColors);
-    printf ("Algoritmo de compresion:% d \n", Info_encabezado-> bCompression);*/
+    f=fopen (filename, "r");
 
-    return Info_encabezado;
-}
 
-RGBDATA **Bmp::createMatrix(int width, int height) {
-    // Crea una matriz bidimensional dinámicamente
-    RGBDATA** Matrix;
-    int i;
+    if (!f)
+        return NULL;        /* Si no podemos leer, no hay imagen*/
 
-    Matrix = (RGBDATA **)malloc(sizeof(RGBDATA*) * height);
-    if (Matrix == NULL) {
-        fprintf (stderr, "Falló la asignación de memoria@@@@");
-        return NULL;
-    }
-
-    for (i = 0; i < height; i++) {
-        Matrix[i] = (RGBDATA *)malloc(sizeof(RGBDATA) * width);
-        if (Matrix[i] == NULL) {
-            fprintf (stderr, "Falló la asignación de memoria)))))");
+        /* Leemos los dos primeros bytes */
+        fread(&type, sizeof(uint16_t), 1, f);
+        if (type !=0x4D42)        /* Comprobamos el formato */
+            {
+            fclose(f);
             return NULL;
-        }
-    }
-    return(Matrix);
+            }
+
+            /* Leemos la cabecera de fichero completa */
+            fread(&header, sizeof(bmpFileHeader), 1, f);
+
+            /* Leemos la cabecera de información completa */
+            fread(bInfoHeader, sizeof(bmpInfoHeader), 1, f);
+
+            /* Reservamos memoria para la imagen, ¿cuánta?
+               Tanto como indique imgsize */
+            imgdata=(unsigned char*)malloc(bInfoHeader->imgsize);
+
+            /* Nos situamos en el sitio donde empiezan los datos de imagen,
+             nos lo indica el offset de la cabecera de fichero*/
+            fseek(f, header.offset, SEEK_SET);
+
+            /* Leemos los datos de imagen, tantos bytes como imgsize */
+            /*int c;
+            while((c= getc(f))!= EOF){
+                std::cout<<c<<std::endl;
+            }*/
+            fread(imgdata, bInfoHeader->imgsize,1, f);
+
+
+            /* Cerramos */
+            fclose(f);
+
+            /* Devolvemos la imagen */
+            return imgdata;
 }
 
-RGBDATA **Bmp::Leer_array_de_pixeles_BMP(FILE *fp) {
-    int i = 0, j = 0;
+void Bmp::DisplayInfo(bmpInfoHeader *info) {
+    printf("Tamaño de la cabecera: %u\n", info->headersize);
+    printf("Anchura: %d\n", info->width);
+    printf("Altura: %d\n", info->height);
+    printf("Planos (1): %d\n", info->planes);
+    printf("Bits por pixel: %d\n", info->bpp);
+    printf("Compresión: %d\n", info->compress);
+    printf("Tamaño de datos de imagen: %u\n", info->imgsize);
+    printf("Resolucón horizontal: %u\n", info->bpmx);
+    printf("Resolucón vertical: %u\n", info->bpmy);
+    printf("Colores en paleta: %d\n", info->colors);
+    printf("Colores importantes: %d\n", info->imxtcolors);
+}
 
-    Informacion_array_pixeles* fileHead = Leer_informacion_pixeles(fp);
-    Informacion_encabezado* Info_encabezado = this->Leer_informacion_encabezado(fp);
-    width = Info_encabezado->bImageWidth;
-    height = Info_encabezado->bImageHeight;
-    RGBDATA** data = this->createMatrix(width,height);
-    // Si el número de dígitos es menor que 8, la paleta es válida
-    if (Info_encabezado->bBitsPerPixel < 8) {
-        RGBQUAD* rgbQuad = (RGBQUAD*)malloc(sizeof(RGBQUAD));
-        if(rgbQuad == NULL){
-            printf ("Falló la asignación de memoria****");
+void Bmp::TextDisplay(bmpInfoHeader *info, unsigned char *img) {
+    int x, y;
+    /* Reducimos la resolución vertical y horizontal para que la imagen entre en pantalla */
+    //static const int reduccionX=6, reduccionY=4;
+    /* Si la componente supera el umbral, el color se marcará como 1. */
+    //static const int umbral=90;
+    /* Asignamos caracteres a los colores en pantalla */
+    static unsigned char colores[9]=" bgfrRGB";
+    int r,g,b;
+
+    /* Dibujamos la imagen */
+    for (y=info->height; y>0; y--)
+    {
+        for (x=0; x<info->width; x++)
+        {
+            b=(img[3*(x+y*info->width)]);
+            g=(img[3*(x+y*info->width)+1]);
+            r=(img[3*(x+y*info->width)+2]);
+
+            //printf("%c", colores[b+g*2+r*4]);
+            std::cout<<"["<<r<<","<<g<<","<<b<<"]";
         }
-        if (fread(rgbQuad, sizeof(rgbQuad), 1, fp) != 1) {
-            printf ("Error al leer la paleta");
-        }
+        printf("\n");
     }
-    for (i = 0; i < height; i++) {
-        for (j = 0; j < width; j++) {
-            fread(&data[i][j], sizeof(RGBDATA), 1, fp);
-        }
-    }
-    return data;
 }
