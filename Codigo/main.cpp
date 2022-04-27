@@ -5,7 +5,7 @@
 #include "lista doblemente enlazada/Lista_pixeles.h"
 #include "BMP/Bmp.h"
 
-//#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 void carro()
 {
@@ -59,12 +59,12 @@ int main() {
     //printf("%d",sizeof(unsigned int));
     //printf("%d",sizeof(unsigned long));
     //printf("%d",sizeof(unsigned char));
-    Bmp *Abridor = new Bmp();
+    //Bmp *Abridor = new Bmp();
 
-    FILE* fp = Abridor->Abrir_Bmp("C:\\Users\\deyla\\OneDrive\\Escritorio\\Programacion\\c++\\manejo bmp\\tome.bmp","r");
+    //FILE* fp = Abridor->Abrir_Bmp("C:\\Users\\deyla\\OneDrive\\Escritorio\\Programacion\\c++\\manejo bmp\\tome.bmp","r");
     //BITMAPFILEHEADER* fileHead = readBmpFileHead(fp);
     //BITMAPINFOHEADER* infoHead = readBmpInfoHead(fp);
-    RGBDATA ** data = Abridor->Leer_array_de_pixeles_BMP(fp);
+    //RGBDATA ** data = Abridor->Leer_array_de_pixeles_BMP(fp);
 
     // Tenga cuidado de evitar subíndices fuera de los límites
     /*for (int i = 0; i < 512; i++) {
@@ -74,11 +74,70 @@ int main() {
         printf("\n");
     }*/
     //closeBmpImage(fp);
-    sf::RenderWindow window(sf::VideoMode(512, 512), "SFML works!");
-    /*sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
-    /rectangulo.setFillColor(sf::Color(data[0][0].red,data[0][0].green,data[0][0].blue,255));
-    rectangulo.setFillColor(sf::Color(255,0,0,255));*/
-    bool hos = true;
+   Bmp *tre = new Bmp();
+
+    tre->img=tre->LoadBMP("C:\\Users\\deyla\\OneDrive\\Escritorio\\Programacion\\c++\\untitled3\\imagenbmp.bmp", &tre->info);
+    tre->DisplayInfo(&tre->info);
+    int x,y,b,r,g;
+    /*for (y=tre->info.height; y>0; y-=1)
+    {
+        for (x=0; x<tre->info.width; x+=1)
+        {
+            b=(tre->img[3*(x+y*tre->info.width)]);
+            g=(tre->img[3*(x+y*tre->info.width)+1]);
+            r=(tre->img[3*(x+y*tre->info.width)+2]);
+            std::cout<<3*(x+y*tre->info.width)<<std::endl;
+
+
+        }
+        printf("\n");
+    }*/
+    /*for (x=0; x<tre->info.height; x++)
+    {
+        for (y=0; y<tre->info.width; y++)
+        {
+            //std::cout<<3*(x+y*info.width)<<std::endl;
+
+            b=(tre->img[3*(x+y*tre->info.width)]);
+            g=(tre->img[3*(x+y*tre->info.width)+1]);
+            r=(tre->img[3*(x+y*tre->info.width)+2]);
+            std::cout<<3*(x+y*tre->info.width)<<std::endl;
+
+        }
+
+        //printf("\n");
+    }*/
+    //TextDisplay(&info, img);
+    //std::string hue = tre->img;
+    /*int R = tre->img[0];
+    int G = tre->img[-2];
+    int B = tre->img[-3];
+    int i =0;
+    while (true){
+        if(tre->img[i] == NULL){
+            if(tre->img[i+1] == NULL){
+                break;
+            }
+            else{
+                i+=1;
+            }
+        }
+        int u;
+        u = tre->img[i];
+        std::cout<<u<<std::endl;
+        tre->img[i];
+        i +=1;
+
+    }*/
+    /*int y = *tre->img;
+    std::cout<<y<<std::endl;
+    std::cout<<"["<<R<<","<<G<<","<<B<<"]"<<std::endl;
+    int b=(tre->img[3*(tre->info.height+tre->info.width*tre->info.width)]);
+    int g=(tre->img[3*(tre->info.height+tre->info.width*tre->info.width)+1]);
+    int r=(tre->img[3*(tre->info.height+tre->info.width*tre->info.width)+2]);
+    std::cout<<"["<<r<<","<<g<<","<<b<<"]"<<std::endl;*/
+    sf::RenderWindow window(sf::VideoMode(tre->info.width, tre->info.height), "SFML works!");
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -89,19 +148,44 @@ int main() {
         }
 
         window.clear();
+        int x, y;
+        int r,g,b;
 
-        for (int i = 0; i < 512; i++) {
+        /* Dibujamos la imagen */
+        for (y=tre->info.height; y>0; y-=1)
+        {
+            for (x=0; x<tre->info.width; x+=1)
+            {
+                //std::cout<<3*(x+y*info.width)<<std::endl;
+
+                b=(tre->img[3*(x+y*tre->info.width)]);
+                g=(tre->img[3*(x+y*tre->info.width)+1]);
+                r=(tre->img[3*(x+y*tre->info.width)+2]);
+                //std::cout<<"["<<r<<","<<g<<","<<b<<"]"<<std::endl;
+
+                //printf("%c", colores[b+g*2+r*4]);
+                sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
+                rectangulo.setFillColor(sf::Color(r,g,b,255));
+                rectangulo.setPosition(x,tre->info.height-y);
+                window.draw(rectangulo);
+            }
+
+            //printf("\n");
+        }
+
+        /*for (int i = 0; i < 512; i++) {
             for (int j = 0; j < 512; j++) {
                 sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
-                rectangulo.setFillColor(sf::Color(data[i][j].red,data[i][j].green,data[i][j].blue,255));
+                rectangulo.setFillColor(sf::Color(255,255,0,255));
                 rectangulo.setPosition(i,j);
                 window.draw(rectangulo);
             }
 
-        }
+        }*/
 
         window.display();
     }
+    
     return 0;
 }
 //
