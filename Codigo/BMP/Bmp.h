@@ -4,54 +4,45 @@
 
 #ifndef CODIGO_BMP_H
 #define CODIGO_BMP_H
-typedef unsigned int DWORD;  // 4bytes
-typedef unsigned short WORD;  // 2bytes
-typedef signed long LARGO;  // 4bytes
-typedef unsigned char BYTE;  // 1bytes
-typedef struct tagInformacion_array_pixeles {
-    WORD bFileType;
-    DWORD bFileSize;
-    WORD bReserved1;
-    WORD bReserved2;
-    DWORD bPixelDataOffset;
-}Informacion_array_pixeles; //14bytes
-/* Estructura de encabezado de información de archivo de mapa de bits */
-typedef struct tagInformacion_encabezado {
-    DWORD bHeaderSize; // Tamaño total del encabezado de información de imagen (40bytes)
-    LARGO bImageWidth; // Ancho de imagen (píxeles)
-    LARGO bImageHeight; // Altura de la imagen
-    WORD bPlanes; // debería ser 0
-    WORD bBitsPerPixel; // Número de píxeles
-    DWORD bCompression; // Método de compresión de imagen
-    DWORD bImageSize; // Tamaño de imagen (bytes)
-    LARGO bXpixelsPerMeter; // píxeles horizontales por metro
-    LARGO bYpixelsPerMeter; // Píxeles verticales por metro
-    DWORD bTotalColors; // El número total de colores utilizados, si el número de píxeles es mayor que 8, este campo no tiene sentido
-    DWORD bImportantColors; // números de color importantes, generalmente inútiles
-}Informacion_encabezado; //40bytes
-/* Estructura de paleta de archivos de mapa de bits */
-typedef struct tagRGBQUAD {
-    BYTE	rgbBlue;
-    BYTE	rgbGreen;
-    BYTE	rgbRed;
-    BYTE	rgbReserved;
-}RGBQUAD;
-/* Estructura de píxeles RGB */
-typedef struct tagRGB {
-    BYTE blue;
-    BYTE green;
-    BYTE red;
-}RGBDATA;
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+typedef struct bmpFileHeader
+{
+    /* 2 bytes de identificación */
+    uint32_t size;        /* Tamaño del archivo */
+    uint16_t resv1;       /* Reservado */
+    uint16_t resv2;       /* Reservado */
+    uint32_t offset;      /* Offset hasta hasta los datos de imagen */
+} bmpFileHeader;
+
+typedef struct bmpInfoHeader
+{
+    uint32_t headersize;      /* Tamaño de la cabecera */
+    uint32_t width;       /* Ancho */
+    uint32_t height;      /* Alto */
+    uint16_t planes;          /* Planos de color (Siempre 1) */
+    uint16_t bpp;             /* bits por pixel */
+    uint32_t compress;        /* compresión */
+    uint32_t imgsize;     /* tamaño de los datos de imagen */
+    uint32_t bpmx;        /* Resolución X en bits por metro */
+    uint32_t bpmy;        /* Resolución Y en bits por metro */
+    uint32_t colors;      /* colors used en la paleta */
+    uint32_t imxtcolors;      /* Colores importantes. 0 si son todos */
+} bmpInfoHeader;
 
 class Bmp {
 public:
-    int width = 0, height = 0;
-    FILE* Abrir_Bmp(char* Archivo, char* mode);
-    Informacion_array_pixeles* Leer_informacion_pixeles(FILE* fp);
-    Informacion_encabezado* Leer_informacion_encabezado(FILE* fp);
-    RGBDATA** createMatrix(int width,int height);
-    RGBDATA** Leer_array_de_pixeles_BMP(FILE* fp);
+    bmpInfoHeader info;
+    unsigned char *img;
+
+    unsigned char *LoadBMP(char *filename, bmpInfoHeader *bInfoHeader);
+    void DisplayInfo(bmpInfoHeader *info);
+    void TextDisplay(bmpInfoHeader *info, unsigned char *img);
 };
+
 
 
 #endif //CODIGO_BMP_H
