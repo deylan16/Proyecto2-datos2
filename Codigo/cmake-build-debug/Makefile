@@ -57,10 +57,10 @@ RM = /snap/clion/189/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deylan/Escritorio/Proyecto2-datos2/Codigo
+CMAKE_SOURCE_DIR = /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug
+CMAKE_BINARY_DIR = /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles /home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ Codigo: cmake_check_build_system
 Codigo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/build
 .PHONY : Codigo/fast
+
+BMP/Bmp.o: BMP/Bmp.cpp.o
+.PHONY : BMP/Bmp.o
+
+# target to build an object file
+BMP/Bmp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o
+.PHONY : BMP/Bmp.cpp.o
+
+BMP/Bmp.i: BMP/Bmp.cpp.i
+.PHONY : BMP/Bmp.i
+
+# target to preprocess a source file
+BMP/Bmp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/BMP/Bmp.cpp.i
+.PHONY : BMP/Bmp.cpp.i
+
+BMP/Bmp.s: BMP/Bmp.cpp.s
+.PHONY : BMP/Bmp.s
+
+# target to generate assembly for a file
+BMP/Bmp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/BMP/Bmp.cpp.s
+.PHONY : BMP/Bmp.cpp.s
 
 Interfaz/Componentes.o: Interfaz/Componentes.cpp.o
 .PHONY : Interfaz/Componentes.o
@@ -177,29 +201,29 @@ Interfaz/Ventana.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s
 .PHONY : Interfaz/Ventana.cpp.s
 
-lista_doblemente_enlazada/Lista_doble.o: lista_doblemente_enlazada/Lista_doble.cpp.o
-.PHONY : lista_doblemente_enlazada/Lista_doble.o
+lista_doblemente_enlazada/Lista_Doble.o: lista_doblemente_enlazada/Lista_Doble.cpp.o
+.PHONY : lista_doblemente_enlazada/Lista_Doble.o
 
 # target to build an object file
-lista_doblemente_enlazada/Lista_doble.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o
-.PHONY : lista_doblemente_enlazada/Lista_doble.cpp.o
+lista_doblemente_enlazada/Lista_Doble.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o
+.PHONY : lista_doblemente_enlazada/Lista_Doble.cpp.o
 
-lista_doblemente_enlazada/Lista_doble.i: lista_doblemente_enlazada/Lista_doble.cpp.i
-.PHONY : lista_doblemente_enlazada/Lista_doble.i
+lista_doblemente_enlazada/Lista_Doble.i: lista_doblemente_enlazada/Lista_Doble.cpp.i
+.PHONY : lista_doblemente_enlazada/Lista_Doble.i
 
 # target to preprocess a source file
-lista_doblemente_enlazada/Lista_doble.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.i
-.PHONY : lista_doblemente_enlazada/Lista_doble.cpp.i
+lista_doblemente_enlazada/Lista_Doble.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.i
+.PHONY : lista_doblemente_enlazada/Lista_Doble.cpp.i
 
-lista_doblemente_enlazada/Lista_doble.s: lista_doblemente_enlazada/Lista_doble.cpp.s
-.PHONY : lista_doblemente_enlazada/Lista_doble.s
+lista_doblemente_enlazada/Lista_Doble.s: lista_doblemente_enlazada/Lista_Doble.cpp.s
+.PHONY : lista_doblemente_enlazada/Lista_Doble.s
 
 # target to generate assembly for a file
-lista_doblemente_enlazada/Lista_doble.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.s
-.PHONY : lista_doblemente_enlazada/Lista_doble.cpp.s
+lista_doblemente_enlazada/Lista_Doble.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.s
+.PHONY : lista_doblemente_enlazada/Lista_Doble.cpp.s
 
 lista_doblemente_enlazada/Lista_pixeles.o: lista_doblemente_enlazada/Lista_pixeles.cpp.o
 .PHONY : lista_doblemente_enlazada/Lista_pixeles.o
@@ -354,15 +378,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Codigo"
+	@echo "... BMP/Bmp.o"
+	@echo "... BMP/Bmp.i"
+	@echo "... BMP/Bmp.s"
 	@echo "... Interfaz/Componentes.o"
 	@echo "... Interfaz/Componentes.i"
 	@echo "... Interfaz/Componentes.s"
 	@echo "... Interfaz/Ventana.o"
 	@echo "... Interfaz/Ventana.i"
 	@echo "... Interfaz/Ventana.s"
-	@echo "... lista_doblemente_enlazada/Lista_doble.o"
-	@echo "... lista_doblemente_enlazada/Lista_doble.i"
-	@echo "... lista_doblemente_enlazada/Lista_doble.s"
+	@echo "... lista_doblemente_enlazada/Lista_Doble.o"
+	@echo "... lista_doblemente_enlazada/Lista_Doble.i"
+	@echo "... lista_doblemente_enlazada/Lista_Doble.s"
 	@echo "... lista_doblemente_enlazada/Lista_pixeles.o"
 	@echo "... lista_doblemente_enlazada/Lista_pixeles.i"
 	@echo "... lista_doblemente_enlazada/Lista_pixeles.s"

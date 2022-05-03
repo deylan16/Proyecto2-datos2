@@ -62,6 +62,27 @@ void Componentes::creaLabel(int posicionx, int posiciony, int tamano,std::string
 
 }
 
+bool Componentes::creaBoton_con_imagen(int posicionx, int posiciony, int ancho, int alto,std::string imagen) {
+    sf::Texture textura;
+    if(!textura.loadFromFile(imagen))
+        std::cout<<"fallo";
+    sf::Sprite sprite;
+    sprite.setTexture(textura);
+    sprite.setTextureRect(sf::IntRect(0,0,ancho,alto));
+    sprite.setPosition(posicionx,posiciony);
+    ptrwindow->draw(sprite);
+    if (posicionx<this->mousex && this->mousex<(posicionx+ancho) && this->mousey<(posiciony+alto) && this->mousey>posiciony){
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+            return true;
+            //Scliente.Enviar(entrada);
+        }
+        else
+            return false;
+    }
+    else
+        return false;
+}
+
 
 
 

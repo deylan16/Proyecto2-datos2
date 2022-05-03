@@ -1,8 +1,8 @@
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_doble.cpp.o: \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.cpp \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

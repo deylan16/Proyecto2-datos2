@@ -1,5 +1,5 @@
 CMakeFiles/Codigo.dir/main.cpp.o: \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/main.cpp \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -136,7 +136,7 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -220,12 +220,15 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_doble.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.h \
+ /usr/include/c++/9/stdlib.h

@@ -7,6 +7,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Componentes.h"
+#include "../lista doblemente enlazada/Lista_Doble.h"
 
 class Ventana {
 public:
@@ -17,7 +18,9 @@ public:
     sf::Event event;
     bool escribiendo = false;
     std::string entrada = "";
-    int contador_botones = 9;
+    int contador_botones = 8;
+    int contador_original = 8;
+    Lista_Doble<sf::RectangleShape> *hola2 = new Lista_Doble<sf::RectangleShape>();
 
     Componentes *componentes = new Componentes();
 

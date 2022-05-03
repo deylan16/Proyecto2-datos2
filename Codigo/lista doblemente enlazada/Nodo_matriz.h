@@ -6,7 +6,7 @@
 #define CODIGO_NODO_MATRIZ_H
 
 
-#include "Lista_doble.h"
+#include "Lista_Doble.h"
 #include "Lista_pixeles.h"
 
 class Nodo_matriz {

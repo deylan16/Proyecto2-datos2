@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -221,4 +221,8 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/Interfaz/Componentes.h
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
+ /usr/include/c++/9/stdlib.h

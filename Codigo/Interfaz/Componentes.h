@@ -25,6 +25,7 @@ public:
     void setposicion_mouse(int entrada_mousex,int entrada_mousey);
     bool creaBoton(int posicionx, int posiciony, int ancho, int alto,std::string texto);
     void creaLabel(int posicionx, int posiciony, int tamano,std::string texto);
+    bool creaBoton_con_imagen(int posicionx, int posiciony, int ancho, int alto,std::string imagen);
 };
 
 

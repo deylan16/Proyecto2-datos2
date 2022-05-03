@@ -1,5 +1,5 @@
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.cpp \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -139,5 +139,5 @@ CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h
