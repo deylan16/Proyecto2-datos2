@@ -4,6 +4,7 @@
 
 #include "Ventana.h"
 #include "../BMP/Bmp.h"
+#include "../lista doblemente enlazada/Lista_pixeles.h"
 
 
 Ventana::Ventana(sf::RenderWindow *window) {
@@ -183,7 +184,7 @@ void Ventana::ventana_principal() {
                 }
             }
         }
-        ptrwindow->clear();
+        //ptrwindow->clear();
 
         sf::RectangleShape rectangulo(sf::Vector2f(1100.f, 100.f));
         rectangulo.setFillColor(sf::Color(146,151,158,255));
@@ -206,6 +207,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
+                modo_activo = "borrador";
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -338,15 +340,41 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
+        if(componentes->creaBoton(410, 60, 30, 30, "Ma")){
+            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+            if (contador_botones == 0){
+                std::cout<<"koka"<<std::endl;
+                multplicador_de_trazo += 1;
+                //seleccionar_jugador2 = true;
+                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+            }
+        }
+        if(componentes->creaBoton(460, 60, 30, 30, "Me")){
+            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+            if (contador_botones == 0){
+                std::cout<<"koka"<<std::endl;
+                if(multplicador_de_trazo >= 0)
+                    multplicador_de_trazo -= 1;
+                //seleccionar_jugador2 = true;
+                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+            }
+        }
+
+
+        /*for(int i = 0;i<lienzo->largo;i++){
+            ptrwindow->draw(lienzo->busqueda_indice(i));
+        }*/
 
         int x, y;
         int r,g,b;
         if (yo){
             for (y=tre->info.height; y>0; y-=1)
             {
+                Lista_pixeles *fila = new Lista_pixeles();
                 for (x=0; x<tre->info.width; x+=1)
                 {
                     //std::cout<<3*(x+y*info.width)<<std::endl;
+
 
                     b=(tre->img[4*(x+y*tre->info.width)]);
                     g=(tre->img[4*(x+y*tre->info.width)+1]);
@@ -357,15 +385,84 @@ void Ventana::ventana_principal() {
                     sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
                     rectangulo.setFillColor(sf::Color(r,g,b,255));
                     rectangulo.setPosition(x,(tre->info.height-y)+100);
-                    //hola2->append(rectangulo);
-                    ptrwindow->draw(rectangulo);
+                    lienzo->append(rectangulo);
+                    fila->append(r,g,b,rectangulo);
+                    //ptrwindow->draw(rectangulo);
                 }
+                RGB_pixeles_imagen->append(fila);
 
 
-            } }
+            }
+            yo = false;
+            for(int n = 0;n <RGB_pixeles_imagen->largo; n++)
+            {
+                for (int u=0; u<RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1)
+                {
+                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(n)->busqueda_indice(u);
+                    //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
+                    ptrwindow->draw( pixel->rectangulo);
+
+
+
+
+                }
+            }
+        }
+        if (modo_activo != "ninguno"){
+            if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+
+                if(100<mousey && mousey<RGB_pixeles_imagen->largo+100 && 0<mousex && mousex<RGB_pixeles_imagen->busqueda_indice(0)->largo){
+                    if(modo_activo == "borrador"){
+                        cambiar_color_pixel_lienzo(mousex,mousey-100,255,255,255);
+
+                    }
+                }
+            }
+
+        }
+        /*for (int z=0; z<RGB_pixeles_imagen->busqueda_indice(100)->largo; z+=1)
+        {
+            cambiar_color_pixel_lienzo(z,100);
+        }*/
+        /*Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(RGB_pixeles_imagen->busqueda_indice(0)->largo/2)->busqueda_indice(0);
+        pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));*/
+
+
+
         ptrwindow->display();
 
     }
 
+}
+
+void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
+    if(multplicador_de_trazo == 0 ){
+        Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+        if(pixel != NULL)
+        {
+            pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+            ptrwindow->draw( pixel->rectangulo);
+        }
+
+    }
+
+    if(multplicador_de_trazo != 0){
+        x -= multplicador_de_trazo;
+        y -= multplicador_de_trazo;
+        for(int a = 0;a <3+multplicador_de_trazo; a++)
+        {
+            for(int l = 0;l <3+multplicador_de_trazo; l++)
+            {
+                Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y+a)->busqueda_indice(x+l);
+                if(pixel != NULL)
+                {
+                    pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+                    ptrwindow->draw( pixel->rectangulo);
+                }
+
+            }
+        }
+
+    }
 }
 

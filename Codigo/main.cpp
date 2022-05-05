@@ -24,7 +24,7 @@ void carro()
     hola->append("arriiba");
     hola->print();*/
 
-    Lista_pixeles *saa = new Lista_pixeles();
+    /*Lista_pixeles *saa = new Lista_pixeles();
     saa->append(43,89,100);
     saa->append(30,93,170);
     saa->append(56,60,255);
@@ -43,7 +43,7 @@ void carro()
     tome->append(saa2);
 
     tome->print();
-    std::cout<<tome->busqueda_indice(0)->busqueda_indice(1)->R<<std::endl;
+    std::cout<<tome->busqueda_indice(0)->busqueda_indice(1)->R<<std::endl;*/
 
 
 }

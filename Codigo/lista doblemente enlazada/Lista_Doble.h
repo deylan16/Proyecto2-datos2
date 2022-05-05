@@ -19,7 +19,7 @@ public:
     void append(T dato);
 
     void print();
-    std::string busqueda_indice(int indice_busqueda);
+    T busqueda_indice(int indice_busqueda);
     void appe(T dato);
 };
 template <typename T>
@@ -59,9 +59,10 @@ void Lista_Doble<T>::print() {
 
 }
 template <typename T>
-std::string Lista_Doble<T>::busqueda_indice(int indice_busqueda) {
-    std::string resultado = "Fuera de rango" ;
+T Lista_Doble<T>::busqueda_indice(int indice_busqueda) {
+
     Nodo<T> *actual = this->Inicio;
+    T resultado = actual->dato;
     for(int i = 0;i < this->largo;i++){
         if(actual->indice == indice_busqueda){
             resultado = actual->dato;

@@ -6,15 +6,15 @@
 #include <iostream>
 #include "Lista_pixeles.h"
 
-void Lista_pixeles::append(int R, int G, int B) {
+void Lista_pixeles::append(int R, int G, int B,sf::RectangleShape rectangulo_entrante) {
     this->largo += 1;
     if(this->Inicio == nullptr){
-        this->Inicio = new Nodo_pixel(R,G,B, nullptr, nullptr,largo-1);
+        this->Inicio = new Nodo_pixel(R,G,B, nullptr, nullptr,largo-1, rectangulo_entrante);
         this->Final = this->Inicio;
     }
     else {
         Nodo_pixel *tmp = this->Final;
-        tmp->next = new Nodo_pixel(R,G,B, nullptr, tmp,largo-1);
+        tmp->next = new Nodo_pixel(R,G,B, nullptr, tmp,largo-1, rectangulo_entrante);
         this->Final = tmp->next;
         Nodo_pixel*tmp2 = this->Final;
         tmp2->prev = tmp;
@@ -40,13 +40,11 @@ void Lista_pixeles::print() {
 }
 
 Nodo_pixel * Lista_pixeles::busqueda_indice(int indice_busqueda) {
-    int resultado[3] = {0,0,0};
+    Nodo_pixel *RESULTADO = NULL;
     Nodo_pixel *actual = this->Inicio;
     for(int i = 0;i < this->largo;i++){
         if(actual->indice == indice_busqueda){
-            resultado[0]  = actual->R;
-            resultado[1]  = actual->G;
-            resultado[2]  = actual->B;
+            RESULTADO = actual;
             break;
 
         }

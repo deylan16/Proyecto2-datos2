@@ -14,7 +14,7 @@ public:
     Nodo_pixel *Final = nullptr;
     int largo = 0;
 
-    void append(int R,int G,int B);
+    void append(int R,int G,int B,sf::RectangleShape rectangulo_entrante);
 
     void print();
     Nodo_pixel * busqueda_indice(int indice_busqueda);

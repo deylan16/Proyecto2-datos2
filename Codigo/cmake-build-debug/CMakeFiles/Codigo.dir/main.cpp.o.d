@@ -223,12 +223,13 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.h \
  /usr/include/c++/9/stdlib.h

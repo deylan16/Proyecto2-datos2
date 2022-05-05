@@ -38,7 +38,7 @@ bool Componentes::creaBoton(int posicionx, int posiciony, int ancho, int alto,st
     sf::Text text2;
     text2.setFont(font2);
     sf::RectangleShape BotonAceptar(sf::Vector2f(ancho,alto));BotonAceptar.setPosition(posicionx,posiciony);BotonAceptar.setFillColor(sf::Color::Blue);ptrwindow->draw(BotonAceptar);
-    text2.setString(texto),text2.setCharacterSize(30),text2.setFillColor(sf::Color::Green),text2.setPosition(posicionx+5,posiciony-5),ptrwindow->draw(text2);
+    text2.setString(texto),text2.setCharacterSize(alto),text2.setFillColor(sf::Color::Green),text2.setPosition(posicionx+5,posiciony-5),ptrwindow->draw(text2);
     if (posicionx<this->mousex && this->mousex<(posicionx+ancho) && this->mousey<(posiciony+alto) && this->mousey>posiciony){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
             return true;
