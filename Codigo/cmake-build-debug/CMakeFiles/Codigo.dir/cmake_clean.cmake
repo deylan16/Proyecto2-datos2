@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d"
   "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o"
   "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
+  "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o"
+  "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o.d"
   "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o"
   "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d"
   "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o"

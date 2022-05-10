@@ -177,6 +177,30 @@ Interfaz/Componentes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s
 .PHONY : Interfaz/Componentes.cpp.s
 
+Interfaz/Datos_juego.o: Interfaz/Datos_juego.cpp.o
+.PHONY : Interfaz/Datos_juego.o
+
+# target to build an object file
+Interfaz/Datos_juego.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o
+.PHONY : Interfaz/Datos_juego.cpp.o
+
+Interfaz/Datos_juego.i: Interfaz/Datos_juego.cpp.i
+.PHONY : Interfaz/Datos_juego.i
+
+# target to preprocess a source file
+Interfaz/Datos_juego.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.i
+.PHONY : Interfaz/Datos_juego.cpp.i
+
+Interfaz/Datos_juego.s: Interfaz/Datos_juego.cpp.s
+.PHONY : Interfaz/Datos_juego.s
+
+# target to generate assembly for a file
+Interfaz/Datos_juego.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s
+.PHONY : Interfaz/Datos_juego.cpp.s
+
 Interfaz/Ventana.o: Interfaz/Ventana.cpp.o
 .PHONY : Interfaz/Ventana.o
 
@@ -384,6 +408,9 @@ help:
 	@echo "... Interfaz/Componentes.o"
 	@echo "... Interfaz/Componentes.i"
 	@echo "... Interfaz/Componentes.s"
+	@echo "... Interfaz/Datos_juego.o"
+	@echo "... Interfaz/Datos_juego.i"
+	@echo "... Interfaz/Datos_juego.s"
 	@echo "... Interfaz/Ventana.o"
 	@echo "... Interfaz/Ventana.i"
 	@echo "... Interfaz/Ventana.s"

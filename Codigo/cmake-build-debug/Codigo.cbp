@@ -96,6 +96,12 @@
 		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Componentes.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp">
 			<Option target="Codigo"/>
 		</Unit>

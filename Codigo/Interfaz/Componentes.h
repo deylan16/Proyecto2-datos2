@@ -26,6 +26,7 @@ public:
     bool creaBoton(int posicionx, int posiciony, int ancho, int alto,std::string texto);
     void creaLabel(int posicionx, int posiciony, int tamano,std::string texto);
     bool creaBoton_con_imagen(int posicionx, int posiciony, int ancho, int alto,std::string imagen);
+    bool creaBoton_color(int posicionx, int posiciony, int ancho, int alto,int r,int g,int b);
 };
 
 

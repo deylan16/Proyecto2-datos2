@@ -224,7 +224,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                //seleccionar_jugador2 = true;
+                modo_activo = "picker";
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
@@ -359,6 +359,15 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
+        if(componentes->creaBoton_color(460, 10, 30, 30, datos->rgb_color_seleccionado[0],datos->rgb_color_seleccionado[1],datos->rgb_color_seleccionado[2] )){
+            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+            if (contador_botones == 0){
+                std::cout<<"koka"<<std::endl;
+
+                //seleccionar_jugador2 = true;
+                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+            }
+        }
 
 
         /*for(int i = 0;i<lienzo->largo;i++){
@@ -414,7 +423,9 @@ void Ventana::ventana_principal() {
                 if(100<mousey && mousey<RGB_pixeles_imagen->largo+100 && 0<mousex && mousex<RGB_pixeles_imagen->busqueda_indice(0)->largo){
                     if(modo_activo == "borrador"){
                         cambiar_color_pixel_lienzo(mousex,mousey-100,255,255,255);
-
+                    }
+                    if(modo_activo == "picker"){
+                        picker(mousex,mousey-100);
                     }
                 }
             }
@@ -437,11 +448,16 @@ void Ventana::ventana_principal() {
 
 void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
     if(multplicador_de_trazo == 0 ){
-        Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
-        if(pixel != NULL)
-        {
-            pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
-            ptrwindow->draw( pixel->rectangulo);
+        if(RGB_pixeles_imagen->busqueda_indice(y) != NULL){
+            Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+            if(pixel != NULL)
+            {
+                pixel->R = r;
+                pixel->B = b;
+                pixel->G = g;
+                pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+                ptrwindow->draw( pixel->rectangulo);
+            }
         }
 
     }
@@ -453,16 +469,44 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
         {
             for(int l = 0;l <3+multplicador_de_trazo; l++)
             {
-                Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y+a)->busqueda_indice(x+l);
-                if(pixel != NULL)
-                {
-                    pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
-                    ptrwindow->draw( pixel->rectangulo);
+                if(RGB_pixeles_imagen->busqueda_indice(y+a) != NULL){
+                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y+a)->busqueda_indice(x+l);
+                    if(pixel != NULL)
+                    {
+                        pixel->R = r;
+                        pixel->B = b;
+                        pixel->G = g;
+                        pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+                        ptrwindow->draw( pixel->rectangulo);
+                    }
                 }
+
 
             }
         }
 
     }
+}
+
+void Ventana::cambiar_color_seleccionado( int r, int g, int b) {
+    datos->rgb_color_seleccionado[0] = r;
+    datos->rgb_color_seleccionado[1] = g;
+    datos->rgb_color_seleccionado[2] = b;
+
+
+}
+
+void Ventana::picker(int x, int y) {
+    if(RGB_pixeles_imagen->busqueda_indice(y) != NULL){
+        Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+        if(pixel != NULL)
+        {
+            cambiar_color_seleccionado(pixel->R,pixel->G,pixel->B);
+
+
+
+        }
+    }
+
 }
 

@@ -9,6 +9,7 @@
 #include "Componentes.h"
 #include "../lista doblemente enlazada/Lista_Doble.h"
 #include "../lista doblemente enlazada/Matriz.h"
+#include "Datos_juego.h"
 
 class Ventana {
 public:
@@ -27,12 +28,15 @@ public:
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
 
     Componentes *componentes = new Componentes();
+    Datos_juego *datos = Datos_juego::GetInstance("Informacion");
 
 
 
     Ventana( sf::RenderWindow *window);
     void ventana_principal();
     void cambiar_color_pixel_lienzo(int x,int y,int r,int g,int b);
+    void cambiar_color_seleccionado(int r,int g,int b);
+    void picker(int x, int y);
 
 };
 

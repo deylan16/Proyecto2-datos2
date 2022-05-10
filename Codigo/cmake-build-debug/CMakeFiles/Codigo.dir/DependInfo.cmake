@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.cpp" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o" "gcc" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d"
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
+  "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o.d"
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d"
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o.d"
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o.d"

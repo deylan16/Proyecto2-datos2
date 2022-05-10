@@ -83,6 +83,20 @@ bool Componentes::creaBoton_con_imagen(int posicionx, int posiciony, int ancho, 
         return false;
 }
 
+bool Componentes::creaBoton_color(int posicionx, int posiciony, int ancho, int alto, int r, int g, int b) {
+    sf::RectangleShape BotonAceptar(sf::Vector2f(ancho,alto));BotonAceptar.setPosition(posicionx,posiciony);BotonAceptar.setFillColor(sf::Color(r,g,b,255));ptrwindow->draw(BotonAceptar);
+    if (posicionx<this->mousex && this->mousex<(posicionx+ancho) && this->mousey<(posiciony+alto) && this->mousey>posiciony){
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+            return true;
+            //Scliente.Enviar(entrada);
+        }
+        else
+            return false;
+    }
+    else
+        return false;
+}
+
 
 
 
