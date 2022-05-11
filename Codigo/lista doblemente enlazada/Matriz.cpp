@@ -4,10 +4,6 @@
 
 #include "Matriz.h"
 
-
-
-
-
 void Matriz::print() {
     Nodo_matriz *actual = this->Inicio;
     int cuenta = 0;

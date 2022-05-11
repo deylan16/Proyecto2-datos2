@@ -16,7 +16,7 @@ Ventana::Ventana(sf::RenderWindow *window) {
 void Ventana::ventana_principal() {
     Bmp *tre = new Bmp();
 
-    tre->img=tre->LoadBMP("/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/gr.bmp", &tre->info);
+    tre->img=tre->LoadBMP("gr.bmp", &tre->info);
     tre->DisplayInfo(&tre->info);
     //tre->SaveBMP("res3.bmp", &tre->info, tre->img);
 
@@ -205,7 +205,7 @@ void Ventana::ventana_principal() {
 
         //componentes->creaLabel(0,0,30,"hola");
         //componentes->creaCajadeTexto(0,200,100,40,entrada);
-        std::string prefijo_ruta = "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Imagenes/";
+        std::string prefijo_ruta = "Imagenes/";
         if(componentes->creaBoton_con_imagen(10, 10, 30, 30, prefijo_ruta + "Borrador.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
@@ -417,9 +417,6 @@ void Ventana::ventana_principal() {
                     Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(n)->busqueda_indice(u);
                     //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
                     ptrwindow->draw( pixel->rectangulo);
-
-
-
 
                 }
             }

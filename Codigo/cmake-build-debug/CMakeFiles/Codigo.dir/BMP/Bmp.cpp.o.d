@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o: \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.cpp \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/BMP/Bmp.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
