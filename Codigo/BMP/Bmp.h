@@ -41,6 +41,7 @@ public:
     unsigned char *LoadBMP(char *filename, bmpInfoHeader *bInfoHeader);
     void DisplayInfo(bmpInfoHeader *info);
     void TextDisplay(bmpInfoHeader *info, unsigned char *img);
+    void SaveBMP(char *filename, bmpInfoHeader *info, unsigned char *imgdata);
 };
 
 

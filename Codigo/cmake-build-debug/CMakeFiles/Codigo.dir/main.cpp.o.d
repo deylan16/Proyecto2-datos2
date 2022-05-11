@@ -233,8 +233,21 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Facade_funciones.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
  /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.h \
- /usr/include/c++/9/stdlib.h
+ /usr/include/c++/9/stdlib.h /usr/include/c++/9/thread \
+ /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/ext/concurrence.h \
+ /usr/include/c++/9/bits/shared_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_base.h \
+ /usr/include/c++/9/bits/allocated_ptr.h \
+ /usr/include/c++/9/bits/refwrap.h \
+ /usr/include/c++/9/bits/shared_ptr_atomic.h \
+ /usr/include/c++/9/bits/atomic_base.h \
+ /usr/include/c++/9/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/9/backward/auto_ptr.h

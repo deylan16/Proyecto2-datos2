@@ -153,6 +153,54 @@ BMP/Bmp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/BMP/Bmp.cpp.s
 .PHONY : BMP/Bmp.cpp.s
 
+Funcionalidades/Facade_funciones.o: Funcionalidades/Facade_funciones.cpp.o
+.PHONY : Funcionalidades/Facade_funciones.o
+
+# target to build an object file
+Funcionalidades/Facade_funciones.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o
+.PHONY : Funcionalidades/Facade_funciones.cpp.o
+
+Funcionalidades/Facade_funciones.i: Funcionalidades/Facade_funciones.cpp.i
+.PHONY : Funcionalidades/Facade_funciones.i
+
+# target to preprocess a source file
+Funcionalidades/Facade_funciones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i
+.PHONY : Funcionalidades/Facade_funciones.cpp.i
+
+Funcionalidades/Facade_funciones.s: Funcionalidades/Facade_funciones.cpp.s
+.PHONY : Funcionalidades/Facade_funciones.s
+
+# target to generate assembly for a file
+Funcionalidades/Facade_funciones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s
+.PHONY : Funcionalidades/Facade_funciones.cpp.s
+
+Funcionalidades/Giros.o: Funcionalidades/Giros.cpp.o
+.PHONY : Funcionalidades/Giros.o
+
+# target to build an object file
+Funcionalidades/Giros.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o
+.PHONY : Funcionalidades/Giros.cpp.o
+
+Funcionalidades/Giros.i: Funcionalidades/Giros.cpp.i
+.PHONY : Funcionalidades/Giros.i
+
+# target to preprocess a source file
+Funcionalidades/Giros.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i
+.PHONY : Funcionalidades/Giros.cpp.i
+
+Funcionalidades/Giros.s: Funcionalidades/Giros.cpp.s
+.PHONY : Funcionalidades/Giros.s
+
+# target to generate assembly for a file
+Funcionalidades/Giros.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s
+.PHONY : Funcionalidades/Giros.cpp.s
+
 Interfaz/Componentes.o: Interfaz/Componentes.cpp.o
 .PHONY : Interfaz/Componentes.o
 
@@ -405,6 +453,12 @@ help:
 	@echo "... BMP/Bmp.o"
 	@echo "... BMP/Bmp.i"
 	@echo "... BMP/Bmp.s"
+	@echo "... Funcionalidades/Facade_funciones.o"
+	@echo "... Funcionalidades/Facade_funciones.i"
+	@echo "... Funcionalidades/Facade_funciones.s"
+	@echo "... Funcionalidades/Giros.o"
+	@echo "... Funcionalidades/Giros.i"
+	@echo "... Funcionalidades/Giros.s"
 	@echo "... Interfaz/Componentes.o"
 	@echo "... Interfaz/Componentes.i"
 	@echo "... Interfaz/Componentes.s"

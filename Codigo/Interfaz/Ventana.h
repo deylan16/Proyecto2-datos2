@@ -10,6 +10,7 @@
 #include "../lista doblemente enlazada/Lista_Doble.h"
 #include "../lista doblemente enlazada/Matriz.h"
 #include "Datos_juego.h"
+#include "../Funcionalidades/Facade_funciones.h"
 
 class Ventana {
 public:
@@ -23,12 +24,14 @@ public:
     int contador_botones = 8;
     int contador_original = 8;
     int multplicador_de_trazo = 2;
+    bool matriz_lista = false;
     std::string modo_activo = "Ninguno";
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
 
     Componentes *componentes = new Componentes();
     Datos_juego *datos = Datos_juego::GetInstance("Informacion");
+    Facade_funciones *funciones = Facade_funciones::GetInstance("Informacion");
 
 
 
@@ -37,6 +40,8 @@ public:
     void cambiar_color_pixel_lienzo(int x,int y,int r,int g,int b);
     void cambiar_color_seleccionado(int r,int g,int b);
     void picker(int x, int y);
+    void redibuja_la_imagen();
+    void renderizar();
 
 };
 

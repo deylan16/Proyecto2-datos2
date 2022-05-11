@@ -7,6 +7,8 @@
 #include "BMP/Bmp.h"
 
 #include <SFML/Graphics.hpp>
+#include <pthread.h>
+#include <thread>
 
 void carro()
 {
@@ -47,14 +49,24 @@ void carro()
 
 
 }
+Ventana *ventana2;
+void hola(){
+    ventana2->redibuja_la_imagen();
+
+}
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(1100,1000),"Memoria");
     sf::RenderWindow *ptrwindow;
     ptrwindow = &window;
-
     Ventana *ventana = new Ventana(ptrwindow);
+    ventana2 = ventana;
+    //std::thread thread_1(hola);
+
+
+
     ventana->ventana_principal();
+    //thread_1.join();
     //carro();
 
 

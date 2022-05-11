@@ -1,7 +1,7 @@
-CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp \
+CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/tuple \
  /usr/include/c++/9/utility \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -134,10 +134,10 @@ CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -153,8 +153,8 @@ CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Nodo_pixel.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \
@@ -177,4 +177,7 @@ CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: \
  /usr/include/SFML/Graphics/PrimitiveType.hpp /usr/include/c++/9/vector \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \
- /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Giros.h

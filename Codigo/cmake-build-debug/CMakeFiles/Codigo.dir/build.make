@@ -223,6 +223,34 @@ CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp -o CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s
 
+CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: ../Funcionalidades/Facade_funciones.cpp
+CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o -c /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp
+
+CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp > CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i
+
+CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp -o CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s
+
+CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o: ../Funcionalidades/Giros.cpp
+CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o -c /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp
+
+CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp > CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i
+
+CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp -o CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s
+
 # Object files for target Codigo
 Codigo_OBJECTS = \
 "CMakeFiles/Codigo.dir/main.cpp.o" \
@@ -235,7 +263,9 @@ Codigo_OBJECTS = \
 "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o" \
 "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o" \
 "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o" \
-"CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o"
+"CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o" \
+"CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o" \
+"CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o"
 
 # External object files for target Codigo
 Codigo_EXTERNAL_OBJECTS =
@@ -251,12 +281,14 @@ Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o
 Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o
 Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o
+Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o
+Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o
 Codigo: CMakeFiles/Codigo.dir/build.make
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Codigo: CMakeFiles/Codigo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Codigo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Codigo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Codigo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

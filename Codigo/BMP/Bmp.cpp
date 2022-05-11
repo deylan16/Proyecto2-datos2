@@ -94,3 +94,28 @@ void Bmp::TextDisplay(bmpInfoHeader *info, unsigned char *img) {
         printf("\n");
     }
 }
+
+void Bmp::SaveBMP(char *filename, bmpInfoHeader *info, unsigned char *imgdata) {
+    bmpFileHeader header;
+    FILE *f;
+    uint16_t type;
+
+    f=fopen(filename, "w+");
+    //info->height = 310;
+    header.size=info->imgsize+sizeof(bmpFileHeader)+sizeof(bmpInfoHeader);
+    /* header.resv1=0; */
+    /* header.resv2=1; */
+    /* El offset será el tamaño de las dos cabeceras + 2 (información de fichero)*/
+    header.offset=sizeof(bmpFileHeader)+sizeof(bmpInfoHeader)+2;
+    /* Escribimos la identificación del archivo */
+    type=0x4D42;
+    fwrite(&type, sizeof(type),1,f);
+    /* Escribimos la cabecera de fichero */
+    fwrite(&header, sizeof(bmpFileHeader),1,f);
+    /* Escribimos la información básica de la imagen */
+    fwrite(info, sizeof(bmpInfoHeader),1,f);
+    /* Escribimos la imagen */
+    fwrite(imgdata, info->imgsize, 1, f);
+    fclose(f);
+}
+

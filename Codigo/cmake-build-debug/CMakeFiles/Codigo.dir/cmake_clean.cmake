@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o"
   "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d"
+  "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o"
+  "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o.d"
+  "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o"
+  "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o.d"
   "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o"
   "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
   "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o"

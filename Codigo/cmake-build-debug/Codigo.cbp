@@ -90,6 +90,18 @@
 		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Giros.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp">
 			<Option target="Codigo"/>
 		</Unit>

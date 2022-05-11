@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/BMP/Bmp.cpp" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o" "gcc" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d"
+  "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o.d"
+  "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o.d"
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o.d"
   "/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d"

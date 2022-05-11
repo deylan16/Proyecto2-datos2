@@ -6,6 +6,8 @@
 #define CODIGO_DATOS_JUEGO_H
 
 #include <mutex>
+#include "../lista doblemente enlazada/Matriz.h"
+
 class Datos_juego {
 private:
     static Datos_juego * pinstance_;
@@ -32,6 +34,7 @@ public:
 
     //******************************
     int rgb_color_seleccionado[3] = {255,255,255 };
+    Matriz *RGB_pixeles_imagen ;
 
 };
 #endif //CODIGO_DATOS_JUEGO_H

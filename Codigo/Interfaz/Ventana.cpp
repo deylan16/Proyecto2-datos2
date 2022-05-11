@@ -2,6 +2,7 @@
 // Created by deyla on 25/4/2022.
 //
 
+#include <thread>
 #include "Ventana.h"
 #include "../BMP/Bmp.h"
 #include "../lista doblemente enlazada/Lista_pixeles.h"
@@ -17,8 +18,10 @@ void Ventana::ventana_principal() {
 
     tre->img=tre->LoadBMP("/home/deylan/Escritorio/repo/Proyecto2-datos2/Codigo/gr.bmp", &tre->info);
     tre->DisplayInfo(&tre->info);
+    //tre->SaveBMP("res3.bmp", &tre->info, tre->img);
 
     bool yo = true;
+
     while (ptrwindow->isOpen())
     {
 
@@ -304,7 +307,11 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                //seleccionar_jugador2 = true;
+                funciones->giro("90derecha");
+                ptrwindow->clear();
+                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                redibuja_la_imagen();
+                ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
@@ -416,6 +423,12 @@ void Ventana::ventana_principal() {
 
                 }
             }
+            datos->RGB_pixeles_imagen = this->RGB_pixeles_imagen;
+
+            matriz_lista = true;
+
+
+
         }
         if (modo_activo != "ninguno"){
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
@@ -456,6 +469,7 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
                 pixel->B = b;
                 pixel->G = g;
                 pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+                //redibuja_la_imagen();
                 ptrwindow->draw( pixel->rectangulo);
             }
         }
@@ -477,6 +491,7 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
                         pixel->B = b;
                         pixel->G = g;
                         pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+                        //redibuja_la_imagen();
                         ptrwindow->draw( pixel->rectangulo);
                     }
                 }
@@ -507,6 +522,31 @@ void Ventana::picker(int x, int y) {
 
         }
     }
+
+}
+
+void Ventana:: redibuja_la_imagen() {
+
+    std::cout<<RGB_pixeles_imagen->largo<<std::endl;
+    std::cout<<datos->RGB_pixeles_imagen->largo<<std::endl;
+    for(int n = 0;n <datos->RGB_pixeles_imagen->largo; n++)
+    {
+        for (int u=0; u<datos->RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1)
+        {
+            Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(n)->busqueda_indice(u);
+            //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
+            pixel->rectangulo.setPosition(u,n+100);
+            ptrwindow->draw( pixel->rectangulo);
+
+
+
+
+        }
+    }
+}
+
+void Ventana::renderizar() {
+    redibuja_la_imagen();
 
 }
 
