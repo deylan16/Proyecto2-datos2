@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include "../Interfaz/Datos_juego.h"
 
 typedef struct bmpFileHeader
 {
@@ -17,6 +18,14 @@ typedef struct bmpFileHeader
     uint16_t resv2;       /* Reservado */
     uint32_t offset;      /* Offset hasta hasta los datos de imagen */
 } bmpFileHeader;
+typedef struct rgb
+{
+    /* 2 bytes de identificación */
+    uint8_t B;        /* Tamaño del archivo */
+    uint8_t G;       /* Reservado */
+    uint8_t R;       /* Reservado */
+    uint8_t A;      /* Offset hasta hasta los datos de imagen */
+} RGB;
 
 typedef struct bmpInfoHeader
 {
@@ -37,6 +46,7 @@ class Bmp {
 public:
     bmpInfoHeader info;
     unsigned char *img;
+    Datos_juego *datos = Datos_juego::GetInstance("Informacion");
 
     unsigned char *LoadBMP(char *filename, bmpInfoHeader *bInfoHeader);
     void DisplayInfo(bmpInfoHeader *info);

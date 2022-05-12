@@ -137,4 +137,42 @@ CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o: \
  /usr/include/c++/9/bits/locale_facets.tcc \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
- /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/stdlib.h
+ /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/stdlib.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/Datos_juego.h \
+ /usr/include/c++/9/mutex /usr/include/c++/9/tuple \
+ /usr/include/c++/9/utility /usr/include/c++/9/bits/stl_relops.h \
+ /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
+ /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/chrono \
+ /usr/include/c++/9/ratio /usr/include/c++/9/limits \
+ /usr/include/c++/9/ctime /usr/include/c++/9/bits/parse_numbers.h \
+ /usr/include/c++/9/bits/std_mutex.h \
+ /usr/include/c++/9/bits/unique_lock.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /usr/include/SFML/Graphics/RectangleShape.hpp \
+ /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/Graphics/Shape.hpp \
+ /usr/include/SFML/Graphics/Drawable.hpp \
+ /usr/include/SFML/Graphics/RenderStates.hpp \
+ /usr/include/SFML/Graphics/BlendMode.hpp \
+ /usr/include/SFML/Graphics/Transform.hpp \
+ /usr/include/SFML/Graphics/Rect.hpp /usr/include/SFML/System/Vector2.hpp \
+ /usr/include/SFML/System/Vector2.inl /usr/include/c++/9/algorithm \
+ /usr/include/c++/9/bits/stl_algo.h \
+ /usr/include/c++/9/bits/algorithmfwd.h \
+ /usr/include/c++/9/bits/stl_heap.h /usr/include/c++/9/bits/stl_tempbuf.h \
+ /usr/include/c++/9/bits/stl_construct.h \
+ /usr/include/c++/9/bits/uniform_int_dist.h \
+ /usr/include/SFML/Graphics/Rect.inl \
+ /usr/include/SFML/Graphics/Transformable.hpp \
+ /usr/include/SFML/Graphics/VertexArray.hpp \
+ /usr/include/SFML/Graphics/Vertex.hpp \
+ /usr/include/SFML/Graphics/Color.hpp \
+ /usr/include/SFML/Graphics/PrimitiveType.hpp /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/stl_uninitialized.h \
+ /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc

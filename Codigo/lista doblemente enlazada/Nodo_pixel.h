@@ -19,6 +19,7 @@ public:
     int R = NULL;
     int G;
     int B;
+    int A;
     sf::RectangleShape rectangulo ;
 
 

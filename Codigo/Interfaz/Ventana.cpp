@@ -16,7 +16,7 @@ Ventana::Ventana(sf::RenderWindow *window) {
 void Ventana::ventana_principal() {
     Bmp *tre = new Bmp();
 
-    tre->img=tre->LoadBMP("gr.bmp", &tre->info);
+    tre->img=tre->LoadBMP("hola.bmp", &tre->info);
     tre->DisplayInfo(&tre->info);
     //tre->SaveBMP("res3.bmp", &tre->info, tre->img);
 
@@ -400,7 +400,7 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
-        if(componentes->creaBoton(560, 10, 30, 30, "G")){
+        if(componentes->creaBoton(510, 60, 30, 30, "G")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
@@ -412,13 +412,21 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
+        if(componentes->creaBoton(560, 10, 30, 30, "S")){
+            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+            if (contador_botones == 0){
+                std::cout<<"koka"<<std::endl;
+                tre->SaveBMP("hola.bmp", &tre->info, tre->img);
+                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+            }
+        }
 
         /*for(int i = 0;i<lienzo->largo;i++){
             ptrwindow->draw(lienzo->busqueda_indice(i));
         }*/
 
         int x, y;
-        int r,g,b;
+        int r,g,b,a;
         if (yo){
             for (y=tre->info.height; y>0; y-=1)
             {
@@ -431,6 +439,7 @@ void Ventana::ventana_principal() {
                     b=(tre->img[4*(x+y*tre->info.width)]);
                     g=(tre->img[4*(x+y*tre->info.width)+1]);
                     r=(tre->img[4*(x+y*tre->info.width)+2]);
+                    a = (tre->img[4*(x+y*tre->info.width)+3]);
                     //std::cout<<"["<<r<<","<<g<<","<<b<<"]"<<std::endl;
 
                     //printf("%c", colores[b+g*2+r*4]);
@@ -439,6 +448,7 @@ void Ventana::ventana_principal() {
                     rectangulo.setPosition(x,(tre->info.height-y)+100);
                     lienzo->append(rectangulo);
                     fila->append(r,g,b,rectangulo);
+                    fila->Final->A = a;
                     //ptrwindow->draw(rectangulo);
                 }
                 RGB_pixeles_imagen->append(fila);

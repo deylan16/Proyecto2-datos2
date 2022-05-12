@@ -240,8 +240,10 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
  /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
  /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/Bmp.h \
- /usr/include/c++/9/stdlib.h /usr/include/c++/9/thread \
- /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/stdlib.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/../Interfaz/Datos_juego.h \
+ /usr/include/c++/9/thread /usr/include/c++/9/memory \
+ /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
  /usr/include/c++/9/bits/shared_ptr.h \
  /usr/include/c++/9/bits/shared_ptr_base.h \

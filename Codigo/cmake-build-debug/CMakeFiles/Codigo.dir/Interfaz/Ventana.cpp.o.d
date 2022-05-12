@@ -251,4 +251,5 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
  /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
  /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
  /usr/include/c++/9/stdlib.h \
+ /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \
  /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h

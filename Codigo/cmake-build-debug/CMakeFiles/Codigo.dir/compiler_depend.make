@@ -173,7 +173,57 @@ CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o: ../BMP/Bmp.cpp \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/bits/istream.tcc \
-  /usr/include/c++/9/stdlib.h
+  /usr/include/c++/9/stdlib.h \
+  ../Interfaz/Datos_juego.h \
+  /usr/include/c++/9/mutex \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/array \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/invoke.h \
+  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/ratio \
+  /usr/include/c++/9/limits \
+  /usr/include/c++/9/ctime \
+  /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/bits/std_mutex.h \
+  /usr/include/c++/9/bits/unique_lock.h \
+  ../lista\ doblemente\ enlazada/Matriz.h \
+  ../lista\ doblemente\ enlazada/Nodo_matriz.h \
+  ../lista\ doblemente\ enlazada/Lista_Doble.h \
+  ../lista\ doblemente\ enlazada/Nodo.h \
+  ../lista\ doblemente\ enlazada/Lista_pixeles.h \
+  ../lista\ doblemente\ enlazada/Nodo_pixel.h \
+  /usr/include/SFML/Graphics/RectangleShape.hpp \
+  /usr/include/SFML/Graphics/Export.hpp \
+  /usr/include/SFML/Config.hpp \
+  /usr/include/SFML/Graphics/Shape.hpp \
+  /usr/include/SFML/Graphics/Drawable.hpp \
+  /usr/include/SFML/Graphics/RenderStates.hpp \
+  /usr/include/SFML/Graphics/BlendMode.hpp \
+  /usr/include/SFML/Graphics/Transform.hpp \
+  /usr/include/SFML/Graphics/Rect.hpp \
+  /usr/include/SFML/System/Vector2.hpp \
+  /usr/include/SFML/System/Vector2.inl \
+  /usr/include/c++/9/algorithm \
+  /usr/include/c++/9/bits/stl_algo.h \
+  /usr/include/c++/9/bits/algorithmfwd.h \
+  /usr/include/c++/9/bits/stl_heap.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_construct.h \
+  /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/SFML/Graphics/Rect.inl \
+  /usr/include/SFML/Graphics/Transformable.hpp \
+  /usr/include/SFML/Graphics/VertexArray.hpp \
+  /usr/include/SFML/Graphics/Vertex.hpp \
+  /usr/include/SFML/Graphics/Color.hpp \
+  /usr/include/SFML/Graphics/PrimitiveType.hpp \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc
 
 CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: ../Funcionalidades/Facade_funciones.cpp \
   /usr/include/stdc-predef.h \
@@ -1668,6 +1718,7 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: ../Interfaz/Ventana.cpp \
   ../Interfaz/Datos_juego.h \
   ../BMP/Bmp.h \
   /usr/include/c++/9/stdlib.h \
+  ../Interfaz/Datos_juego.h \
   ../lista\ doblemente\ enlazada/Lista_pixeles.h
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o: ../lista\ doblemente\ enlazada/Lista_Doble.cpp \
@@ -3042,6 +3093,7 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
   ../lista\ doblemente\ enlazada/Lista_pixeles.h \
   ../BMP/Bmp.h \
   /usr/include/c++/9/stdlib.h \
+  ../Interfaz/Datos_juego.h \
   /usr/include/c++/9/thread \
   /usr/include/c++/9/memory \
   /usr/include/c++/9/bits/stl_raw_storage_iter.h \
@@ -3176,6 +3228,10 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 
 ../Funcionalidades/Filtros.cpp:
 
+../Funcionalidades/Facade_funciones.h:
+
+../Funcionalidades/Facade_funciones.cpp:
+
 ../lista\ doblemente\ enlazada/Nodo_matriz.cpp:
 
 /usr/include/c++/9/bits/vector.tcc:
@@ -3219,8 +3275,6 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 /usr/include/SFML/Graphics/BlendMode.hpp:
 
 /usr/include/SFML/Graphics/RenderStates.hpp:
-
-/usr/include/SFML/Graphics/Shape.hpp:
 
 /usr/include/SFML/System/Vector3.hpp:
 
@@ -3456,8 +3510,6 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/stdlib.h:
 
-../Funcionalidades/Facade_funciones.cpp:
-
 /usr/include/features.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -3485,10 +3537,6 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/backward/binders.h:
 
 /usr/include/c++/9/bits/basic_string.h:
-
-../Interfaz/Datos_juego.h:
-
-/usr/include/c++/9/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -3654,7 +3702,9 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/bits/istream.tcc:
 
-../Funcionalidades/Facade_funciones.h:
+/usr/include/c++/9/typeinfo:
+
+../Interfaz/Datos_juego.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -3709,3 +3759,5 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/bits/std_abs.h:
 
 /usr/include/SFML/Graphics/Export.hpp:
+
+/usr/include/SFML/Graphics/Shape.hpp:

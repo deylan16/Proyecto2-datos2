@@ -66,6 +66,7 @@ int main() {
 
 
     ventana->ventana_principal();
+    //std::cout<<930%4<<std::endl;
     //thread_1.join();
     //carro();
 
