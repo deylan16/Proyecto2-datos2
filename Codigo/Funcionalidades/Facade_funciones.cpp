@@ -4,6 +4,7 @@
 
 #include "Facade_funciones.h"
 #include "Giros.h"
+#include "Filtros.h"
 
 Facade_funciones* Facade_funciones::pinstance_{nullptr};
 
@@ -21,4 +22,9 @@ std::mutex Facade_funciones::mutex_;
 void Facade_funciones::giro(std::string direccion) {
     Giros *girar = new Giros();
     girar->giro(direccion);
+}
+
+void Facade_funciones::aplicar_filtro(std::string tipo_filtro){
+    Filtros *filtrador = new Filtros();
+    filtrador->cual_filtro(tipo_filtro);
 }

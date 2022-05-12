@@ -22,15 +22,32 @@ void Matriz::print() {
 Lista_pixeles *Matriz::busqueda_indice(int indice_busqueda) {
     Lista_pixeles *resultado = nullptr ;
     Nodo_matriz *actual = this->Inicio;
-    for(int i = 0;i < this->largo;i++){
-        if(actual->indice == indice_busqueda){
-            resultado = actual->dato;
-        }
-        else{
-            actual = actual->next;
-        }
+    if(indice_busqueda < largo/2){
+        for(int i = 0;i < this->largo;i++){
+            if(actual->indice == indice_busqueda){
+                resultado = actual->dato;
+                break;
+            }
+            else{
+                actual = actual->next;
+            }
 
+        }
     }
+    if(largo/2 <= indice_busqueda){
+        actual = Final;
+        for(int i = 0;i < this->largo;i++){
+            if(actual->indice == indice_busqueda){
+                resultado = actual->dato;
+                break;
+            }
+            else{
+                actual = actual->prev;
+            }
+
+        }
+    }
+
     return resultado;
 }
 

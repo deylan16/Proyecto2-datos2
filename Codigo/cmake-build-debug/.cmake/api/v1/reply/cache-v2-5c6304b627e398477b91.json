@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"
+			"value" : "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo"
+			"value" : "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1215,7 +1215,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"
+			"value" : "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug"
 		},
 		{
 			"name" : "Codigo_IS_TOP_LEVEL",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo"
+			"value" : "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo"
 		},
 		{
 			"name" : "ProcessorCount_cmd_nproc",

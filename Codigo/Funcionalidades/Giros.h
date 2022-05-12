@@ -13,6 +13,9 @@ public:
     Datos_juego *datos = Datos_juego::GetInstance("Informacion");
     void giro(std::string direccion);
     void giro90derecha();
+    void giro90izquierda();
+    void flipHorizontal();
+    void flipVertical();
 
 };
 

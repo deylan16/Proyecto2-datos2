@@ -291,7 +291,11 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                //seleccionar_jugador2 = true;
+                funciones->giro("flipHorizontal");
+                ptrwindow->clear();
+                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                redibuja_la_imagen();
+                ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
@@ -299,7 +303,12 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                //seleccionar_jugador2 = true;
+                funciones->giro("flipVertical");
+                ptrwindow->clear();
+                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                redibuja_la_imagen();
+                ptrwindow->display();
+
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
@@ -319,7 +328,11 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                //seleccionar_jugador2 = true;
+                funciones->giro("90izquierda");
+                ptrwindow->clear();
+                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                redibuja_la_imagen();
+                ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
@@ -375,7 +388,30 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
-
+        if(componentes->creaBoton(510, 10, 30, 30, "N")){
+            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+            if (contador_botones == 0){
+                std::cout<<"koka"<<std::endl;
+                funciones->aplicar_filtro("negativo");
+                ptrwindow->clear();
+                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                redibuja_la_imagen();
+                ptrwindow->display();
+                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+            }
+        }
+        if(componentes->creaBoton(560, 10, 30, 30, "G")){
+            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+            if (contador_botones == 0){
+                std::cout<<"koka"<<std::endl;
+                funciones->aplicar_filtro("escala_grises");
+                ptrwindow->clear();
+                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                redibuja_la_imagen();
+                ptrwindow->display();
+                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+            }
+        }
 
         /*for(int i = 0;i<lienzo->largo;i++){
             ptrwindow->draw(lienzo->busqueda_indice(i));
@@ -524,21 +560,24 @@ void Ventana::picker(int x, int y) {
 
 void Ventana:: redibuja_la_imagen() {
 
-    std::cout<<RGB_pixeles_imagen->largo<<std::endl;
-    std::cout<<datos->RGB_pixeles_imagen->largo<<std::endl;
-    for(int n = 0;n <datos->RGB_pixeles_imagen->largo; n++)
+    Nodo_matriz *fila2 = datos->RGB_pixeles_imagen->Inicio;
+    Lista_pixeles *fila = fila2->dato;
+    Nodo_pixel *pixel = fila->Inicio;
+    int largo_columnas = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;
+
+    for(int n = 0;n <datos->RGB_pixeles_imagen->largo-2; n++)
     {
-        for (int u=0; u<datos->RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1)
+        for (int u=0; u<largo_columnas ;u+=1)
         {
-            Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(n)->busqueda_indice(u);
+
             //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
             pixel->rectangulo.setPosition(u,n+100);
             ptrwindow->draw( pixel->rectangulo);
-
-
-
-
+            pixel = pixel->next;
         }
+        fila2 = fila2->next;
+        fila = fila2->dato;
+        pixel = fila->Inicio;
     }
 }
 

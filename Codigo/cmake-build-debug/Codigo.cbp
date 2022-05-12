@@ -5,26 +5,26 @@
 		<Option title="Codigo"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
+				<Option working_dir="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Codigo">
-				<Option output="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/Codigo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
+				<Option output="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Codigo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -34,20 +34,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codigo"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codigo"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Codigo/fast">
-				<Option output="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/Codigo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
+				<Option output="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Codigo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -57,125 +57,131 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codigo/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codigo/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
+				<Option working_dir="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
+				<Option working_dir="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/BMP/Bmp.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/Bmp.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Componentes.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Ventana.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.h">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.h">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/main.cpp">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp">
 			<Option target="Codigo"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/CMakeLists.txt">
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/main.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

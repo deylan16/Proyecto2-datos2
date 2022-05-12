@@ -39,6 +39,7 @@ public:
 
     void borrador(int x,int y);
     void giro(std::string direccion);
+    void aplicar_filtro(std::string tipo_filtro);
 
 };
 

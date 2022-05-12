@@ -42,17 +42,30 @@ void Lista_pixeles::print() {
 Nodo_pixel * Lista_pixeles::busqueda_indice(int indice_busqueda) {
     Nodo_pixel *RESULTADO = NULL;
     Nodo_pixel *actual = this->Inicio;
-    for(int i = 0;i < this->largo;i++){
-        if(actual->indice == indice_busqueda){
-            RESULTADO = actual;
-            break;
+    if(indice_busqueda < largo/2){
+        for(int i = 0;i < this->largo;i++){
+            if(actual->indice == indice_busqueda){
+                RESULTADO = actual;
+                break;
+            }
+            else{
+                actual = actual->next;
+            }
 
         }
-        else{
-            actual = actual->next;
-        }
-
     }
+    if(largo/2 <= indice_busqueda){
+        actual = Final;
+        for(int i = 0;i < this->largo;i++){
+            if(actual->indice == indice_busqueda){
+                RESULTADO = actual;
+                break;
+            }
+            else{
+                actual = actual->prev;
+            }
 
-    return actual;
+        }
+    }
+    return RESULTADO;
 }

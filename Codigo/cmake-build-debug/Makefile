@@ -57,10 +57,10 @@ RM = /snap/clion/189/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo"
+CMAKE_SOURCE_DIR = /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,30 @@ Funcionalidades/Facade_funciones.s: Funcionalidades/Facade_funciones.cpp.s
 Funcionalidades/Facade_funciones.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s
 .PHONY : Funcionalidades/Facade_funciones.cpp.s
+
+Funcionalidades/Filtros.o: Funcionalidades/Filtros.cpp.o
+.PHONY : Funcionalidades/Filtros.o
+
+# target to build an object file
+Funcionalidades/Filtros.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o
+.PHONY : Funcionalidades/Filtros.cpp.o
+
+Funcionalidades/Filtros.i: Funcionalidades/Filtros.cpp.i
+.PHONY : Funcionalidades/Filtros.i
+
+# target to preprocess a source file
+Funcionalidades/Filtros.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.i
+.PHONY : Funcionalidades/Filtros.cpp.i
+
+Funcionalidades/Filtros.s: Funcionalidades/Filtros.cpp.s
+.PHONY : Funcionalidades/Filtros.s
+
+# target to generate assembly for a file
+Funcionalidades/Filtros.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.s
+.PHONY : Funcionalidades/Filtros.cpp.s
 
 Funcionalidades/Giros.o: Funcionalidades/Giros.cpp.o
 .PHONY : Funcionalidades/Giros.o
@@ -456,6 +480,9 @@ help:
 	@echo "... Funcionalidades/Facade_funciones.o"
 	@echo "... Funcionalidades/Facade_funciones.i"
 	@echo "... Funcionalidades/Facade_funciones.s"
+	@echo "... Funcionalidades/Filtros.o"
+	@echo "... Funcionalidades/Filtros.i"
+	@echo "... Funcionalidades/Filtros.s"
 	@echo "... Funcionalidades/Giros.o"
 	@echo "... Funcionalidades/Giros.i"
 	@echo "... Funcionalidades/Giros.s"
