@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/tuple \
  /usr/include/c++/9/utility \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -134,10 +134,10 @@ CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -153,8 +153,8 @@ CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \

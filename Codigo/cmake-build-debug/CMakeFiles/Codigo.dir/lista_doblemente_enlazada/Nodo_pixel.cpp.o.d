@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o: \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.cpp \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \

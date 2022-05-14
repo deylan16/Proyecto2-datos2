@@ -11,11 +11,10 @@
 #include "../lista doblemente enlazada/Matriz.h"
 #include "Datos_juego.h"
 #include "../Funcionalidades/Facade_funciones.h"
+#include "../Funcionalidades/Figuras.h"
 
 class Ventana {
 public:
-
-
 
     sf::RenderWindow *ptrwindow ;
     sf::Event event;
@@ -29,11 +28,14 @@ public:
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
 
+    bool figura_seleccionada = false;  //    relacionado con las figuras predeterminadas
+    sf::CircleShape circuloActual = sf::CircleShape(0);
+    sf::RectangleShape cuadradoActual = sf::RectangleShape(sf::Vector2f(0,0));
+    Figuras *figurasPredeterminadas;
+
     Componentes *componentes = new Componentes();
     Datos_juego *datos = Datos_juego::GetInstance("Informacion");
     Facade_funciones *funciones = Facade_funciones::GetInstance("Informacion");
-
-
 
     Ventana( sf::RenderWindow *window);
     void ventana_principal();

@@ -53,10 +53,10 @@ RM = /snap/clion/190/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo
+CMAKE_SOURCE_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Codigo.dir/depend.make
@@ -72,198 +72,240 @@ include CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/main.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Codigo.dir/main.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Codigo.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/main.cpp.o -MF CMakeFiles/Codigo.dir/main.cpp.o.d -o CMakeFiles/Codigo.dir/main.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Codigo.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/main.cpp.o -MF CMakeFiles/Codigo.dir/main.cpp.o.d -o CMakeFiles/Codigo.dir/main.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/main.cpp"
 
 CMakeFiles/Codigo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/main.cpp > CMakeFiles/Codigo.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/main.cpp" > CMakeFiles/Codigo.dir/main.cpp.i
 
 CMakeFiles/Codigo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/main.cpp -o CMakeFiles/Codigo.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/main.cpp" -o CMakeFiles/Codigo.dir/main.cpp.s
 
 CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: ../Interfaz/Ventana.cpp
 CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o -MF CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d -o CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o -MF CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d -o CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp"
 
 CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp > CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" > CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.i
 
 CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp -o CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" -o CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s
 
 CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o: ../Interfaz/Componentes.cpp
 CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o -MF CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d -o CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o -MF CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d -o CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp"
 
 CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp > CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" > CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.i
 
 CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp -o CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" -o CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.s
 
 CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o: ../BMP/Bmp.cpp
 CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o -MF CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d -o CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o -MF CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d -o CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp"
 
 CMakeFiles/Codigo.dir/BMP/Bmp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/BMP/Bmp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp > CMakeFiles/Codigo.dir/BMP/Bmp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp" > CMakeFiles/Codigo.dir/BMP/Bmp.cpp.i
 
 CMakeFiles/Codigo.dir/BMP/Bmp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/BMP/Bmp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp -o CMakeFiles/Codigo.dir/BMP/Bmp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp" -o CMakeFiles/Codigo.dir/BMP/Bmp.cpp.s
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o: ../lista\ doblemente\ enlazada/Nodo.cpp
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o -c "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp"
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.i
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: ../lista\ doblemente\ enlazada/Matriz.cpp
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o -c "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp"
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.i
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.s
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o: ../lista\ doblemente\ enlazada/Nodo_matriz.cpp
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o -c "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp"
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.i
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.s
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: ../lista\ doblemente\ enlazada/Lista_pixeles.cpp
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o -c "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp"
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.i
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.s
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o: ../lista\ doblemente\ enlazada/Nodo_pixel.cpp
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o -c "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp"
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.i
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o: ../lista\ doblemente\ enlazada/Lista_Doble.cpp
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o -c "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp"
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.i
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.s
 
 CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: ../Interfaz/Datos_juego.cpp
 CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o -MF CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o.d -o CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o -MF CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o.d -o CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp"
 
 CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp > CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp" > CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.i
 
 CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp -o CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp" -o CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.s
 
 CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: ../Funcionalidades/Facade_funciones.cpp
 CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp"
 
 CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp > CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp" > CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.i
 
 CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp -o CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp" -o CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s
 
 CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o: ../Funcionalidades/Giros.cpp
 CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp"
 
 CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp > CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp" > CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.i
 
 CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp -o CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp" -o CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s
 
 CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o: ../Funcionalidades/Filtros.cpp
 CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o -c /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp"
 
 CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp > CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp" > CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.i
 
 CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp -o CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp" -o CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.s
+
+CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o: ../Funcionalidades/Figuras.cpp
+CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.cpp"
+
+CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.cpp" > CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.i
+
+CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.cpp" -o CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.s
+
+CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o: ../Funcionalidades/Circulo.cpp
+CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.cpp"
+
+CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.cpp" > CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.i
+
+CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.cpp" -o CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.s
+
+CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o: ../Funcionalidades/Cuadrado.cpp
+CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Cuadrado.cpp"
+
+CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Cuadrado.cpp" > CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.i
+
+CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Cuadrado.cpp" -o CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.s
 
 # Object files for target Codigo
 Codigo_OBJECTS = \
@@ -280,7 +322,10 @@ Codigo_OBJECTS = \
 "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o" \
 "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o" \
 "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o" \
-"CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o"
+"CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o" \
+"CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o" \
+"CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o" \
+"CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o"
 
 # External object files for target Codigo
 Codigo_EXTERNAL_OBJECTS =
@@ -299,12 +344,15 @@ Codigo: CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o
+Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o
+Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o
+Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o
 Codigo: CMakeFiles/Codigo.dir/build.make
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Codigo: CMakeFiles/Codigo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Codigo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Codigo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Codigo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -316,6 +364,6 @@ CMakeFiles/Codigo.dir/clean:
 .PHONY : CMakeFiles/Codigo.dir/clean
 
 CMakeFiles/Codigo.dir/depend:
-	cd /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Codigo.dir/depend
 

@@ -6,6 +6,8 @@
 #include "Ventana.h"
 #include "../BMP/Bmp.h"
 #include "../lista doblemente enlazada/Lista_pixeles.h"
+#include <iostream>
+using namespace std;
 
 
 Ventana::Ventana(sf::RenderWindow *window) {
@@ -251,7 +253,8 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                //seleccionar_jugador2 = true;
+                //circulo
+                modo_activo = "circulo";
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
@@ -267,7 +270,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                //seleccionar_jugador2 = true;
+                modo_activo = "cuadrado";
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
@@ -483,9 +486,15 @@ void Ventana::ventana_principal() {
                     if(modo_activo == "picker"){
                         picker(mousex,mousey-100);
                     }
+                    if(modo_activo == "circulo"){
+                        figura_seleccionada = figurasPredeterminadas->CrearCirculo(ptrwindow,&circuloActual, event.mouseButton.x, event.mouseButton.y,event);
+                    }
+                    if(modo_activo == "cuadrado"){
+                        figura_seleccionada = figurasPredeterminadas->CrearCuadrado(ptrwindow,&cuadradoActual, event.mouseButton.x, event.mouseButton.y,event);
+                    }
+
                 }
             }
-
         }
         /*for (int z=0; z<RGB_pixeles_imagen->busqueda_indice(100)->largo; z+=1)
         {
@@ -493,9 +502,6 @@ void Ventana::ventana_principal() {
         }*/
         /*Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(RGB_pixeles_imagen->busqueda_indice(0)->largo/2)->busqueda_indice(0);
         pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));*/
-
-
-
         ptrwindow->display();
 
     }
@@ -551,7 +557,6 @@ void Ventana::cambiar_color_seleccionado( int r, int g, int b) {
     datos->rgb_color_seleccionado[1] = g;
     datos->rgb_color_seleccionado[2] = b;
 
-
 }
 
 void Ventana::picker(int x, int y) {
@@ -560,9 +565,6 @@ void Ventana::picker(int x, int y) {
         if(pixel != NULL)
         {
             cambiar_color_seleccionado(pixel->R,pixel->G,pixel->B);
-
-
-
         }
     }
 

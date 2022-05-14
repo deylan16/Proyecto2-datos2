@@ -57,10 +57,10 @@ RM = /snap/clion/190/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo
+CMAKE_SOURCE_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -153,6 +153,54 @@ BMP/Bmp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/BMP/Bmp.cpp.s
 .PHONY : BMP/Bmp.cpp.s
 
+Funcionalidades/Circulo.o: Funcionalidades/Circulo.cpp.o
+.PHONY : Funcionalidades/Circulo.o
+
+# target to build an object file
+Funcionalidades/Circulo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o
+.PHONY : Funcionalidades/Circulo.cpp.o
+
+Funcionalidades/Circulo.i: Funcionalidades/Circulo.cpp.i
+.PHONY : Funcionalidades/Circulo.i
+
+# target to preprocess a source file
+Funcionalidades/Circulo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.i
+.PHONY : Funcionalidades/Circulo.cpp.i
+
+Funcionalidades/Circulo.s: Funcionalidades/Circulo.cpp.s
+.PHONY : Funcionalidades/Circulo.s
+
+# target to generate assembly for a file
+Funcionalidades/Circulo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.s
+.PHONY : Funcionalidades/Circulo.cpp.s
+
+Funcionalidades/Cuadrado.o: Funcionalidades/Cuadrado.cpp.o
+.PHONY : Funcionalidades/Cuadrado.o
+
+# target to build an object file
+Funcionalidades/Cuadrado.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o
+.PHONY : Funcionalidades/Cuadrado.cpp.o
+
+Funcionalidades/Cuadrado.i: Funcionalidades/Cuadrado.cpp.i
+.PHONY : Funcionalidades/Cuadrado.i
+
+# target to preprocess a source file
+Funcionalidades/Cuadrado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.i
+.PHONY : Funcionalidades/Cuadrado.cpp.i
+
+Funcionalidades/Cuadrado.s: Funcionalidades/Cuadrado.cpp.s
+.PHONY : Funcionalidades/Cuadrado.s
+
+# target to generate assembly for a file
+Funcionalidades/Cuadrado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.s
+.PHONY : Funcionalidades/Cuadrado.cpp.s
+
 Funcionalidades/Facade_funciones.o: Funcionalidades/Facade_funciones.cpp.o
 .PHONY : Funcionalidades/Facade_funciones.o
 
@@ -176,6 +224,30 @@ Funcionalidades/Facade_funciones.s: Funcionalidades/Facade_funciones.cpp.s
 Funcionalidades/Facade_funciones.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.s
 .PHONY : Funcionalidades/Facade_funciones.cpp.s
+
+Funcionalidades/Figuras.o: Funcionalidades/Figuras.cpp.o
+.PHONY : Funcionalidades/Figuras.o
+
+# target to build an object file
+Funcionalidades/Figuras.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o
+.PHONY : Funcionalidades/Figuras.cpp.o
+
+Funcionalidades/Figuras.i: Funcionalidades/Figuras.cpp.i
+.PHONY : Funcionalidades/Figuras.i
+
+# target to preprocess a source file
+Funcionalidades/Figuras.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.i
+.PHONY : Funcionalidades/Figuras.cpp.i
+
+Funcionalidades/Figuras.s: Funcionalidades/Figuras.cpp.s
+.PHONY : Funcionalidades/Figuras.s
+
+# target to generate assembly for a file
+Funcionalidades/Figuras.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.s
+.PHONY : Funcionalidades/Figuras.cpp.s
 
 Funcionalidades/Filtros.o: Funcionalidades/Filtros.cpp.o
 .PHONY : Funcionalidades/Filtros.o
@@ -477,9 +549,18 @@ help:
 	@echo "... BMP/Bmp.o"
 	@echo "... BMP/Bmp.i"
 	@echo "... BMP/Bmp.s"
+	@echo "... Funcionalidades/Circulo.o"
+	@echo "... Funcionalidades/Circulo.i"
+	@echo "... Funcionalidades/Circulo.s"
+	@echo "... Funcionalidades/Cuadrado.o"
+	@echo "... Funcionalidades/Cuadrado.i"
+	@echo "... Funcionalidades/Cuadrado.s"
 	@echo "... Funcionalidades/Facade_funciones.o"
 	@echo "... Funcionalidades/Facade_funciones.i"
 	@echo "... Funcionalidades/Facade_funciones.s"
+	@echo "... Funcionalidades/Figuras.o"
+	@echo "... Funcionalidades/Figuras.i"
+	@echo "... Funcionalidades/Figuras.s"
 	@echo "... Funcionalidades/Filtros.o"
 	@echo "... Funcionalidades/Filtros.i"
 	@echo "... Funcionalidades/Filtros.s"
