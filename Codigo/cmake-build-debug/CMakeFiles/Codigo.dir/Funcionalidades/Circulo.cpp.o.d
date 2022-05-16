@@ -221,4 +221,16 @@ CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/9/iostream
+ /usr/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
+ /usr/include/c++/9/mutex /usr/include/c++/9/chrono \
+ /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
+ /usr/include/c++/9/bits/std_mutex.h \
+ /usr/include/c++/9/bits/unique_lock.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /usr/include/c++/9/iostream \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h

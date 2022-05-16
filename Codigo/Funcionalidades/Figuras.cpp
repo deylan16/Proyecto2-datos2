@@ -12,28 +12,26 @@ using namespace std;
 Figuras::Figuras() {
 }
 
-bool Figuras::CrearCirculo(sf::RenderWindow *window, sf::CircleShape *figuraCirculo, int mouseX, int mouseY, sf::Event event) {
+bool Figuras::CrearFiguraCirculo(Datos_juego *datosJuego, sf::CircleShape *figuraCirculo, sf::Vector2f coordsMouse, sf::Event event) {
     bool sePresionaElLienzoEnModoCirculo = false; /* se realiza, debido a que al presionar un boton puede
                                                     que se presione mas de una vez automaticamente*/
     switch(event.type){
         case sf::Event::MouseButtonPressed:{
             Circulo circulo = Circulo();
-            bool CreaUnCirculo = circulo.logicCrearCirculo(window,figuraCirculo,mouseX,mouseY);
-            window->draw(*figuraCirculo);
+            bool CreaUnCirculo = circulo.logicCrearCirculo(datosJuego,figuraCirculo,coordsMouse);
             return CreaUnCirculo;
          }
          default:
             return sePresionaElLienzoEnModoCirculo;
     }
 }
-bool Figuras::CrearCuadrado(sf::RenderWindow *window, sf::RectangleShape *figuraCuadrado, int mouseX, int mouseY, sf::Event event) {
+bool Figuras::CrearFiguraCuadrado(Datos_juego *datosJuego, sf::RectangleShape *figuraCuadrado, sf::Vector2f coordsMouse, sf::Event event) {
     bool sePresionaElLienzoEnModoCuadrado = false; /* se realiza, debido a que al presionar un boton puede
                                                     que se presione mas de una vez automaticamente*/
     switch(event.type){
         case sf::Event::MouseButtonPressed:{
             Cuadrado cuadrado = Cuadrado();
-            bool CreaUnCuadrado = cuadrado.logicCrearCuadrado(window,figuraCuadrado,mouseX,mouseY);
-            window->draw(*figuraCuadrado);
+            bool CreaUnCuadrado = cuadrado.logicCrearCuadrado(datosJuego,figuraCuadrado,coordsMouse);
             return CreaUnCuadrado;
         }
         default:

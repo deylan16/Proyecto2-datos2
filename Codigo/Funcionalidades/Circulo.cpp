@@ -11,16 +11,18 @@ Circulo::Circulo() {
 
 }
 
-bool Circulo::logicCrearCirculo(sf::RenderWindow *window, sf::CircleShape *circuloActualSeleccionado, float mouseX, float mouseY) {
+bool Circulo::logicCrearCirculo(Datos_juego *datosJuego, sf::CircleShape *circuloActualSeleccionado, sf::Vector2f coordsMouse) {
     bool SeSeleccionaElCirculo = false;
+    int coordMouseX = coordsMouse.x;
+    int coordMouseY = coordsMouse.y;
 
     if (circuloActualSeleccionado->getRadius() == 0){
-        crearCirculo(window,circuloActualSeleccionado,mouseX,mouseY);
+        crearCirculo(datosJuego,circuloActualSeleccionado, coordsMouse);
         cout<<"primer circulo"<<endl;
         return SeSeleccionaElCirculo;
     }
-    float distanciaEntrePuntos_x = mouseX-circuloActualSeleccionado->getPosition().x;
-    float distanciaEntrePuntos_y = mouseY-circuloActualSeleccionado->getPosition().y;
+    float distanciaEntrePuntos_x = coordMouseX-circuloActualSeleccionado->getPosition().x;
+    float distanciaEntrePuntos_y = coordMouseY-circuloActualSeleccionado->getPosition().y;
     int radioCirculo = circuloActualSeleccionado->getRadius();
 
     if (0<=distanciaEntrePuntos_x && distanciaEntrePuntos_x<=2*radioCirculo && 0<=distanciaEntrePuntos_y && distanciaEntrePuntos_y <=2*radioCirculo){
@@ -29,17 +31,19 @@ bool Circulo::logicCrearCirculo(sf::RenderWindow *window, sf::CircleShape *circu
         return SeSeleccionaElCirculo;
     }
     else{
-        crearCirculo(window,circuloActualSeleccionado,mouseX,mouseY);
+        crearCirculo(datosJuego,circuloActualSeleccionado,coordsMouse);
         //cout<<"se crea circulo al presionar afuera"<<endl;
         return SeSeleccionaElCirculo;
     }
 }
-void Circulo::crearCirculo(sf::RenderWindow *window,sf::CircleShape *circuloActual, int mouseX, int mouseY) {
+void Circulo::crearCirculo(Datos_juego *datosJuego,sf::CircleShape *circuloActual, sf::Vector2f coordsMouse) {
     int radio = 40;
+    int coordMouseX = coordsMouse.x;
+    int coordMouseY = coordsMouse.y;
     *circuloActual = sf::CircleShape(radio);
-    circuloActual->setPosition(mouseX-radio, mouseY-radio);
+    circuloActual->setPosition(coordMouseX-radio, coordMouseY-radio);
     circuloActual->setFillColor(sf::Color::Transparent);
-    circuloActual->setOutlineColor(sf::Color::Black);
+    circuloActual->setOutlineColor(sf::Color(datosJuego->getColor_R(),datosJuego->getColor_G(),datosJuego->getColor_B(),255));
     circuloActual->setOutlineThickness(5.0);
 }
 

@@ -8,16 +8,18 @@ Cuadrado::Cuadrado() {
 
 }
 
-bool Cuadrado::logicCrearCuadrado(sf::RenderWindow *window, sf::RectangleShape *cuadradoActualSeleccionado, float mouseX,float mouseY) {
+bool Cuadrado::logicCrearCuadrado(Datos_juego *datosJuego, sf::RectangleShape *cuadradoActualSeleccionado, sf::Vector2f coordsMouse) {
     bool SeSeleccionaElCuadrado = false;
+    int coordMouseX = coordsMouse.x;
+    int coordMouseY = coordsMouse.y;
 
     if (cuadradoActualSeleccionado->getSize().x == 0){
-        crearCuadrado(window,cuadradoActualSeleccionado,mouseX,mouseY);
+        crearCuadrado(datosJuego,cuadradoActualSeleccionado,coordsMouse);
         //cout<<"primer cuadrado"<<endl;
         return SeSeleccionaElCuadrado;
     }
-    float distanciaEntrePuntos_x = mouseX-cuadradoActualSeleccionado->getPosition().x;
-    float distanciaEntrePuntos_y = mouseY-cuadradoActualSeleccionado->getPosition().y;
+    float distanciaEntrePuntos_x = coordMouseX-cuadradoActualSeleccionado->getPosition().x;
+    float distanciaEntrePuntos_y = coordMouseY-cuadradoActualSeleccionado->getPosition().y;
     int sizeDelLadoDelCuadrado = cuadradoActualSeleccionado->getSize().x;
 
     if (0<=distanciaEntrePuntos_x && distanciaEntrePuntos_x<=sizeDelLadoDelCuadrado && 0<=distanciaEntrePuntos_y && distanciaEntrePuntos_y <=sizeDelLadoDelCuadrado){
@@ -26,19 +28,20 @@ bool Cuadrado::logicCrearCuadrado(sf::RenderWindow *window, sf::RectangleShape *
         return SeSeleccionaElCuadrado;
     }
     else{
-        crearCuadrado(window,cuadradoActualSeleccionado,mouseX,mouseY);
+        crearCuadrado(datosJuego,cuadradoActualSeleccionado,coordsMouse);
         //cout<<"se crea circulo al presionar afuera"<<endl;
         return SeSeleccionaElCuadrado;
     }
-
 }
-void Cuadrado::crearCuadrado(sf::RenderWindow *window, sf::RectangleShape *cuadradoActual, int mouseX,int mouseY) {
+void Cuadrado::crearCuadrado(Datos_juego *datosJuego, sf::RectangleShape *cuadradoActual, sf::Vector2f coordsMouse) {
     float sizeLadoCuadrado = 50.0;
+    int coordMouseX = coordsMouse.x;
+    int coordMouseY = coordsMouse.y;
+
     sf::Vector2f dimensionCuadrado(sizeLadoCuadrado,sizeLadoCuadrado);
     *cuadradoActual = sf::RectangleShape(dimensionCuadrado);
-    cuadradoActual->setPosition(mouseX-(sizeLadoCuadrado/2), mouseY-(sizeLadoCuadrado/2));
+    cuadradoActual->setPosition(coordMouseX-(sizeLadoCuadrado/2), coordMouseY-(sizeLadoCuadrado/2));
     cuadradoActual->setFillColor(sf::Color::Transparent);
-    cuadradoActual->setOutlineColor(sf::Color::Black);
+    cuadradoActual->setOutlineColor(sf::Color(datosJuego->getColor_R(),datosJuego->getColor_G(),datosJuego->getColor_B(),255));
     cuadradoActual->setOutlineThickness(5.0);
-
 }

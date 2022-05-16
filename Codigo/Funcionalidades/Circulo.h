@@ -6,14 +6,14 @@
 #define CODIGO_CIRCULO_H
 
 #include <SFML/Graphics.hpp>
+#include "../Interfaz/Datos_juego.h"
 
 class Circulo{
 
 public:
     Circulo();
-
-    bool logicCrearCirculo(sf::RenderWindow *window,sf::CircleShape *circuloActualSeleccionado, float mouseX, float mouseY);
-    void crearCirculo(sf::RenderWindow *window,sf::CircleShape *circuloActual,int mouseX, int mouseY);
+    bool logicCrearCirculo(Datos_juego *datosJuego,sf::CircleShape *circuloActualSeleccionado, sf::Vector2f coordsMouse);
+    void crearCirculo(Datos_juego *datosJuego,sf::CircleShape *circuloActual,sf::Vector2f coordsMouse);
     bool movimientoCirculo(sf::RenderWindow *window,sf::CircleShape *ultima_figuraSeleccionada,sf::Event event);
 };
 

@@ -6,14 +6,15 @@
 #define CODIGO_CUADRADO_H
 
 #include <SFML/Graphics.hpp>
+#include "../Interfaz/Datos_juego.h"
 
 class Cuadrado{
 
 public:
     Cuadrado();
 
-    bool logicCrearCuadrado(sf::RenderWindow *window,sf::RectangleShape *cuadradoActualSeleccionado, float mouseX, float mouseY);
-    void crearCuadrado(sf::RenderWindow *window,sf::RectangleShape *cuadradoActual,int mouseX, int mouseY);
+    bool logicCrearCuadrado(Datos_juego *datosJuego,sf::RectangleShape *cuadradoActualSeleccionado, sf::Vector2f coordsMouse);
+    void crearCuadrado(Datos_juego *datosJuego,sf::RectangleShape *cuadradoActual,sf::Vector2f coordsMouse);
 };
 
 #endif //CODIGO_CUADRADO_H

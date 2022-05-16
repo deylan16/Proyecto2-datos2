@@ -28,13 +28,16 @@ public:
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
 
-    bool figura_seleccionada = false;  //    relacionado con las figuras predeterminadas
+    // Relacionado con las figuras predeterminadas
+    bool figura_seleccionada = false;
     sf::CircleShape circuloActual = sf::CircleShape(0);
     sf::RectangleShape cuadradoActual = sf::RectangleShape(sf::Vector2f(0,0));
     Figuras *figurasPredeterminadas;
 
+    // Elementos visuales
     Componentes *componentes = new Componentes();
     Datos_juego *datos = Datos_juego::GetInstance("Informacion");
+    int color_R,color_G,color_B;
     Facade_funciones *funciones = Facade_funciones::GetInstance("Informacion");
 
     Ventana( sf::RenderWindow *window);

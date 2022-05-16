@@ -507,7 +507,20 @@ CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o: ../Funcionalidades/Circulo.
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
-  /usr/include/c++/9/iostream
+  ../Interfaz/Datos_juego.h \
+  /usr/include/c++/9/mutex \
+  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/ratio \
+  /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/bits/std_mutex.h \
+  /usr/include/c++/9/bits/unique_lock.h \
+  ../lista\ doblemente\ enlazada/Matriz.h \
+  ../lista\ doblemente\ enlazada/Nodo_matriz.h \
+  ../lista\ doblemente\ enlazada/Lista_Doble.h \
+  ../lista\ doblemente\ enlazada/Nodo.h \
+  /usr/include/c++/9/iostream \
+  ../lista\ doblemente\ enlazada/Lista_pixeles.h \
+  ../lista\ doblemente\ enlazada/Nodo_pixel.h
 
 CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o: ../Funcionalidades/Cuadrado.cpp \
   /usr/include/stdc-predef.h \
@@ -790,7 +803,21 @@ CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o: ../Funcionalidades/Cuadrad
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/SFML/Graphics/VertexBuffer.hpp
+  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  ../Interfaz/Datos_juego.h \
+  /usr/include/c++/9/mutex \
+  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/ratio \
+  /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/bits/std_mutex.h \
+  /usr/include/c++/9/bits/unique_lock.h \
+  ../lista\ doblemente\ enlazada/Matriz.h \
+  ../lista\ doblemente\ enlazada/Nodo_matriz.h \
+  ../lista\ doblemente\ enlazada/Lista_Doble.h \
+  ../lista\ doblemente\ enlazada/Nodo.h \
+  /usr/include/c++/9/iostream \
+  ../lista\ doblemente\ enlazada/Lista_pixeles.h \
+  ../lista\ doblemente\ enlazada/Nodo_pixel.h
 
 CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o: ../Funcionalidades/Facade_funciones.cpp \
   /usr/include/stdc-predef.h \
@@ -1300,6 +1327,20 @@ CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o: ../Funcionalidades/Figuras.
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  ../Interfaz/Datos_juego.h \
+  /usr/include/c++/9/mutex \
+  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/ratio \
+  /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/bits/std_mutex.h \
+  /usr/include/c++/9/bits/unique_lock.h \
+  ../lista\ doblemente\ enlazada/Matriz.h \
+  ../lista\ doblemente\ enlazada/Nodo_matriz.h \
+  ../lista\ doblemente\ enlazada/Lista_Doble.h \
+  ../lista\ doblemente\ enlazada/Nodo.h \
+  /usr/include/c++/9/iostream \
+  ../lista\ doblemente\ enlazada/Lista_pixeles.h \
+  ../lista\ doblemente\ enlazada/Nodo_pixel.h \
   ../Funcionalidades/Circulo.h \
   ../Funcionalidades/Cuadrado.h
 
