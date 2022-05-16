@@ -4,24 +4,35 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/BMP/Bmp.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/BMP/Image.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/BMP/Image.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.obj"
+  "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/main.cpp" "C:/Users/deyla/OneDrive/Escritorio/Proyecto 2 Datos 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles/Codigo.dir/main.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "C:/mingw64/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o" "gcc" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o.d"
-  "/home/deylan/Escritorio/repo2/Proyecto2-datos2/Codigo/main.cpp" "CMakeFiles/Codigo.dir/main.cpp.o" "gcc" "CMakeFiles/Codigo.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

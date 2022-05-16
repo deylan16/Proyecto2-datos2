@@ -16,7 +16,7 @@ Ventana::Ventana(sf::RenderWindow *window) {
 void Ventana::ventana_principal() {
     Bmp *tre = new Bmp();
 
-    tre->img=tre->LoadBMP("hola.bmp", &tre->info);
+    tre->img=tre->LoadBMP("gr.bmp", &tre->info);
     tre->DisplayInfo(&tre->info);
     //tre->SaveBMP("res3.bmp", &tre->info, tre->img);
 
@@ -421,26 +421,24 @@ void Ventana::ventana_principal() {
             }
         }
 
-        /*for(int i = 0;i<lienzo->largo;i++){
-            ptrwindow->draw(lienzo->busqueda_indice(i));
-        }*/
 
         int x, y;
         int r,g,b,a;
+        int saltador_de_bits = 4;
+        if(tre->info.bpp = 24)
+            saltador_de_bits = 3;
         if (yo){
-            for (y=tre->info.height; y>0; y-=1)
+            for (y=tre->info.height-1; y>0; y-=1)
             {
                 Lista_pixeles *fila = new Lista_pixeles();
                 for (x=0; x<tre->info.width; x+=1)
                 {
-                    //std::cout<<3*(x+y*info.width)<<std::endl;
 
 
                     b=(tre->img[4*(x+y*tre->info.width)]);
                     g=(tre->img[4*(x+y*tre->info.width)+1]);
                     r=(tre->img[4*(x+y*tre->info.width)+2]);
-                    a = (tre->img[4*(x+y*tre->info.width)+3]);
-                    //std::cout<<"["<<r<<","<<g<<","<<b<<"]"<<std::endl;
+
 
                     //printf("%c", colores[b+g*2+r*4]);
                     sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
@@ -448,7 +446,7 @@ void Ventana::ventana_principal() {
                     rectangulo.setPosition(x,(tre->info.height-y)+100);
                     lienzo->append(rectangulo);
                     fila->append(r,g,b,rectangulo);
-                    fila->Final->A = a;
+                    //fila->Final->A = a;
                     //ptrwindow->draw(rectangulo);
                 }
                 RGB_pixeles_imagen->append(fila);
@@ -580,7 +578,7 @@ void Ventana:: redibuja_la_imagen() {
         for (int u=0; u<largo_columnas ;u+=1)
         {
 
-            //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
+            pixel->rectangulo.setFillColor(sf::Color(pixel->R,pixel->G,pixel->B,255));
             pixel->rectangulo.setPosition(u,n+100);
             ptrwindow->draw( pixel->rectangulo);
             pixel = pixel->next;

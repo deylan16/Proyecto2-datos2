@@ -3,28 +3,34 @@
 //
 
 #include "Bmp.h"
-
+#include "Image.h"
 
 
 unsigned char *Bmp::LoadBMP(char *filename, bmpInfoHeader *bInfoHeader) {
-    FILE *f;
-    bmpFileHeader header;     /* cabecera */
-    unsigned char *imgdata;   /* datos de imagen */
-    uint16_t type;        /* 2 bytes identificativos */
+        FILE *f;
 
-    f=fopen (filename, "r");
+        bmpFileHeader header;     /* cabecera */
+        unsigned char *imgdata;   /* datos de imagen */
+        uint16_t type;        /* 2 bytes identificativos */
+
+        f=fopen (filename, "r");
 
 
-    if (!f)
-        return NULL;        /* Si no podemos leer, no hay imagen*/
+        if (!f){
+
+            return NULL;
+        }
+              /* Si no podemos leer, no hay imagen*/
 
         /* Leemos los dos primeros bytes */
         fread(&type, sizeof(uint16_t), 1, f);
         if (type !=0x4D42)        /* Comprobamos el formato */
             {
+
             fclose(f);
             return NULL;
             }
+
 
             /* Leemos la cabecera de fichero completa */
             fread(&header, sizeof(bmpFileHeader), 1, f);
@@ -96,76 +102,140 @@ void Bmp::TextDisplay(bmpInfoHeader *info, unsigned char *img) {
 }
 
 void Bmp::SaveBMP(char *filename, bmpInfoHeader *info, unsigned char *imgdata) {
-    bmpFileHeader header;
+    int width = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo-1;
+    int height = datos->RGB_pixeles_imagen->largo;
+    //int width = 640;
+    //int height = 480;
+
+    /*bmpFileHeader header;
     FILE *f;
-    uint16_t type;
-    bmpInfoHeader info2;
-    info2.headersize = 124;      /* Tamaño de la cabecera */
-    info2.width = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;       /* Ancho */
-    info2.height= datos->RGB_pixeles_imagen->largo;      /* Alto */
-    info2.planes = 1;          /* Planos de color (Siempre 1) */
-    info2.bpp = 32;             /* bits por pixel */
-    info2.compress = 3;        /* compresión */
-    info2.imgsize =info2.width *info2.height *4;     /* tamaño de los datos de imagen */
-    info2.bpmx = 0;        /* Resolución X en bits por metro */
-    info2.bpmy = 0;        /* Resolución Y en bits por metro */
-    info2.colors= 0;      /* colors used en la paleta */
-    info2.imxtcolors = 0;      /* Colores importantes. 0 si son todos */
-
     f=fopen(filename, "w+");
-    //info->height = 310;
-    header.size=info2.imgsize+sizeof(bmpFileHeader)+sizeof(bmpInfoHeader);
-    /* header.resv1=0; */
-    /* header.resv2=1; */
-    /* El offset será el tamaño de las dos cabeceras + 2 (información de fichero)*/
-    header.offset=sizeof(bmpFileHeader)+sizeof(bmpInfoHeader)+2;
-    /* Escribimos la identificación del archivo */
-    type=0x4D42;
-    fwrite(&type, sizeof(type),1,f);
-    /* Escribimos la cabecera de fichero */
-    fwrite(&header, sizeof(bmpFileHeader),1,f);
-    /* Escribimos la información básica de la imagen */
-    fwrite(&info2, sizeof(bmpInfoHeader),1,f);
-    /* Escribimos la imagen */
+    int m_width = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo-1;
+    int m_height =  datos->RGB_pixeles_imagen->largo;
 
-    int relleno = ((4-(info2.width*3)%4)%4);
-    Nodo_matriz *fila2 = datos->RGB_pixeles_imagen->Final;
-    Lista_pixeles *fila = fila2->dato;
-    Nodo_pixel *pixel = fila->Inicio;
-    int largo_columnas = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;
+    unsigned char badPad[4] = {0,0,0,0};
+    const int paddingAmount = ((4-(m_width*3)%4)%4);
 
-    for(int n = 0;n <datos->RGB_pixeles_imagen->largo-2; n++)
-    {
-        for (int u=0; u<largo_columnas ;u+=1)
-        {
-            rgb colores_pixel;
-            colores_pixel.R = pixel->R;
-            colores_pixel.G = pixel->G;
-            colores_pixel.B = pixel->B;
-            colores_pixel.A = 255;
-            fwrite(&colores_pixel, sizeof(colores_pixel), 1, f);
-            //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
-            //pixel->rectangulo.setPosition(u,n+100);
+    const int fileHeaderSize = 14;
+    const int informationHeaderSize = 40;
+    const int fileSize = fileHeaderSize + m_width * m_height*3 + paddingAmount * m_width;
 
-            pixel = pixel->next;
+    unsigned char fileHeader[fileHeaderSize];
+    uint16_t type=0x4D42;
+
+    fileHeader[0] = type ;
+    fileHeader[1] =  type>>8;
+
+    fileHeader[2] = fileSize;
+    fileHeader[3] = fileSize >> 8;
+    fileHeader[4] = fileSize >> 16;
+    fileHeader[5] = fileSize >> 24;
+
+    fileHeader[6] = 0;
+    fileHeader[7] = 0;
+
+    fileHeader[8] = 0;
+    fileHeader[9] = 0;
+
+    fileHeader[10] = fileHeaderSize + informationHeaderSize;
+    fileHeader[11] = 0;
+    fileHeader[12] = 0;
+    fileHeader[13] = 0;
+
+    unsigned char informationHeader[informationHeaderSize];
+
+    informationHeader[0] = informationHeaderSize;
+    informationHeader[1] =0;
+    informationHeader[2] =0;
+    informationHeader[3] =0;
+
+    informationHeader[4] =m_width;
+    informationHeader[5] =m_width>>8;
+    informationHeader[6] =m_width>>16;
+    informationHeader[7] =m_width>>24;
+
+    informationHeader[8] = m_height;
+    informationHeader[9] =m_height >> 8;
+    informationHeader[10] =m_height >> 16;
+    informationHeader[11] =m_height >> 24;
+
+    informationHeader[12] = 1;
+    informationHeader[13] = 0;
+
+    informationHeader[14] = 32;
+    informationHeader[15] = 0;
+
+    informationHeader[16] =0;
+    informationHeader[17] =0;
+    informationHeader[18] =0;
+    informationHeader[19] =0;
+
+    informationHeader[20] =0;
+    informationHeader[21] =0;
+    informationHeader[22] =0;
+    informationHeader[23] =0;
+
+    informationHeader[24] =0;
+    informationHeader[25] =0;
+    informationHeader[26] =0;
+    informationHeader[27] =0;
+
+    informationHeader[28] =0;
+    informationHeader[29] =0;
+    informationHeader[30] =0;
+    informationHeader[31] =0;
+
+    informationHeader[32] =0;
+    informationHeader[33] =0;
+    informationHeader[34] =0;
+    informationHeader[35] =0;
+
+    informationHeader[36] =0;
+    informationHeader[37] =0;
+    informationHeader[38] =0;
+    informationHeader[39] =0;
+
+    fwrite(fileHeader, fileHeaderSize,1,f);
+    fwrite(informationHeader, informationHeaderSize,1,f);
+
+    for(int y = m_height-1; y>0 ;y--){
+        for(int x = 0; x< m_width;x++){
+            Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+
+            unsigned char r = pixel->R;
+            unsigned char g = pixel->G;
+            unsigned char b = pixel->B;
+
+            unsigned  char color[] = {b,g,r,255};
+            fwrite(color, 4,1,f);
+
+
         }
-        for (int u=0; u<largo_columnas ;u+=1)
-        {
-            rgb colores_pixel;
-            colores_pixel.R = 0;
-            colores_pixel.G = 0;
-            colores_pixel.B =0 ;
-            colores_pixel.A = 0;
-            fwrite(&colores_pixel, sizeof(colores_pixel), 1, f);
-
-        }
-
-        fila2 = fila2->prev;
-        fila = fila2->dato;
-        pixel = fila->Inicio;
+        fwrite(badPad, paddingAmount,1,f);
     }
 
+
+
+
+
+
+
+
+
+
+
+
     //fwrite(imgdata, info->imgsize, 1, f);
-    fclose(f);
+    fclose(f);*/
+
+    Image image(width, height);
+    for(int y = 0; y< height;y++){
+        for(int x = 0;x<width;x++){
+            Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+            image.SetColor(Color(pixel->R,pixel->G,pixel->B),x,height-1-y);
+        }
+    }
+    image.Export("image.bmp");
+
 }
 
