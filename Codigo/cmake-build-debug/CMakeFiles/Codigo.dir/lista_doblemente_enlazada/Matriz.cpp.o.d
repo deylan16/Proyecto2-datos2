@@ -1,9 +1,9 @@
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.cpp \
+ /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.cpp \
  /usr/include/stdc-predef.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -125,7 +125,7 @@ CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -144,8 +144,8 @@ CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo_pixel.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \

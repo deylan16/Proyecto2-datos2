@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"
+CXX_INCLUDES = -I/home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR
 
 CXX_FLAGS = -g -std=gnu++14
 
