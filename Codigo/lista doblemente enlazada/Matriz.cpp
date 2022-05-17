@@ -15,8 +15,6 @@ void Matriz::print() {
         actual = actual->next;
     }
     todo += "]";
-
-
 }
 
 Lista_pixeles *Matriz::busqueda_indice(int indice_busqueda) {

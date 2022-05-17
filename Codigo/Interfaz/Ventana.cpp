@@ -287,7 +287,7 @@ void Ventana::ventana_principal() {
                 std::cout<<"koka"<<std::endl;
                 funciones->giro("flipHorizontal");
                 ptrwindow->clear();
-                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                //RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
                 redibuja_la_imagen();
                 ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
@@ -299,7 +299,7 @@ void Ventana::ventana_principal() {
                 std::cout<<"koka"<<std::endl;
                 funciones->giro("flipVertical");
                 ptrwindow->clear();
-                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                //RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
                 redibuja_la_imagen();
                 ptrwindow->display();
 
@@ -312,7 +312,7 @@ void Ventana::ventana_principal() {
                 std::cout<<"koka"<<std::endl;
                 funciones->giro("90derecha");
                 ptrwindow->clear();
-                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                //RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
                 redibuja_la_imagen();
                 ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
@@ -324,7 +324,7 @@ void Ventana::ventana_principal() {
                 std::cout<<"koka"<<std::endl;
                 funciones->giro("90izquierda");
                 ptrwindow->clear();
-                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                //RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
                 redibuja_la_imagen();
                 ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
@@ -389,7 +389,7 @@ void Ventana::ventana_principal() {
                 std::cout<<"koka"<<std::endl;
                 funciones->aplicar_filtro("negativo");
                 ptrwindow->clear();
-                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                //RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
                 redibuja_la_imagen();
                 ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
@@ -401,7 +401,7 @@ void Ventana::ventana_principal() {
                 std::cout<<"koka"<<std::endl;
                 funciones->aplicar_filtro("escala_grises");
                 ptrwindow->clear();
-                RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                //RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
                 redibuja_la_imagen();
                 ptrwindow->display();
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
@@ -547,7 +547,6 @@ void Ventana::cambiar_color_seleccionado( int r, int g, int b) {
     //datos->rgb_color_seleccionado[1] = g;
     //datos->rgb_color_seleccionado[2] = b;
     datos->setRGBcolor_seleccionado(r,g,b);
-
 }
 
 void Ventana::picker(int x, int y) {
@@ -562,12 +561,14 @@ void Ventana::picker(int x, int y) {
 
 void Ventana:: redibuja_la_imagen() {
 
-    Nodo_matriz *fila2 = datos->RGB_pixeles_imagen->Inicio;
+    //Nodo_matriz *fila2 = datos->RGB_pixeles_imagen->Inicio;
+    Nodo_matriz *fila2 = RGB_pixeles_imagen->Inicio;
     Lista_pixeles *fila = fila2->dato;
     Nodo_pixel *pixel = fila->Inicio;
-    int largo_columnas = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;
+    // int largo_columnas = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;
+    int largo_columnas = RGB_pixeles_imagen->busqueda_indice(0)->largo;
 
-    for(int n = 0;n <datos->RGB_pixeles_imagen->largo-2; n++)
+    for(int n = 0;n <RGB_pixeles_imagen->largo-2; n++)
     {
         for (int u=0; u<largo_columnas ;u+=1)
         {
