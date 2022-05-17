@@ -1,1 +1,0 @@
-  -L"C:/Users/deyla/OneDrive/Escritorio/materias tec/semestre 5/datos 2/proyector 2/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR"  -lpthread /SFML-2.5.1/lib/libsfml-graphics-d.a /SFML-2.5.1/lib/libsfml-window-d.a /SFML-2.5.1/lib/libsfml-system-d.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

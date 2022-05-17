@@ -3,7 +3,7 @@
 //
 
 #include "Bmp.h"
-
+#include "Image.h"
 
 
 unsigned char *Bmp::LoadBMP(char *filename, bmpInfoHeader *bInfoHeader) {
@@ -96,76 +96,16 @@ void Bmp::TextDisplay(bmpInfoHeader *info, unsigned char *img) {
 }
 
 void Bmp::SaveBMP(char *filename, bmpInfoHeader *info, unsigned char *imgdata) {
-    bmpFileHeader header;
-    FILE *f;
-    uint16_t type;
-    bmpInfoHeader info2;
-    info2.headersize = 124;      /* Tamaño de la cabecera */
-    info2.width = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;       /* Ancho */
-    info2.height= datos->RGB_pixeles_imagen->largo;      /* Alto */
-    info2.planes = 1;          /* Planos de color (Siempre 1) */
-    info2.bpp = 32;             /* bits por pixel */
-    info2.compress = 3;        /* compresión */
-    info2.imgsize =info2.width *info2.height *4;     /* tamaño de los datos de imagen */
-    info2.bpmx = 0;        /* Resolución X en bits por metro */
-    info2.bpmy = 0;        /* Resolución Y en bits por metro */
-    info2.colors= 0;      /* colors used en la paleta */
-    info2.imxtcolors = 0;      /* Colores importantes. 0 si son todos */
-
-    f=fopen(filename, "w+");
-    //info->height = 310;
-    header.size=info2.imgsize+sizeof(bmpFileHeader)+sizeof(bmpInfoHeader);
-    /* header.resv1=0; */
-    /* header.resv2=1; */
-    /* El offset será el tamaño de las dos cabeceras + 2 (información de fichero)*/
-    header.offset=sizeof(bmpFileHeader)+sizeof(bmpInfoHeader)+2;
-    /* Escribimos la identificación del archivo */
-    type=0x4D42;
-    fwrite(&type, sizeof(type),1,f);
-    /* Escribimos la cabecera de fichero */
-    fwrite(&header, sizeof(bmpFileHeader),1,f);
-    /* Escribimos la información básica de la imagen */
-    fwrite(&info2, sizeof(bmpInfoHeader),1,f);
-    /* Escribimos la imagen */
-
-    int relleno = ((4-(info2.width*3)%4)%4);
-    Nodo_matriz *fila2 = datos->RGB_pixeles_imagen->Final;
-    Lista_pixeles *fila = fila2->dato;
-    Nodo_pixel *pixel = fila->Inicio;
-    int largo_columnas = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;
-
-    for(int n = 0;n <datos->RGB_pixeles_imagen->largo-2; n++)
-    {
-        for (int u=0; u<largo_columnas ;u+=1)
-        {
-            rgb colores_pixel;
-            colores_pixel.R = pixel->R;
-            colores_pixel.G = pixel->G;
-            colores_pixel.B = pixel->B;
-            colores_pixel.A = 255;
-            fwrite(&colores_pixel, sizeof(colores_pixel), 1, f);
-            //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
-            //pixel->rectangulo.setPosition(u,n+100);
-
-            pixel = pixel->next;
+    int width = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo-1;
+    int height = datos->RGB_pixeles_imagen->largo;
+    Image image(width, height);
+    for(int y = 0; y< height;y++){
+        for(int x = 0;x<width;x++){
+            Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+            image.SetColor(Color(pixel->R,pixel->G,pixel->B),x,height-1-y);
         }
-        for (int u=0; u<largo_columnas ;u+=1)
-        {
-            rgb colores_pixel;
-            colores_pixel.R = 0;
-            colores_pixel.G = 0;
-            colores_pixel.B =0 ;
-            colores_pixel.A = 0;
-            fwrite(&colores_pixel, sizeof(colores_pixel), 1, f);
-
-        }
-
-        fila2 = fila2->prev;
-        fila = fila2->dato;
-        pixel = fila->Inicio;
     }
+    image.Export("image.bmp");
 
-    //fwrite(imgdata, info->imgsize, 1, f);
-    fclose(f);
 }
 
