@@ -48,6 +48,13 @@ public:
     void redibuja_la_imagen();
     void renderizar();
 
+    void trazar_linea_recta(float coordenada_x_pixel1, float coordenada_y_pixel1,
+                            float coordenada_x_pixel2, float coordenada_y_pixel2);
+
+    void seleccion_rectangular(float coordenada_x_pixel1, float coordenada_y_pixel1,
+                               float coordenada_x_pixel2, float coordenada_y_pixel2);
+
+    void seleccion_libre(int x, int y);
 };
 
 

@@ -7,6 +7,7 @@
 #include "../BMP/Bmp.h"
 #include "../lista doblemente enlazada/Lista_pixeles.h"
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 
@@ -23,6 +24,9 @@ void Ventana::ventana_principal() {
     //tre->SaveBMP("res3.bmp", &tre->info, tre->img);
 
     bool yo = true;
+
+    int clicks_linea_seleccion = 0;
+    float coords_linea_seleccion[2][2];
 
     while (ptrwindow->isOpen()){
 
@@ -228,6 +232,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
+                modo_activo = "lapicero";
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -334,6 +339,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
+                modo_activo = "seleccion_libre";
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -342,6 +348,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
+                modo_activo = "seleccion_rectangular";
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -350,6 +357,9 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
+                modo_activo = "seleccion_magica";
+                std::cout << "Redibujando..." << std::endl;
+                redibuja_la_imagen();
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -488,6 +498,33 @@ void Ventana::ventana_principal() {
                     if (modo_activo =="lapiz"){
                         cambiar_color_pixel_lienzo(mousex,mousey-100,color_R,color_G,color_B);
                     }
+                    if(modo_activo == "lapicero"){
+                        clicks_linea_seleccion += 1;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
+                        sleep(1);
+                        if (clicks_linea_seleccion == 2)
+                        {
+                            trazar_linea_recta(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
+                                               coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
+                            clicks_linea_seleccion = 0;
+                        }
+                    }
+                    if(modo_activo == "seleccion_rectangular"){
+                        clicks_linea_seleccion += 1;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
+                        sleep(1);
+                        if (clicks_linea_seleccion == 2)
+                        {
+                            seleccion_rectangular(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
+                                                  coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
+                            clicks_linea_seleccion = 0;
+                        }
+                    }
+                    if(modo_activo == "seleccion_libre"){
+                        seleccion_libre(mousex, mousey-100);
+                    }
                 }
             }
         /*for (int z=0; z<RGB_pixeles_imagen->busqueda_indice(100)->largo; z+=1)
@@ -572,7 +609,7 @@ void Ventana:: redibuja_la_imagen() {
         for (int u=0; u<largo_columnas ;u+=1)
         {
 
-            //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
+            pixel->rectangulo.setFillColor(sf::Color(pixel->R,pixel->G,pixel->B,255));
             pixel->rectangulo.setPosition(u,n+100);
             ptrwindow->draw( pixel->rectangulo);
             pixel = pixel->next;
@@ -588,3 +625,159 @@ void Ventana::renderizar() {
 
 }
 
+void Ventana::trazar_linea_recta(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2) {
+    float pendiente, origen;
+    int minimo, maximo, ambito, dominio, r, g, b;
+    r = color_R;
+    g = color_G;
+    b = color_B;
+
+    if (abs(coordenada_x_pixel1 - coordenada_x_pixel2) < 50)
+    {
+        pendiente = ((coordenada_x_pixel1 - coordenada_x_pixel2) / (coordenada_y_pixel1 - coordenada_y_pixel2));
+        origen = coordenada_x_pixel1 - (pendiente * coordenada_y_pixel1);
+        if (coordenada_y_pixel1 > coordenada_y_pixel2)
+        {
+            minimo = coordenada_y_pixel2;
+            maximo = coordenada_y_pixel1;
+            while (minimo <= maximo) {
+                dominio = (pendiente * minimo) + origen;
+                cambiar_color_pixel_lienzo(dominio, minimo - 100, r, g, b);
+                minimo++;
+            }
+        }
+        else
+        {
+            minimo = coordenada_y_pixel1;
+            maximo = coordenada_y_pixel2;
+            while (minimo <= maximo) {
+                dominio = (pendiente * minimo) + origen;
+                cambiar_color_pixel_lienzo(dominio, minimo - 100, r, g, b);
+                minimo++;
+            }
+        }
+    }
+    else
+    {
+        pendiente = ((coordenada_y_pixel1 - coordenada_y_pixel2) / (coordenada_x_pixel1 - coordenada_x_pixel2));
+        origen = coordenada_y_pixel1 - (pendiente * coordenada_x_pixel1);
+        if (coordenada_x_pixel1 > coordenada_x_pixel2)
+        {
+            minimo = coordenada_x_pixel2;
+            maximo = coordenada_x_pixel1;
+            while (minimo <= maximo) {
+                ambito = (pendiente * minimo) + origen;
+                cambiar_color_pixel_lienzo(minimo, ambito - 100, r, g, b);
+                minimo++;
+            }
+        }
+        else
+        {
+            minimo = coordenada_x_pixel1;
+            maximo = coordenada_x_pixel2;
+            while (minimo <= maximo) {
+                ambito = (pendiente * minimo) + origen;
+                cambiar_color_pixel_lienzo(minimo, ambito - 100, r, g, b);
+                minimo++;
+            }
+        }
+    }
+}
+
+void Ventana::seleccion_rectangular(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2)
+{
+    int minimo_x, minimo_y, maximo_x, maximo_y, minimo_x_fijo;
+    if (coordenada_x_pixel1 > coordenada_x_pixel2)
+    {
+        minimo_x = coordenada_x_pixel2;
+        minimo_x_fijo = coordenada_x_pixel2;
+        maximo_x = coordenada_x_pixel1;
+        if (coordenada_y_pixel1 > coordenada_y_pixel2)
+        {
+            minimo_y = coordenada_y_pixel2;
+            maximo_y = coordenada_y_pixel1;
+            while (minimo_y <= maximo_y)
+            {
+                while (minimo_x <= maximo_x)
+                {
+                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(minimo_y - 100)->busqueda_indice(minimo_x);
+                    pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));
+                    ptrwindow->draw( pixel->rectangulo);
+                    minimo_x++;
+                }
+                minimo_y++;
+                minimo_x = minimo_x_fijo;
+            }
+        }
+        else
+        {
+            minimo_y = coordenada_y_pixel1;
+            maximo_y = coordenada_y_pixel2;
+            while (minimo_y <= maximo_y)
+            {
+                while (minimo_x <= maximo_x)
+                {
+                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(minimo_y - 100)->busqueda_indice(minimo_x);
+                    pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));
+                    ptrwindow->draw( pixel->rectangulo);
+                    minimo_x++;
+                }
+                minimo_y++;
+                minimo_x = minimo_x_fijo;
+            }
+        }
+    }
+    else
+    {
+        minimo_x = coordenada_x_pixel1;
+        minimo_x_fijo = coordenada_x_pixel1;
+        maximo_x = coordenada_x_pixel2;
+        if (coordenada_y_pixel1 > coordenada_y_pixel2)
+        {
+            minimo_y = coordenada_y_pixel2;
+            maximo_y = coordenada_y_pixel1;
+            while (minimo_y <= maximo_y)
+            {
+                while (minimo_x <= maximo_x)
+                {
+                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(minimo_y - 100)->busqueda_indice(minimo_x);
+                    pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));
+                    ptrwindow->draw( pixel->rectangulo);
+                    minimo_x++;
+                }
+                minimo_y++;
+                minimo_x = minimo_x_fijo;
+            }
+        }
+        else
+        {
+            minimo_y = coordenada_y_pixel1;
+            maximo_y = coordenada_y_pixel2;
+            while (minimo_y <= maximo_y)
+            {
+                while (minimo_x <= maximo_x)
+                {
+                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(minimo_y - 100)->busqueda_indice(minimo_x);
+                    pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));
+                    ptrwindow->draw( pixel->rectangulo);
+                    minimo_x++;
+                }
+                minimo_y++;
+                minimo_x = minimo_x_fijo;
+            }
+        }
+    }
+}
+
+void Ventana::seleccion_libre(int x, int y){
+    if(RGB_pixeles_imagen->busqueda_indice(y) != NULL){
+        Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+        if(pixel != NULL)
+        {
+            if (pixel->R == 255 && pixel->G == 255 && pixel->B == 255)
+            {
+                std::cout << "True" << std::endl;
+            }
+        }
+    }
+}
