@@ -138,6 +138,12 @@
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp">
 			<Option target="Codigo"/>
 		</Unit>
@@ -180,6 +186,12 @@
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp">
 			<Option target="Codigo"/>
 		</Unit>
@@ -190,6 +202,12 @@
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.h">
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/main.cpp">

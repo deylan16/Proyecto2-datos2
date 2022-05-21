@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Giros.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.o.d"
+  "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.cpp" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o.d"
@@ -24,8 +25,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_pixeles.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_pixeles.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Matriz.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Matriz.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o.d"
+  "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_matriz.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.o.d"
+  "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.cpp" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o" "gcc" "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/main.cpp" "CMakeFiles/Codigo.dir/main.cpp.o" "gcc" "CMakeFiles/Codigo.dir/main.cpp.o.d"
   )
 

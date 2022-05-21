@@ -345,6 +345,30 @@ Funcionalidades/Giros.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Giros.cpp.s
 .PHONY : Funcionalidades/Giros.cpp.s
 
+Funcionalidades/PaintFill.o: Funcionalidades/PaintFill.cpp.o
+.PHONY : Funcionalidades/PaintFill.o
+
+# target to build an object file
+Funcionalidades/PaintFill.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o
+.PHONY : Funcionalidades/PaintFill.cpp.o
+
+Funcionalidades/PaintFill.i: Funcionalidades/PaintFill.cpp.i
+.PHONY : Funcionalidades/PaintFill.i
+
+# target to preprocess a source file
+Funcionalidades/PaintFill.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.i
+.PHONY : Funcionalidades/PaintFill.cpp.i
+
+Funcionalidades/PaintFill.s: Funcionalidades/PaintFill.cpp.s
+.PHONY : Funcionalidades/PaintFill.s
+
+# target to generate assembly for a file
+Funcionalidades/PaintFill.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.s
+.PHONY : Funcionalidades/PaintFill.cpp.s
+
 Interfaz/Componentes.o: Interfaz/Componentes.cpp.o
 .PHONY : Interfaz/Componentes.o
 
@@ -513,6 +537,30 @@ lista_doblemente_enlazada/Nodo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s
 .PHONY : lista_doblemente_enlazada/Nodo.cpp.s
 
+lista_doblemente_enlazada/NodoPixelEnCola.o: lista_doblemente_enlazada/NodoPixelEnCola.cpp.o
+.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.o
+
+# target to build an object file
+lista_doblemente_enlazada/NodoPixelEnCola.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o
+.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.cpp.o
+
+lista_doblemente_enlazada/NodoPixelEnCola.i: lista_doblemente_enlazada/NodoPixelEnCola.cpp.i
+.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/NodoPixelEnCola.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.i
+.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.cpp.i
+
+lista_doblemente_enlazada/NodoPixelEnCola.s: lista_doblemente_enlazada/NodoPixelEnCola.cpp.s
+.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/NodoPixelEnCola.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.s
+.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.cpp.s
+
 lista_doblemente_enlazada/Nodo_matriz.o: lista_doblemente_enlazada/Nodo_matriz.cpp.o
 .PHONY : lista_doblemente_enlazada/Nodo_matriz.o
 
@@ -560,6 +608,30 @@ lista_doblemente_enlazada/Nodo_pixel.s: lista_doblemente_enlazada/Nodo_pixel.cpp
 lista_doblemente_enlazada/Nodo_pixel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo_pixel.cpp.s
 .PHONY : lista_doblemente_enlazada/Nodo_pixel.cpp.s
+
+lista_doblemente_enlazada/QueuePixels.o: lista_doblemente_enlazada/QueuePixels.cpp.o
+.PHONY : lista_doblemente_enlazada/QueuePixels.o
+
+# target to build an object file
+lista_doblemente_enlazada/QueuePixels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o
+.PHONY : lista_doblemente_enlazada/QueuePixels.cpp.o
+
+lista_doblemente_enlazada/QueuePixels.i: lista_doblemente_enlazada/QueuePixels.cpp.i
+.PHONY : lista_doblemente_enlazada/QueuePixels.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/QueuePixels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.i
+.PHONY : lista_doblemente_enlazada/QueuePixels.cpp.i
+
+lista_doblemente_enlazada/QueuePixels.s: lista_doblemente_enlazada/QueuePixels.cpp.s
+.PHONY : lista_doblemente_enlazada/QueuePixels.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/QueuePixels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.s
+.PHONY : lista_doblemente_enlazada/QueuePixels.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -621,6 +693,9 @@ help:
 	@echo "... Funcionalidades/Giros.o"
 	@echo "... Funcionalidades/Giros.i"
 	@echo "... Funcionalidades/Giros.s"
+	@echo "... Funcionalidades/PaintFill.o"
+	@echo "... Funcionalidades/PaintFill.i"
+	@echo "... Funcionalidades/PaintFill.s"
 	@echo "... Interfaz/Componentes.o"
 	@echo "... Interfaz/Componentes.i"
 	@echo "... Interfaz/Componentes.s"
@@ -642,12 +717,18 @@ help:
 	@echo "... lista_doblemente_enlazada/Nodo.o"
 	@echo "... lista_doblemente_enlazada/Nodo.i"
 	@echo "... lista_doblemente_enlazada/Nodo.s"
+	@echo "... lista_doblemente_enlazada/NodoPixelEnCola.o"
+	@echo "... lista_doblemente_enlazada/NodoPixelEnCola.i"
+	@echo "... lista_doblemente_enlazada/NodoPixelEnCola.s"
 	@echo "... lista_doblemente_enlazada/Nodo_matriz.o"
 	@echo "... lista_doblemente_enlazada/Nodo_matriz.i"
 	@echo "... lista_doblemente_enlazada/Nodo_matriz.s"
 	@echo "... lista_doblemente_enlazada/Nodo_pixel.o"
 	@echo "... lista_doblemente_enlazada/Nodo_pixel.i"
 	@echo "... lista_doblemente_enlazada/Nodo_pixel.s"
+	@echo "... lista_doblemente_enlazada/QueuePixels.o"
+	@echo "... lista_doblemente_enlazada/QueuePixels.i"
+	@echo "... lista_doblemente_enlazada/QueuePixels.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
