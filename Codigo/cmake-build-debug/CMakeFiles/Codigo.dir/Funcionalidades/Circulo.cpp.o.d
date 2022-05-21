@@ -1,6 +1,13 @@
-CMakeFiles/Codigo.dir/main.cpp.o: \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
+CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o: \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.cpp \
+ /usr/include/stdc-predef.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.h \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
+ /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
+ /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
+ /usr/include/c++/9/ostream /usr/include/c++/9/ios \
+ /usr/include/c++/9/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -9,10 +16,9 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
- /usr/include/c++/9/ostream /usr/include/c++/9/ios \
- /usr/include/c++/9/iosfwd /usr/include/c++/9/bits/stringfwd.h \
- /usr/include/c++/9/bits/memoryfwd.h /usr/include/c++/9/bits/postypes.h \
- /usr/include/c++/9/cwchar /usr/include/wchar.h \
+ /usr/include/c++/9/bits/stringfwd.h /usr/include/c++/9/bits/memoryfwd.h \
+ /usr/include/c++/9/bits/postypes.h /usr/include/c++/9/cwchar \
+ /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
@@ -134,13 +140,7 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
  /usr/include/c++/9/bits/locale_facets.tcc \
  /usr/include/c++/9/bits/basic_ios.tcc \
- /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
- /usr/include/c++/9/bits/istream.tcc \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
- /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
- /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
- /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
- /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
+ /usr/include/c++/9/bits/ostream.tcc \
  /usr/include/SFML/System/FileInputStream.hpp \
  /usr/include/SFML/System/InputStream.hpp \
  /usr/include/SFML/System/NonCopyable.hpp \
@@ -164,7 +164,9 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/c++/9/bits/unique_ptr.h /usr/include/c++/9/tuple \
  /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
  /usr/include/c++/9/bits/invoke.h /usr/include/SFML/System/Utf.inl \
- /usr/include/c++/9/iterator /usr/include/c++/9/bits/stream_iterator.h \
+ /usr/include/c++/9/iterator /usr/include/c++/9/istream \
+ /usr/include/c++/9/bits/istream.tcc \
+ /usr/include/c++/9/bits/stream_iterator.h \
  /usr/include/SFML/System/String.inl /usr/include/SFML/System/Thread.hpp \
  /usr/include/SFML/System/Thread.inl \
  /usr/include/SFML/System/ThreadLocal.hpp \
@@ -220,38 +222,15 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Facade_funciones.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Figuras.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/ColorPixels.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/BMP/Bmp.h \
- /usr/include/c++/9/stdlib.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/BMP/../Interfaz/Datos_juego.h \
- /usr/include/c++/9/thread /usr/include/c++/9/memory \
- /usr/include/c++/9/bits/stl_raw_storage_iter.h \
- /usr/include/c++/9/ext/concurrence.h \
- /usr/include/c++/9/bits/shared_ptr.h \
- /usr/include/c++/9/bits/shared_ptr_base.h \
- /usr/include/c++/9/bits/allocated_ptr.h \
- /usr/include/c++/9/bits/refwrap.h \
- /usr/include/c++/9/bits/shared_ptr_atomic.h \
- /usr/include/c++/9/bits/atomic_base.h \
- /usr/include/c++/9/bits/atomic_lockfree_defines.h \
- /usr/include/c++/9/backward/auto_ptr.h
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /usr/include/c++/9/iostream \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h

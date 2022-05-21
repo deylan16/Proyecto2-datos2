@@ -250,6 +250,7 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Figuras.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/ColorPixels.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
  /usr/include/c++/9/stdlib.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \

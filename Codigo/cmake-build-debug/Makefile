@@ -201,6 +201,30 @@ Funcionalidades/Circulo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.s
 .PHONY : Funcionalidades/Circulo.cpp.s
 
+Funcionalidades/ColorPixels.o: Funcionalidades/ColorPixels.cpp.o
+.PHONY : Funcionalidades/ColorPixels.o
+
+# target to build an object file
+Funcionalidades/ColorPixels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.o
+.PHONY : Funcionalidades/ColorPixels.cpp.o
+
+Funcionalidades/ColorPixels.i: Funcionalidades/ColorPixels.cpp.i
+.PHONY : Funcionalidades/ColorPixels.i
+
+# target to preprocess a source file
+Funcionalidades/ColorPixels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.i
+.PHONY : Funcionalidades/ColorPixels.cpp.i
+
+Funcionalidades/ColorPixels.s: Funcionalidades/ColorPixels.cpp.s
+.PHONY : Funcionalidades/ColorPixels.s
+
+# target to generate assembly for a file
+Funcionalidades/ColorPixels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.s
+.PHONY : Funcionalidades/ColorPixels.cpp.s
+
 Funcionalidades/Cuadrado.o: Funcionalidades/Cuadrado.cpp.o
 .PHONY : Funcionalidades/Cuadrado.o
 
@@ -579,6 +603,9 @@ help:
 	@echo "... Funcionalidades/Circulo.o"
 	@echo "... Funcionalidades/Circulo.i"
 	@echo "... Funcionalidades/Circulo.s"
+	@echo "... Funcionalidades/ColorPixels.o"
+	@echo "... Funcionalidades/ColorPixels.i"
+	@echo "... Funcionalidades/ColorPixels.s"
 	@echo "... Funcionalidades/Cuadrado.o"
 	@echo "... Funcionalidades/Cuadrado.i"
 	@echo "... Funcionalidades/Cuadrado.s"

@@ -12,7 +12,9 @@ using namespace std;
 
 Ventana::Ventana(sf::RenderWindow *window) {
     this->ptrwindow = window;
-
+    colorPixels = new ColorPixel(window,RGB_pixeles_imagen);
+    colorPixels->setDatos(datos);
+    colorPixels->setMultiplicadorDeTrazo(&multiplicador_de_trazo);
 }
 
 void Ventana::ventana_principal() {
@@ -20,13 +22,11 @@ void Ventana::ventana_principal() {
 
     tre->img=tre->LoadBMP("gr.bmp", &tre->info);
     tre->DisplayInfo(&tre->info);
-    //tre->SaveBMP("res3.bmp", &tre->info, tre->img);
 
     bool yo = true;
 
     while (ptrwindow->isOpen()){
 
-        //componentes->setWindow(window);
         int mousex =sf::Mouse::getPosition(*ptrwindow).x;
         int mousey = sf::Mouse::getPosition( *ptrwindow).y;
         sf::Event Event{};
@@ -41,7 +41,8 @@ void Ventana::ventana_principal() {
         int contadorborrar = 1;
         while (ptrwindow->pollEvent(event)){
 
-            color_R = datos->getColor_R(); color_G = datos->getColor_G(); color_B=datos->getColor_B();
+            color_R = colorPixels->getDatosJuego()->getColor_R(); color_G = colorPixels->getDatosJuego()->getColor_G();
+            color_B= colorPixels->getDatosJuego()->getColor_B();
 
             if (event.type == sf::Event::Closed)
                 ptrwindow->close();
@@ -194,9 +195,6 @@ void Ventana::ventana_principal() {
 
         ptrwindow->draw(rectangulo);
 
-
-        //componentes->creaLabel(0,0,30,"hola");
-        //componentes->creaCajadeTexto(0,200,100,40,entrada);
         std::string prefijo_ruta = "Imagenes/";
         if(componentes->creaBoton_con_imagen(10, 10, 30, 30, prefijo_ruta + "Borrador.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
@@ -236,6 +234,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
+                modo_activo = "paintFill";
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -358,7 +357,7 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                multplicador_de_trazo += 3;
+                multiplicador_de_trazo += 3;
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -367,8 +366,9 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-                if(multplicador_de_trazo >= 0)
-                    multplicador_de_trazo -= 3;
+                if(multiplicador_de_trazo >= 0){
+                    multiplicador_de_trazo -= 3;
+                }
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -378,7 +378,6 @@ void Ventana::ventana_principal() {
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
-
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
@@ -416,21 +415,14 @@ void Ventana::ventana_principal() {
             }
         }
 
-        /*for(int i = 0;i<lienzo->largo;i++){
-            ptrwindow->draw(lienzo->busqueda_indice(i));
-        }*/
-
         int x, y;
         int r,g,b,a;
         if (yo){
             for (y=tre->info.height; y>0; y-=1)
             {
                 Lista_pixeles *fila = new Lista_pixeles();
-                for (x=0; x<tre->info.width; x+=1)
-                {
+                for (x=0; x<tre->info.width; x+=1) {
                     //std::cout<<3*(x+y*info.width)<<std::endl;
-
-
                     b=(tre->img[4*(x+y*tre->info.width)]);
                     g=(tre->img[4*(x+y*tre->info.width)+1]);
                     r=(tre->img[4*(x+y*tre->info.width)+2]);
@@ -448,27 +440,23 @@ void Ventana::ventana_principal() {
                 }
                 RGB_pixeles_imagen->append(fila);
 
-
             }
             yo = false;
-            for(int n = 0;n <RGB_pixeles_imagen->largo; n++)
-            {
-                for (int u=0; u<RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1)
-                {
+            for(int n = 0;n <RGB_pixeles_imagen->largo; n++) {
+                for (int u=0; u<RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1){
                     Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(n)->busqueda_indice(u);
                     //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
                     ptrwindow->draw( pixel->rectangulo);
 
                 }
             }
-            datos->RGB_pixeles_imagen = this->RGB_pixeles_imagen;
-
+            colorPixels->getDatosJuego()->RGB_pixeles_imagen = this->RGB_pixeles_imagen;
+            //datos->RGB_pixeles_imagen = this->RGB_pixeles_imagen;
             matriz_lista = true;
-
-
 
         }
         if (modo_activo != "ninguno"){
+
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
                 if(100<mousey && mousey<RGB_pixeles_imagen->largo+100 && 0<mousex && mousex<RGB_pixeles_imagen->busqueda_indice(0)->largo){
                     if(modo_activo == "borrador"){
@@ -488,70 +476,27 @@ void Ventana::ventana_principal() {
                     if (modo_activo =="lapiz"){
                         cambiar_color_pixel_lienzo(mousex,mousey-100,color_R,color_G,color_B);
                     }
-                }
-            }
-        /*for (int z=0; z<RGB_pixeles_imagen->busqueda_indice(100)->largo; z+=1)
-        {
-            cambiar_color_pixel_lienzo(z,100);
-        }*/
-        /*Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(RGB_pixeles_imagen->busqueda_indice(0)->largo/2)->busqueda_indice(0);
-        pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));*/
-        ptrwindow->display();
-    }
+                    if(modo_activo == "paintFill"){
 
-}
-
-void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
-    if(multplicador_de_trazo == 0 ){
-        if(RGB_pixeles_imagen->busqueda_indice(y) != NULL){
-            Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
-            if(pixel != NULL)
-            {
-                pixel->R = r;
-                pixel->B = b;
-                pixel->G = g;
-                pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
-                //redibuja_la_imagen();
-                ptrwindow->draw( pixel->rectangulo);
-            }
-        }
-    }
-
-    if(multplicador_de_trazo != 0){
-        x -= multplicador_de_trazo;
-        y -= multplicador_de_trazo;
-        for(int a = 0;a <3+multplicador_de_trazo; a++)
-        {
-            for(int l = 0;l <3+multplicador_de_trazo; l++)
-            {
-                if(RGB_pixeles_imagen->busqueda_indice(y+a) != NULL){
-                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y+a)->busqueda_indice(x+l);
-                    if(pixel != NULL)
-                    {
-                        pixel->R = r;
-                        pixel->B = b;
-                        pixel->G = g;
-                        pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
-                        //redibuja_la_imagen();
-                        ptrwindow->draw( pixel->rectangulo);
                     }
                 }
             }
-        }
 
+        ptrwindow->display();
     }
 }
 
+void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
+    colorPixels->set_color_pixel_lienzo(x,y,r,g,b);
+}
+
 void Ventana::cambiar_color_seleccionado( int r, int g, int b) {
-    //datos->rgb_color_seleccionado[0] = r;
-    //datos->rgb_color_seleccionado[1] = g;
-    //datos->rgb_color_seleccionado[2] = b;
     datos->setRGBcolor_seleccionado(r,g,b);
 }
 
 void Ventana::picker(int x, int y) {
-    if(RGB_pixeles_imagen->busqueda_indice(y) != NULL){
-        Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+    if(colorPixels->getRGB_pixeles_imagen()->busqueda_indice(y) != NULL){
+        Nodo_pixel *pixel = colorPixels->getRGB_pixeles_imagen()->busqueda_indice(y)->busqueda_indice(x);
         if(pixel != NULL){
             cambiar_color_seleccionado(pixel->R,pixel->G,pixel->B);
         }
@@ -562,16 +507,14 @@ void Ventana::picker(int x, int y) {
 void Ventana:: redibuja_la_imagen() {
 
     //Nodo_matriz *fila2 = datos->RGB_pixeles_imagen->Inicio;
-    Nodo_matriz *fila2 = RGB_pixeles_imagen->Inicio;
+    Nodo_matriz *fila2 = colorPixels->getRGB_pixeles_imagen()->Inicio;
     Lista_pixeles *fila = fila2->dato;
     Nodo_pixel *pixel = fila->Inicio;
     // int largo_columnas = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;
-    int largo_columnas = RGB_pixeles_imagen->busqueda_indice(0)->largo;
+    int largo_columnas = colorPixels->getRGB_pixeles_imagen()->busqueda_indice(0)->largo;
 
-    for(int n = 0;n <RGB_pixeles_imagen->largo-2; n++)
-    {
-        for (int u=0; u<largo_columnas ;u+=1)
-        {
+    for(int n = 0;n <colorPixels->getRGB_pixeles_imagen()->largo-2; n++){
+        for (int u=0; u<largo_columnas ;u+=1){
 
             //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
             pixel->rectangulo.setPosition(u,n+100);

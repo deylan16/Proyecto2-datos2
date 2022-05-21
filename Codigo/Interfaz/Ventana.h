@@ -12,6 +12,7 @@
 #include "Datos_juego.h"
 #include "../Funcionalidades/Facade_funciones.h"
 #include "../Funcionalidades/Figuras.h"
+#include "../Funcionalidades/ColorPixels.h"
 
 class Ventana {
 public:
@@ -22,10 +23,11 @@ public:
     std::string entrada = "";
     int contador_botones = 8;
     int contador_original = 8;
-    int multplicador_de_trazo = 2;
+    int multiplicador_de_trazo = -1;
     bool matriz_lista = false;
     std::string modo_activo = "Ninguno";
     Matriz *RGB_pixeles_imagen = new Matriz();
+    ColorPixel *colorPixels;
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
 
     // Relacionado con las figuras predeterminadas

@@ -102,6 +102,12 @@
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/ColorPixels.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/ColorPixels.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Cuadrado.cpp">
 			<Option target="Codigo"/>
 		</Unit>

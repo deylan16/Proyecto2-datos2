@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Codigo.dir/BMP/Image.cpp.o.d"
   "CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o"
   "CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o.d"
+  "CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.o"
+  "CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.o.d"
   "CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o"
   "CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o.d"
   "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o"

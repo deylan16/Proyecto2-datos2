@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/BMP/Bmp.cpp" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o" "gcc" "CMakeFiles/Codigo.dir/BMP/Bmp.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/BMP/Image.cpp" "CMakeFiles/Codigo.dir/BMP/Image.cpp.o" "gcc" "CMakeFiles/Codigo.dir/BMP/Image.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o.d"
+  "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/ColorPixels.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Cuadrado.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Facade_funciones.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Facade_funciones.cpp.o.d"
   "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.cpp" "CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o" "gcc" "CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o.d"
