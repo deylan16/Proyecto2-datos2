@@ -27,6 +27,11 @@ public:
     std::string modo_activo = "Ninguno";
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
+    int clicks_linea_seleccion = 0;
+    float coords_linea_seleccion[2][2];
+    int estado_seleccion_libre = 1;
+    int trazo_seleccion_libre[10000];
+    int trazo_seleccion_libre_indice = 0;
 
     // Relacionado con las figuras predeterminadas
     bool figura_seleccionada = false;
@@ -54,7 +59,13 @@ public:
     void seleccion_rectangular(float coordenada_x_pixel1, float coordenada_y_pixel1,
                                float coordenada_x_pixel2, float coordenada_y_pixel2);
 
-    void seleccion_libre(int x, int y);
+    void trazo_seleccion_libre_append(int coordenada);
+
+    void seleccion_libre(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2,
+                         float coordenada_y_pixel2);
+
+    void crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2,
+                          float coordenada_y_pixel2);
 };
 
 
