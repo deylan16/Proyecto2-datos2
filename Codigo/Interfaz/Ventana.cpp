@@ -476,7 +476,7 @@ void Ventana::ventana_principal() {
                     if (modo_activo =="lapiz"){
                         cambiar_color_pixel_lienzo(mousex,mousey-100,color_R,color_G,color_B);
                     }
-                    if(modo_activo == "paintFill"){
+                    if(modo_activo == "paintFill"){ // enviar mousey-100
 
                     }
                 }

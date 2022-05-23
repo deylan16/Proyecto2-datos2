@@ -21,8 +21,8 @@ private:
     LinkedListPixels listaDeEstadosPixeles;
     int cantidadPixelesAdyacentes = 4;
     NodoPixel* crearNodoPixelVisitado(int coordMouseX, int coordMouseY);
-    void verificarCoincidenciaColorPixel(ColorPixel *colorPixel, int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente);
-    void pintarPixelDeIgualColor(ColorPixel *colorPixel, int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente);
+    void verificarCoincidenciaColorPixel(ColorPixel *colorPixels, int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente);
+    void pintarPixelDeIgualColor(ColorPixel *colorPixels, int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente);
 
     // incremento o decremento para obtener posibles nodos adyacentes en el eje horizontal
     int incrementoEnCoordX_nodoAdyacente[4] = {0,0,1,-1};
