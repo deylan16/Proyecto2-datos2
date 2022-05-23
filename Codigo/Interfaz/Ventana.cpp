@@ -501,7 +501,6 @@ void Ventana::picker(int x, int y) {
             cambiar_color_seleccionado(pixel->R,pixel->G,pixel->B);
         }
     }
-
 }
 
 void Ventana:: redibuja_la_imagen() {

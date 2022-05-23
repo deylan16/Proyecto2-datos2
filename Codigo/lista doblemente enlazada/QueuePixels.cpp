@@ -7,42 +7,34 @@
 using namespace std;
 
 QueuePixels::QueuePixels() {
-    NodoPixel NodoInicial = NodoPixel();
+    NodoPixel *NodoInicial;
+    NodoInicial->nextNodo = NULL;
     head = NodoInicial;
     tail = NodoInicial;
 }
 
-void QueuePixels::push(NodoPixel nuevoNodoPixel) {
-    head.setNext(nuevoNodoPixel);
+void QueuePixels::push(NodoPixel *nuevoNodoPixel) {
+    tail->nextNodo = nuevoNodoPixel;
     tail = nuevoNodoPixel;
 }
 
-NodoPixel QueuePixels::front() {
+NodoPixel* QueuePixels::front() {
     return this->head;
 }
 
-NodoPixel QueuePixels::pop() {
-    NodoPixel tempHead = head;
-    if(head.getNext()== nullptr){head = NodoPixel(); return head;}
-    head = *head.getNext();
+NodoPixel* QueuePixels::pop() {
+    NodoPixel *tempHead = head;
+    if (head == NULL){
+        return NULL;
+    }
+    head = head->nextNodo;
     return tempHead;
 }
 
 bool QueuePixels::empty(){
-    if(head.getNext()== nullptr){
+    if(head == NULL){
         return true;
     }
     return false;
 }
 
-NodoPixel::NodoPixel() { // Nodos contenidos en la cola de Pixeles
-    nextNode = nullptr;
-}
-
-void NodoPixel::setNext(NodoPixel nuevoNodoPixel) {
-    *nextNode = nuevoNodoPixel;
-}
-
-NodoPixel* NodoPixel::getNext() {
-    return nextNode;
-}

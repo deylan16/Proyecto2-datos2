@@ -162,6 +162,12 @@
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/ListaEnlazadaPixeles.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/ListaEnlazadaPixeles.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp">
 			<Option target="Codigo"/>
 		</Unit>
@@ -184,12 +190,6 @@
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo.h">
-			<Option target="Codigo"/>
-		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.cpp">
-			<Option target="Codigo"/>
-		</Unit>
-		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.h">
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_matriz.cpp">

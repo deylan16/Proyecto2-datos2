@@ -363,19 +363,19 @@ CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.s
 
-CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o: CMakeFiles/Codigo.dir/flags.make
-CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o: ../lista\ doblemente\ enlazada/NodoPixelEnCola.cpp
-CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.cpp"
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o: ../lista\ doblemente\ enlazada/ListaEnlazadaPixeles.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o -c "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/ListaEnlazadaPixeles.cpp"
 
-CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.i
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/ListaEnlazadaPixeles.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.i
 
-CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/NodoPixelEnCola.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.s
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/lista doblemente enlazada/ListaEnlazadaPixeles.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.s
 
 # Object files for target Codigo
 Codigo_OBJECTS = \
@@ -400,7 +400,7 @@ Codigo_OBJECTS = \
 "CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.o" \
 "CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o" \
 "CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o" \
-"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o"
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o"
 
 # External object files for target Codigo
 Codigo_EXTERNAL_OBJECTS =
@@ -426,7 +426,7 @@ Codigo: CMakeFiles/Codigo.dir/BMP/Image.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Funcionalidades/ColorPixels.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o
 Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o
-Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o
 Codigo: CMakeFiles/Codigo.dir/build.make
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1

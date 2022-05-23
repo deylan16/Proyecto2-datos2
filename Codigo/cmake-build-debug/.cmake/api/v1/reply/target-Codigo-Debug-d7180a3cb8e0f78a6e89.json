@@ -452,12 +452,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lista doblemente enlazada/NodoPixelEnCola.cpp",
+			"path" : "lista doblemente enlazada/ListaEnlazadaPixeles.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lista doblemente enlazada/NodoPixelEnCola.h",
+			"path" : "lista doblemente enlazada/ListaEnlazadaPixeles.h",
 			"sourceGroupIndex" : 1
 		}
 	],

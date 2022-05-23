@@ -441,6 +441,30 @@ Interfaz/Ventana.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.s
 .PHONY : Interfaz/Ventana.cpp.s
 
+lista_doblemente_enlazada/ListaEnlazadaPixeles.o: lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o
+.PHONY : lista_doblemente_enlazada/ListaEnlazadaPixeles.o
+
+# target to build an object file
+lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o
+.PHONY : lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.o
+
+lista_doblemente_enlazada/ListaEnlazadaPixeles.i: lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.i
+.PHONY : lista_doblemente_enlazada/ListaEnlazadaPixeles.i
+
+# target to preprocess a source file
+lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.i
+.PHONY : lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.i
+
+lista_doblemente_enlazada/ListaEnlazadaPixeles.s: lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.s
+.PHONY : lista_doblemente_enlazada/ListaEnlazadaPixeles.s
+
+# target to generate assembly for a file
+lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.s
+.PHONY : lista_doblemente_enlazada/ListaEnlazadaPixeles.cpp.s
+
 lista_doblemente_enlazada/Lista_Doble.o: lista_doblemente_enlazada/Lista_Doble.cpp.o
 .PHONY : lista_doblemente_enlazada/Lista_Doble.o
 
@@ -536,30 +560,6 @@ lista_doblemente_enlazada/Nodo.s: lista_doblemente_enlazada/Nodo.cpp.s
 lista_doblemente_enlazada/Nodo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.s
 .PHONY : lista_doblemente_enlazada/Nodo.cpp.s
-
-lista_doblemente_enlazada/NodoPixelEnCola.o: lista_doblemente_enlazada/NodoPixelEnCola.cpp.o
-.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.o
-
-# target to build an object file
-lista_doblemente_enlazada/NodoPixelEnCola.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.o
-.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.cpp.o
-
-lista_doblemente_enlazada/NodoPixelEnCola.i: lista_doblemente_enlazada/NodoPixelEnCola.cpp.i
-.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.i
-
-# target to preprocess a source file
-lista_doblemente_enlazada/NodoPixelEnCola.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.i
-.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.cpp.i
-
-lista_doblemente_enlazada/NodoPixelEnCola.s: lista_doblemente_enlazada/NodoPixelEnCola.cpp.s
-.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.s
-
-# target to generate assembly for a file
-lista_doblemente_enlazada/NodoPixelEnCola.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/lista_doblemente_enlazada/NodoPixelEnCola.cpp.s
-.PHONY : lista_doblemente_enlazada/NodoPixelEnCola.cpp.s
 
 lista_doblemente_enlazada/Nodo_matriz.o: lista_doblemente_enlazada/Nodo_matriz.cpp.o
 .PHONY : lista_doblemente_enlazada/Nodo_matriz.o
@@ -705,6 +705,9 @@ help:
 	@echo "... Interfaz/Ventana.o"
 	@echo "... Interfaz/Ventana.i"
 	@echo "... Interfaz/Ventana.s"
+	@echo "... lista_doblemente_enlazada/ListaEnlazadaPixeles.o"
+	@echo "... lista_doblemente_enlazada/ListaEnlazadaPixeles.i"
+	@echo "... lista_doblemente_enlazada/ListaEnlazadaPixeles.s"
 	@echo "... lista_doblemente_enlazada/Lista_Doble.o"
 	@echo "... lista_doblemente_enlazada/Lista_Doble.i"
 	@echo "... lista_doblemente_enlazada/Lista_Doble.s"
@@ -717,9 +720,6 @@ help:
 	@echo "... lista_doblemente_enlazada/Nodo.o"
 	@echo "... lista_doblemente_enlazada/Nodo.i"
 	@echo "... lista_doblemente_enlazada/Nodo.s"
-	@echo "... lista_doblemente_enlazada/NodoPixelEnCola.o"
-	@echo "... lista_doblemente_enlazada/NodoPixelEnCola.i"
-	@echo "... lista_doblemente_enlazada/NodoPixelEnCola.s"
 	@echo "... lista_doblemente_enlazada/Nodo_matriz.o"
 	@echo "... lista_doblemente_enlazada/Nodo_matriz.i"
 	@echo "... lista_doblemente_enlazada/Nodo_matriz.s"
