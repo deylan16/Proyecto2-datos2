@@ -5,21 +5,6 @@
 #ifndef CODIGO_QUEUEPIXELS_H
 #define CODIGO_QUEUEPIXELS_H
 
-/*class NodoPixel {
-public:
-    NodoPixel();
-    void setNext(NodoPixel nuevoNodoPixel);
-    NodoPixel* getNext();
-    int R;
-    int G;
-    int B;
-    bool visitado;
-    int coordX;
-    int coordY;
-
-private:
-    NodoPixel *nextNode;
-};*/
 struct NodoPixel{
     NodoPixel *nextNodo;
     int R,G,B;

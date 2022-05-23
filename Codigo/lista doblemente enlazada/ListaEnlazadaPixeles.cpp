@@ -21,6 +21,6 @@ void LinkedListPixels::insertNodo(NodoPixel *nuevoNodoPixel) {
 }
 
 NodoPixel* LinkedListPixels::getHeatNodo() {
-    return this->head;
+    return head;
 }
 

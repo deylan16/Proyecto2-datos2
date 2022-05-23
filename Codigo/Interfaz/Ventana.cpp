@@ -15,6 +15,7 @@ Ventana::Ventana(sf::RenderWindow *window) {
     colorPixels = new ColorPixel(window,RGB_pixeles_imagen);
     colorPixels->setDatos(datos);
     colorPixels->setMultiplicadorDeTrazo(&multiplicador_de_trazo);
+
 }
 
 void Ventana::ventana_principal() {
@@ -455,6 +456,7 @@ void Ventana::ventana_principal() {
             matriz_lista = true;
 
         }
+
         if (modo_activo != "ninguno"){
 
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -476,12 +478,14 @@ void Ventana::ventana_principal() {
                     if (modo_activo =="lapiz"){
                         cambiar_color_pixel_lienzo(mousex,mousey-100,color_R,color_G,color_B);
                     }
-                    if(modo_activo == "paintFill"){ // enviar mousey-100
-
+                    if(modo_activo == "paintFill"){
+                        int tempTrazo = multiplicador_de_trazo;
+                        multiplicador_de_trazo = 0;
+                        colorDeRellenoLienzo.pintarArea(colorPixels,sf::Vector2f(mousex,mousey-100));
+                        multiplicador_de_trazo = tempTrazo;
                     }
                 }
             }
-
         ptrwindow->display();
     }
 }

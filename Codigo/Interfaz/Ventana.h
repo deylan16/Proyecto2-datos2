@@ -13,6 +13,7 @@
 #include "../Funcionalidades/Facade_funciones.h"
 #include "../Funcionalidades/Figuras.h"
 #include "../Funcionalidades/ColorPixels.h"
+#include "../Funcionalidades/PaintFill.h"
 
 class Ventana {
 public:
@@ -27,8 +28,14 @@ public:
     bool matriz_lista = false;
     std::string modo_activo = "Ninguno";
     Matriz *RGB_pixeles_imagen = new Matriz();
-    ColorPixel *colorPixels;
+
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
+
+    // cambio de colores del lienzo
+    ColorPixel *colorPixels;
+
+    //Relleno de un espacio de un solo color
+    PaintFill colorDeRellenoLienzo = PaintFill();
 
     // Relacionado con las figuras predeterminadas
     bool figura_seleccionada = false;

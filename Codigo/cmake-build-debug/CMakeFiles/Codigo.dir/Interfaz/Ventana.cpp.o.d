@@ -251,6 +251,11 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Figuras.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/ColorPixels.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/PaintFill.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/ColorPixels.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/ListaEnlazadaPixeles.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
  /usr/include/c++/9/stdlib.h \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \

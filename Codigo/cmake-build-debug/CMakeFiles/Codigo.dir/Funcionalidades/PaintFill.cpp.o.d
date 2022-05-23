@@ -237,4 +237,7 @@ CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/ListaEnlazadaPixeles.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/Nodo_pixel.h

@@ -12,19 +12,35 @@ ColorPixel::ColorPixel(sf::RenderWindow *ptrWindow, Matriz *nuevoRGB_pixeles_ima
 }
 
 void ColorPixel::set_color_pixel_lienzo(int x, int y,int r,int g,int b) {
-    x -= *trazoSize;
-    y -= *trazoSize;
-    for(int a = 0;a <3+*trazoSize; a++) {
-        for(int l = 0;l <3+*trazoSize; l++) {
+    if(trazoSize == 0 ){
+        if(RGB_pixeles_imagen->busqueda_indice(y) != NULL){
+            Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+            if(pixel != NULL)
+            {
+                pixel->R = r;
+                pixel->B = b;
+                pixel->G = g;
+                pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+                //redibuja_la_imagen();
+                window->draw( pixel->rectangulo);
+            }
+        }
+    }
+    if(trazoSize!=0){
+        x -= *trazoSize;
+        y -= *trazoSize;
+        for(int a = 0;a <3+*trazoSize; a++) {
+            for(int l = 0;l <3+*trazoSize; l++) {
 
-            if(RGB_pixeles_imagen->busqueda_indice(y+a) != NULL){
-                Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y+a)->busqueda_indice(x+l);
-                if(pixel != NULL) {
-                    pixel->R = r;
-                    pixel->B = b;
-                    pixel->G = g;
-                    pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
-                    window->draw( pixel->rectangulo);
+                if(RGB_pixeles_imagen->busqueda_indice(y+a) != NULL){
+                    Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y+a)->busqueda_indice(x+l);
+                    if(pixel != NULL) {
+                        pixel->R = r;
+                        pixel->B = b;
+                        pixel->G = g;
+                        pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
+                        window->draw( pixel->rectangulo);
+                    }
                 }
             }
         }
