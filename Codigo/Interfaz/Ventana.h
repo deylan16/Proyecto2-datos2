@@ -61,11 +61,15 @@ public:
 
     void trazo_seleccion_libre_append(int coordenada);
 
-    void seleccion_libre(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2,
-                         float coordenada_y_pixel2);
+    void seleccion_libre(float coordenada_x_pixel1, float coordenada_y_pixel1,
+                         float coordenada_x_pixel2, float coordenada_y_pixel2);
 
-    void crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2,
-                          float coordenada_y_pixel2);
+    void crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1,
+                          float coordenada_x_pixel2, float coordenada_y_pixel2);
+
+    void breadthFirstSearch_Verificar(int coordenada_x, int coordenada_y, int nivel);
+
+    void breadthFirstSearch_Pintar(int coordenada_x, int coordenada_y, int nivel);
 };
 
 
