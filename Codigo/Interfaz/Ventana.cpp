@@ -424,6 +424,7 @@ void Ventana::ventana_principal() {
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
+                    modo_activo = "seleccion_magica";
                     //seleccionar_jugador2 = true;
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -543,8 +544,16 @@ void Ventana::ventana_principal() {
                         ptrwindow->draw(circuloActual);
                     }
                     if(modo_activo == "cuadrado"){
-                        figura_seleccionada = figurasPredeterminadas->CrearFiguraCuadrado(datos,&cuadradoActual,sf::Vector2f (mousex,mousey),event);
-                        ptrwindow->draw(cuadradoActual);
+                        clicks_linea_seleccion += 1;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
+                        sleep(1);
+                        if (clicks_linea_seleccion == 2)
+                        {
+                            crear_rectangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
+                                             coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
+                            clicks_linea_seleccion = 0;
+                        }
                     }
                     if (modo_activo =="lapiz"){
                         cambiar_color_pixel_lienzo(mousex,mousey-100,color_R,color_G,color_B);
