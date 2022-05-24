@@ -132,6 +132,12 @@
 		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/Giros.h">
 			<Option target="Codigo"/>
 		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.h">
+			<Option target="Codigo"/>
+		</Unit>
 		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp">
 			<Option target="Codigo"/>
 		</Unit>
@@ -148,6 +154,12 @@
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Interfaz/Ventana.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/LinkedListPixels.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/LinkedListPixels.h">
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/Lista_Doble.cpp">
@@ -184,6 +196,12 @@
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/Nodo_pixel.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.cpp">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.h">
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/main.cpp">

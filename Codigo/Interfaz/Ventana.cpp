@@ -300,6 +300,7 @@ void Ventana::ventana_principal() {
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
+                    modo_activo = "paintFill";
                     //seleccionar_jugador2 = true;
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -623,6 +624,13 @@ void Ventana::ventana_principal() {
                         pixel->rectangulo.setFillColor(sf::Color(color_R,color_G,color_B,255));
                         ptrwindow->draw( pixel->rectangulo);
                         breadthFirstSearch_Verificar(mousex, mousey-100, 1);
+                    }
+                    if(modo_activo == "paintFill"){
+                        int tempTrazo = multplicador_de_trazo;
+                        multplicador_de_trazo = 0;
+                        colorDeRellenoLienzo.ptrwindow = ptrwindow;
+                        colorDeRellenoLienzo.pintarArea(sf::Vector2f(mousex,mousey-100));
+                        multplicador_de_trazo = tempTrazo;
                     }
                 }
             }

@@ -5,8 +5,25 @@
 #ifndef CODIGO_QUEUEPIXELS_H
 #define CODIGO_QUEUEPIXELS_H
 
+struct NodoPixel{
+    NodoPixel *nextNodo;
+    int R,G,B;
+    bool visitado;
+    int coordX, coordY;
+};
 
 class QueuePixels {
+public:
+    QueuePixels();
+    NodoPixel* pop();
+    NodoPixel* front();
+    void push(NodoPixel *nuevoNodoPixel);
+    bool empty();
+    void clear();
+
+private:
+    NodoPixel *head;
+    NodoPixel *tail;
 
 };
 

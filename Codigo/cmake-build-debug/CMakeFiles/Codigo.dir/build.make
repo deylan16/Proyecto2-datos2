@@ -321,6 +321,48 @@ CMakeFiles/Codigo.dir/BMP/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/BMP/Image.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/Image.cpp -o CMakeFiles/Codigo.dir/BMP/Image.cpp.s
 
+CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o: ../Funcionalidades/PaintFill.cpp
+CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o -MF CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o.d -o CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o -c /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp
+
+CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp > CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.i
+
+CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp -o CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.s
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o: ../lista\ doblemente\ enlazada/LinkedListPixels.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o -c "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/LinkedListPixels.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/LinkedListPixels.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/LinkedListPixels.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.s
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o: CMakeFiles/Codigo.dir/flags.make
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o: ../lista\ doblemente\ enlazada/QueuePixels.cpp
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o: CMakeFiles/Codigo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o -MF CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o.d -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o -c "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.cpp"
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.cpp" > CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.i
+
+CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/lista doblemente enlazada/QueuePixels.cpp" -o CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.s
+
 # Object files for target Codigo
 Codigo_OBJECTS = \
 "CMakeFiles/Codigo.dir/main.cpp.o" \
@@ -340,7 +382,10 @@ Codigo_OBJECTS = \
 "CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o" \
 "CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o" \
 "CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o" \
-"CMakeFiles/Codigo.dir/BMP/Image.cpp.o"
+"CMakeFiles/Codigo.dir/BMP/Image.cpp.o" \
+"CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o" \
+"CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o"
 
 # External object files for target Codigo
 Codigo_EXTERNAL_OBJECTS =
@@ -363,12 +408,15 @@ Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Circulo.cpp.o
 Codigo: CMakeFiles/Codigo.dir/Funcionalidades/Cuadrado.cpp.o
 Codigo: CMakeFiles/Codigo.dir/BMP/Image.cpp.o
+Codigo: CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o
+Codigo: CMakeFiles/Codigo.dir/lista_doblemente_enlazada/QueuePixels.cpp.o
 Codigo: CMakeFiles/Codigo.dir/build.make
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Codigo: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Codigo: CMakeFiles/Codigo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Codigo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Codigo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Codigo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -13,6 +13,7 @@
 #include "../Funcionalidades/Facade_funciones.h"
 #include "../Funcionalidades/Figuras.h"
 #include "../BMP/Bmp.h"
+#include "../Funcionalidades/PaintFill.h"
 
 class Ventana {
 public:
@@ -21,8 +22,8 @@ public:
     sf::Event event;
     bool escribiendo = false;
     std::string entrada = "";
-    int contador_botones = 8;
-    int contador_original = 8;
+    int contador_botones = 7;
+    int contador_original = 7;
     int multplicador_de_trazo = 2;
     bool matriz_lista = false;
     std::string modo_activo = "Ninguno";
@@ -30,6 +31,7 @@ public:
     std::string orden_ventana_escogiendo = "Escogiendo";
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
+    PaintFill colorDeRellenoLienzo = PaintFill();
 
     Bmp *tre = new Bmp();
 
