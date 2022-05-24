@@ -72,7 +72,7 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"
+					"path" : "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"
 				}
 			],
 			"language" : "CXX",
@@ -122,11 +122,11 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR",
+				"fragment" : "-L/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR",
+				"fragment" : "-Wl,-rpath,/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR",
 				"role" : "libraries"
 			},
 			{

@@ -12,6 +12,7 @@
 #include "Datos_juego.h"
 #include "../Funcionalidades/Facade_funciones.h"
 #include "../Funcionalidades/Figuras.h"
+#include "../BMP/Bmp.h"
 
 class Ventana {
 public:
@@ -25,9 +26,11 @@ public:
     int multplicador_de_trazo = 2;
     bool matriz_lista = false;
     std::string modo_activo = "Ninguno";
+    std::string orden_abrir = "Escogiendo";
+    std::string orden_ventana_escogiendo = "Escogiendo";
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
-
+    Bmp *tre = new Bmp();
     // Relacionado con las figuras predeterminadas
     bool figura_seleccionada = false;
     sf::CircleShape circuloActual = sf::CircleShape(0);
@@ -47,6 +50,13 @@ public:
     void picker(int x, int y);
     void redibuja_la_imagen();
     void renderizar();
+    void ventana_elije_nueva_o_cargar();
+    void ventana_elije_nueva_o_cargar_esta_elijiendo();
+
+    void ventana_elije_nueva_o_cargar_ruta_absoluta();
+    void verificando_imagen_a_cargar(char *ruta_entrante);
+    void ventana_elije_nueva_o_cargar_crear_nuevo_lienzo();
+    void creando_lienzo_nuevo(std::string dimensiones);
 
 };
 

@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o: \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.cpp \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/Figuras.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -222,17 +222,17 @@ CMakeFiles/Codigo.dir/Funcionalidades/Figuras.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/iostream \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/Funcionalidades/Cuadrado.h
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/Circulo.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Funcionalidades/Cuadrado.h

@@ -1,5 +1,5 @@
 CMakeFiles/Codigo.dir/BMP/Image.cpp.o: \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/Image.cpp \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/Image.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/cstdio \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -139,12 +139,12 @@ CMakeFiles/Codigo.dir/BMP/Image.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
  /usr/include/c++/9/bits/fstream.tcc \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/Image.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/Image.h \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/../Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/tuple \
  /usr/include/c++/9/utility /usr/include/c++/9/bits/stl_relops.h \
  /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
@@ -153,13 +153,13 @@ CMakeFiles/Codigo.dir/BMP/Image.cpp.o: \
  /usr/include/c++/9/ctime /usr/include/c++/9/bits/parse_numbers.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/iostream \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo3/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/BMP/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \
