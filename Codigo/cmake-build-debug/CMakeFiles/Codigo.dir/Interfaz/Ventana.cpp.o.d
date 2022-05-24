@@ -253,4 +253,10 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
  /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
  /usr/include/c++/9/stdlib.h \
  /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \
- /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h
+ /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h

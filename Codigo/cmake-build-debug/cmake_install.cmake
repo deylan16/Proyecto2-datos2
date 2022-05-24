@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Install script for directory: /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo
-=======
-# Install script for directory: /home/luisale06/Datos 2/Proyecto2/Proyecto2-datos2/Codigo
->>>>>>> master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -54,9 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
 file(WRITE "/home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "/home/luisale06/Datos 2/Proyecto2/Proyecto2-datos2/Codigo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> master
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

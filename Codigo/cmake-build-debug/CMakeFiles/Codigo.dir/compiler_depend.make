@@ -2842,7 +2842,14 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: ../Interfaz/Ventana.cpp \
   ../BMP/Bmp.h \
   /usr/include/c++/9/stdlib.h \
   ../Interfaz/Datos_juego.h \
-  ../lista\ doblemente\ enlazada/Lista_pixeles.h
+  ../lista\ doblemente\ enlazada/Lista_pixeles.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
 
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o: ../lista\ doblemente\ enlazada/Lista_Doble.cpp \
   /usr/include/stdc-predef.h \
@@ -4235,6 +4242,10 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 
 ../lista\ doblemente\ enlazada/Nodo.cpp:
 
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
 ../Interfaz/Ventana.h:
 
 /usr/include/c++/9/bits/shared_ptr_base.h:
@@ -4669,6 +4680,8 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 
 ../BMP/Bmp.cpp:
 
+/usr/include/unistd.h:
+
 /usr/include/SFML/System/ThreadLocalPtr.hpp:
 
 /usr/include/c++/9/bits/unique_lock.h:
@@ -4715,6 +4728,8 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:
 
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
 ../BMP/Image.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
@@ -4743,6 +4758,8 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/cstdlib:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/errno.h:
 
 /usr/include/c++/9/debug/assertions.h:
@@ -4750,6 +4767,8 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/exception:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/9/type_traits:
 
@@ -4892,6 +4911,8 @@ CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/stdexcept:
 
 ../lista\ doblemente\ enlazada/Nodo.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/SFML/Window/Sensor.hpp:
 

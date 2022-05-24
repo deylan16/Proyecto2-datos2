@@ -30,16 +30,16 @@ public:
     std::string orden_ventana_escogiendo = "Escogiendo";
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
-<<<<<<< HEAD
+
     Bmp *tre = new Bmp();
-=======
+
     int clicks_linea_seleccion = 0;
     float coords_linea_seleccion[2][2];
     int estado_seleccion_libre = 1;
     int trazo_seleccion_libre[10000];
     int trazo_seleccion_libre_indice = 0;
 
->>>>>>> master
+
     // Relacionado con las figuras predeterminadas
     bool figura_seleccionada = false;
     sf::CircleShape circuloActual = sf::CircleShape(0);

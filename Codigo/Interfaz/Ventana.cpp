@@ -270,7 +270,6 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-<<<<<<< HEAD
             if(componentes->creaBoton_con_imagen(60, 10, 30, 30, prefijo_ruta + "picker.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
@@ -278,24 +277,18 @@ void Ventana::ventana_principal() {
                     modo_activo = "picker";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
-=======
+
         }
-        if(componentes->creaBoton_con_imagen(60, 60, 30, 30, prefijo_ruta + "Lapicero.png")){
+            if(componentes->creaBoton_con_imagen(60, 60, 30, 30, prefijo_ruta + "Lapicero.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
                 modo_activo = "lapicero";
                 //seleccionar_jugador2 = true;
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
->>>>>>> master
+
             }
-            if(componentes->creaBoton_con_imagen(60, 60, 30, 30, prefijo_ruta + "Lapicero.png")){
-                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
-                if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
-                    //seleccionar_jugador2 = true;
-                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
-                }
+
             }
             if(componentes->creaBoton_con_imagen(110, 10, 30, 30, prefijo_ruta + "paint_fill.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
@@ -383,7 +376,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-<<<<<<< HEAD
+
             if(componentes->creaBoton_con_imagen(310, 60, 30, 30, prefijo_ruta + "giro_izquierda.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
@@ -396,24 +389,8 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
+
             if(componentes->creaBoton_con_imagen(360, 10, 30, 30, prefijo_ruta + "seleccion_libre.png")){
-                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
-                if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
-                    //seleccionar_jugador2 = true;
-                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
-                }
-            }
-            if(componentes->creaBoton_con_imagen(360, 60, 30, 30, prefijo_ruta + "seleccion_rectangular.png")){
-                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
-                if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
-                    //seleccionar_jugador2 = true;
-                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
-                }
-=======
-        }
-        if(componentes->creaBoton_con_imagen(360, 10, 30, 30, prefijo_ruta + "seleccion_libre.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
@@ -433,7 +410,7 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
-        if(componentes->creaBoton_con_imagen(360, 60, 30, 30, prefijo_ruta + "seleccion_rectangular.png")){
+            if(componentes->creaBoton_con_imagen(360, 60, 30, 30, prefijo_ruta + "seleccion_rectangular.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
                 std::cout<<"koka"<<std::endl;
@@ -442,15 +419,7 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
-        if(componentes->creaBoton_con_imagen(410, 10, 30, 30, prefijo_ruta + "seleccion_magica.png")){
-            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
-            if (contador_botones == 0){
-                std::cout<<"koka"<<std::endl;
-                modo_activo = "seleccion_magica";
-                //seleccionar_jugador2 = true;
-                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
->>>>>>> master
-            }
+
             if(componentes->creaBoton_con_imagen(410, 10, 30, 30, prefijo_ruta + "seleccion_magica.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
@@ -520,25 +489,19 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-
-<<<<<<< HEAD
-            if (yo){
-=======
-        if(componentes->creaBoton(1000, 10, 100, 30, "Render")){
-            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
-            if (contador_botones == 0){
-                std::cout<<"koka"<<std::endl;
-                std::cout << "Redibujando..." << std::endl;
-                redibuja_la_imagen();
-                //seleccionar_jugador2 = true;
-                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+            if(componentes->creaBoton(1000, 10, 100, 30, "Render")){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    std::cout << "Redibujando..." << std::endl;
+                    redibuja_la_imagen();
+                    //seleccionar_jugador2 = true;
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
             }
-        }
 
-        /*for(int i = 0;i<lienzo->largo;i++){
-            ptrwindow->draw(lienzo->busqueda_indice(i));
-        }*/
->>>>>>> master
+
+            if (yo){
 
                 yo = false;
                 for(int n = 0;n <RGB_pixeles_imagen->largo; n++)
@@ -558,29 +521,6 @@ void Ventana::ventana_principal() {
 
 
             }
-            if (modo_activo != "ninguno"){
-                if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-                    if(100<mousey && mousey<RGB_pixeles_imagen->largo+100 && 0<mousex && mousex<RGB_pixeles_imagen->busqueda_indice(0)->largo){
-                        if(modo_activo == "borrador"){
-                            cambiar_color_pixel_lienzo(mousex,mousey-100,255,255,255);
-                        }
-                        if(modo_activo == "picker"){
-                            picker(mousex,mousey-100);
-                        }
-                        if(modo_activo == "circulo"){
-                            figura_seleccionada = figurasPredeterminadas->CrearFiguraCirculo(datos,&circuloActual, sf::Vector2f (mousex,mousey),event);
-                            ptrwindow->draw(circuloActual);
-                        }
-                        if(modo_activo == "cuadrado"){
-                            figura_seleccionada = figurasPredeterminadas->CrearFiguraCuadrado(datos,&cuadradoActual,sf::Vector2f (mousex,mousey),event);
-                            ptrwindow->draw(cuadradoActual);
-                        }
-                        if (modo_activo =="lapiz"){
-                            cambiar_color_pixel_lienzo(mousex,mousey-100,color_R,color_G,color_B);
-                        }
-                    }
-            }
-        }
 
 
 
@@ -588,10 +528,6 @@ void Ventana::ventana_principal() {
 
 
 
-
-
-<<<<<<< HEAD
-=======
         }
         if (modo_activo != "ninguno"){
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -673,7 +609,7 @@ void Ventana::ventana_principal() {
         }*/
         /*Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(RGB_pixeles_imagen->busqueda_indice(0)->largo/2)->busqueda_indice(0);
         pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));*/
->>>>>>> master
+
         ptrwindow->display();
     }
 
@@ -766,7 +702,7 @@ void Ventana::renderizar() {
 
 }
 
-<<<<<<< HEAD
+
 void Ventana::ventana_elije_nueva_o_cargar() {
     componentes->creaLabel(0,0,30,"Bienvenido a paint++");
     componentes->creaLabel(0,40,30,"Que deseas hacer");
@@ -806,7 +742,10 @@ void Ventana::ventana_elije_nueva_o_cargar_esta_elijiendo() {
 
 
             contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
-=======
+        }
+    }
+}
+
 void Ventana::trazar_linea_recta(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2) {
     float pendiente, origen;
     int minimo, maximo, ambito, dominio, r, g, b;
@@ -939,12 +878,11 @@ void Ventana::seleccion_libre(float coordenada_x_pixel1, float coordenada_y_pixe
                 ptrwindow->draw( pixel->rectangulo);
                 minimo++;
             }
->>>>>>> master
         }
     }
 }
 
-<<<<<<< HEAD
+
 void Ventana::ventana_elije_nueva_o_cargar_ruta_absoluta() {
     componentes->creaLabel(0,80,30,"Por favor escribe la ruta absoluta o el nombre en caso de estar en la carpeta predeterminada");
 
@@ -1091,7 +1029,7 @@ void Ventana::creando_lienzo_nuevo(std::string dimensiones) {
 
 }
 
-=======
+
 void Ventana::crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2)
 {
     int minimo_x, minimo_y, maximo_x, maximo_y, minimo_x_fijo, r, g, b;
@@ -1328,4 +1266,4 @@ void Ventana::breadthFirstSearch_Pintar(int coordenada_x, int coordenada_y, int 
     nivel++;
     breadthFirstSearch_Verificar(coordenada_x, coordenada_y, nivel);
 }
->>>>>>> master
+
