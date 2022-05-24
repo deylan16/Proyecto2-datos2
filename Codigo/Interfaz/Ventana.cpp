@@ -245,7 +245,13 @@ void Ventana::ventana_principal() {
             ventana_elije_nueva_o_cargar();
 
         }
-        else{
+
+        if(orden_abrir == "Guardando"){
+            ventana_guardando();
+
+
+        }
+        if(orden_abrir == "paint"){
             sf::RectangleShape rectangulo(sf::Vector2f(1100.f, 100.f));
             rectangulo.setFillColor(sf::Color(146,151,158,255));
             rectangulo.setPosition(0,0);
@@ -376,7 +382,6 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-
             if(componentes->creaBoton_con_imagen(310, 60, 30, 30, prefijo_ruta + "giro_izquierda.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
@@ -389,7 +394,6 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-
             if(componentes->creaBoton_con_imagen(360, 10, 30, 30, prefijo_ruta + "seleccion_libre.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
@@ -419,7 +423,6 @@ void Ventana::ventana_principal() {
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
-
             if(componentes->creaBoton_con_imagen(410, 10, 30, 30, prefijo_ruta + "seleccion_magica.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
@@ -485,7 +488,33 @@ void Ventana::ventana_principal() {
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
-                    tre->SaveBMP("hola.bmp", &tre->info, tre->img);
+                    ptrwindow->clear();
+                    orden_abrir = "Guardando";
+
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton(560, 60, 30, 30, "T")){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    funciones->aplicar_filtro("trueque");
+                    ptrwindow->clear();
+                    RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                    redibuja_la_imagen();
+                    ptrwindow->display();
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton(610, 60, 30, 30, "D")){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    funciones->aplicar_filtro("Dividir");
+                    ptrwindow->clear();
+                    RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
+                    redibuja_la_imagen();
+                    ptrwindow->display();
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
@@ -1265,5 +1294,27 @@ void Ventana::breadthFirstSearch_Pintar(int coordenada_x, int coordenada_y, int 
 
     nivel++;
     breadthFirstSearch_Verificar(coordenada_x, coordenada_y, nivel);
+}
+
+void Ventana::ventana_guardando() {
+    componentes->creaLabel(0,80,30,"Por favor escribe el nombre de tu archivo");
+
+    componentes->creaCajadeTexto(0,120,300,30,entrada);
+    if(componentes->creaBoton(0, 160, 300, 30, "Aceptar")){
+        contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+        if (contador_botones == 0){
+            std::cout<<"koka"<<std::endl;
+            std::cout<<entrada[0]<<std::endl;
+            std::string nuevo = entrada + ".bmp";
+            tre->SaveBMP(const_cast<char *>(nuevo.c_str()), &tre->info, tre->img);
+            orden_abrir = "paint";
+            ptrwindow->clear();
+            redibuja_la_imagen();
+
+
+            contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+        }
+    }
+
 }
 

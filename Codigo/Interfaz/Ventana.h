@@ -59,6 +59,7 @@ public:
     void picker(int x, int y);
     void redibuja_la_imagen();
     void renderizar();
+    void ventana_guardando();
     void ventana_elije_nueva_o_cargar();
     void ventana_elije_nueva_o_cargar_esta_elijiendo();
 

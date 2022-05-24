@@ -105,7 +105,7 @@ void Bmp::SaveBMP(char *filename, bmpInfoHeader *info, unsigned char *imgdata) {
             image.SetColor(Color(pixel->R,pixel->G,pixel->B),x,height-1-y);
         }
     }
-    image.Export("image.bmp");
+    image.Export(filename);
 
 }
 

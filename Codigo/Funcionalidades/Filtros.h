@@ -15,6 +15,8 @@ public:
     void cual_filtro(std::string tipo_filtro);
     void filtro_negativo();
     void filtro_escala_grises();
+    void filtro_trueque();
+    void filtro_dividir();
 
 };
 
