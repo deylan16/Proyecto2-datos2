@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 /snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo -B /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug
-=======
-/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/190/bin/ninja/linux/ninja -G Ninja -S "/home/luisale06/Datos 2/Proyecto2Def/Proyecto2-datos2/Codigo" -B "/home/luisale06/Datos 2/Proyecto2Def/Proyecto2-datos2/Codigo/cmake-build-debug"
 -- The C compiler identification is GNU 9.4.0
 -- The CXX compiler identification is GNU 9.4.0
 -- Detecting C compiler ABI info
@@ -14,11 +11,10 @@
 -- Check for working CXX compiler: /usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
->>>>>>> master
 -- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
 -- SFML_INCLUDE_DIR: /SFML-2.5.1/include
 -- SFML_LIBRARIES: 
 -- SFML_VERSION: 2.5.1
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/luisale06/Datos 2/Proyecto2Def/Proyecto2-datos2/Codigo/cmake-build-debug
+-- Build files have been written to: /home/deylan/Escritorio/repo4/Proyecto2-datos2/Codigo/cmake-build-debug
