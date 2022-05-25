@@ -73,9 +73,6 @@ public:
     void trazar_linea_recta(float coordenada_x_pixel1, float coordenada_y_pixel1,
                             float coordenada_x_pixel2, float coordenada_y_pixel2);
 
-    void seleccion_rectangular(float coordenada_x_pixel1, float coordenada_y_pixel1,
-                               float coordenada_x_pixel2, float coordenada_y_pixel2);
-
     void trazo_seleccion_libre_append(int coordenada);
 
     void seleccion_libre(float coordenada_x_pixel1, float coordenada_y_pixel1,
@@ -84,10 +81,10 @@ public:
     void crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1,
                           float coordenada_x_pixel2, float coordenada_y_pixel2);
 
-    void
-    crear_circulo(float coordenada_x_borde1, float coordenada_y_borde1,
-                  float coordenada_x_borde2, float coordenada_y_borde2);
-};
+    void crear_circulo(float coordenada_x_borde1, float coordenada_y_borde1,
+                       float coordenada_x_borde2, float coordenada_y_borde2);
 
+    void cambiar_color_pixel_seleccion(int x, int y);
+};
 
 #endif //CODIGO_VENTANA_H
