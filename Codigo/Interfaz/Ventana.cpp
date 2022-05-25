@@ -321,6 +321,7 @@ void Ventana::ventana_principal() {
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
+                    modo_activo = "triangulo";
                     //seleccionar_jugador2 = true;
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -571,6 +572,20 @@ void Ventana::ventana_principal() {
                     }
                     if(modo_activo == "picker"){
                         picker(mousex,mousey-100);
+                    }
+                    if(modo_activo == "triangulo"){
+                        clicks_linea_seleccion += 1;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
+                        sleep(1);
+                        if (clicks_linea_seleccion == 2)
+                        {
+                            int tempTrazo = multplicador_de_trazo;
+                            multplicador_de_trazo = 0;
+                            crear_triangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
+                            clicks_linea_seleccion = 0;
+                            multplicador_de_trazo = tempTrazo;
+                        }
                     }
                     if(modo_activo == "circulo"){
                         clicks_linea_seleccion += 1;
@@ -1114,6 +1129,46 @@ void Ventana::cambiar_color_pixel_seleccion(int x, int y)
                 pixel->rectangulo.setFillColor(sf::Color(255, 255, 255, 255));
                 ptrwindow->draw(pixel->rectangulo);
             }
+        }
+    }
+}
+
+void Ventana::crear_triangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2)
+{
+    int ambito, dominio, coordenada_x_centro, coordenada_y_centro, minimo_x, minimo_y, maximo_x, maximo_y, apotema_x, apotema_y;
+    float pendiente, origen;
+
+    apotema_x = abs(coordenada_x_pixel1 - coordenada_x_pixel2) / 2;
+    apotema_y = abs(coordenada_y_pixel1 - coordenada_y_pixel2) / 2;
+    coordenada_x_centro = (coordenada_x_pixel1 + coordenada_x_pixel2) / 2;
+    coordenada_y_centro = (coordenada_y_pixel1 + coordenada_y_pixel2) / 2;
+    minimo_x = coordenada_x_centro - apotema_x;
+    maximo_x = coordenada_x_centro + apotema_x;
+    minimo_y = coordenada_y_centro - apotema_y;
+    maximo_y = coordenada_y_centro + apotema_y;
+
+    if(abs(coordenada_x_pixel1 - coordenada_x_pixel2) < 75 && abs(coordenada_y_pixel1 - coordenada_y_pixel2) > 10)
+    {
+        std::cout << "Vertical" << std::endl;
+        pendiente = ((coordenada_x_pixel1 - coordenada_x_pixel2) / (coordenada_y_pixel1 - coordenada_y_pixel2));
+        origen = coordenada_x_pixel1 - (pendiente * coordenada_y_pixel1);
+        while(minimo_y <= maximo_y)
+        {
+            dominio = (pendiente * minimo_y) + origen;
+            trazar_linea_recta(minimo_x, minimo_y, dominio, minimo_y);
+            minimo_y++;
+        }
+    }
+    else
+    {
+        std::cout << "Horizontal" << std::endl;
+        pendiente = ((coordenada_y_pixel1 - coordenada_y_pixel2) / (coordenada_x_pixel1 - coordenada_x_pixel2));
+        origen = coordenada_y_pixel1 - (pendiente * coordenada_x_pixel1);
+        while(minimo_x <= maximo_x)
+        {
+            ambito = (pendiente * minimo_x) + origen;
+            trazar_linea_recta(minimo_x, maximo_y, minimo_x, ambito);
+            minimo_x++;
         }
     }
 }

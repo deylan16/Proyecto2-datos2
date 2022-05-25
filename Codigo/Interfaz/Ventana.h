@@ -87,6 +87,9 @@ public:
                        float coordenada_x_borde2, float coordenada_y_borde2);
 
     void cambiar_color_pixel_seleccion(int x, int y);
+
+    void crear_triangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2,
+                         float coordenada_y_pixel2);
 };
 
 #endif //CODIGO_VENTANA_H
