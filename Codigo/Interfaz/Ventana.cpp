@@ -570,8 +570,16 @@ void Ventana::ventana_principal() {
                         picker(mousex,mousey-100);
                     }
                     if(modo_activo == "circulo"){
-                        figura_seleccionada = figurasPredeterminadas->CrearFiguraCirculo(datos,&circuloActual, sf::Vector2f (mousex,mousey),event);
-                        ptrwindow->draw(circuloActual);
+                        clicks_linea_seleccion += 1;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
+                        coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
+                        sleep(1);
+                        if (clicks_linea_seleccion == 2)
+                        {
+                            crear_rectangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
+                                             coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
+                            clicks_linea_seleccion = 0;
+                        }
                     }
                     if(modo_activo == "cuadrado"){
                         clicks_linea_seleccion += 1;
@@ -620,10 +628,6 @@ void Ventana::ventana_principal() {
                         trazo_seleccion_libre_append(mousey);
                     }
                     if(modo_activo == "seleccion_magica"){
-                        Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(mousey-100)->busqueda_indice(mousex);
-                        pixel->rectangulo.setFillColor(sf::Color(color_R,color_G,color_B,255));
-                        ptrwindow->draw( pixel->rectangulo);
-                        breadthFirstSearch_Verificar(mousex, mousey-100, 1);
                     }
                     if(modo_activo == "paintFill"){
                         int tempTrazo = multplicador_de_trazo;
@@ -633,21 +637,6 @@ void Ventana::ventana_principal() {
                     }
                 }
             }
-
-        /*Generar cuadrado
-        clicks_linea_seleccion += 1;
-        coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
-        coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
-        sleep(1);
-        if (clicks_linea_seleccion == 2)
-        {
-            crear_rectangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
-                             coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
-            clicks_linea_seleccion = 0;
-        }
-        */
-
-
         /*for (int z=0; z<RGB_pixeles_imagen->busqueda_indice(100)->largo; z+=1)
         {
             cambiar_color_pixel_lienzo(z,100);
@@ -1152,163 +1141,6 @@ void Ventana::crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pix
             }
         }
     }
-}
-
-void Ventana::breadthFirstSearch_Verificar(int coordenada_x, int coordenada_y, int nivel){
-    Nodo_pixel *pixel_seleccionado = RGB_pixeles_imagen->busqueda_indice(coordenada_y)->busqueda_indice(coordenada_x);
-    int r_seleccionado, g_seleccionado, b_seleccionado, minimo_x, minimo_y, maximo_x, maximo_y, minimo_x_fijo, minimo_y_fijo, lado, i, r1, g1, b1, r2, g2, b2;
-
-    r_seleccionado = pixel_seleccionado->R;
-    g_seleccionado = pixel_seleccionado->G;
-    b_seleccionado = pixel_seleccionado->B;
-
-    minimo_x = coordenada_x - nivel;
-    minimo_y = coordenada_y - nivel;
-    minimo_x_fijo = coordenada_x - nivel;
-    minimo_y_fijo = coordenada_y - nivel;
-
-    maximo_x = coordenada_x + nivel;
-    maximo_y = coordenada_y + nivel;
-
-    bool pintar_nivel = false;
-
-    lado = (2 * nivel) + 1;
-    i = 0;
-
-    while(i <= lado)
-    {
-        Nodo_pixel *pixel1 = RGB_pixeles_imagen->busqueda_indice(minimo_y)->busqueda_indice(minimo_x);
-        r1 = pixel1->R;
-        g1 = pixel1->G;
-        b1 = pixel1->B;
-
-        Nodo_pixel *pixel2 = RGB_pixeles_imagen->busqueda_indice(maximo_y)->busqueda_indice(minimo_x);
-        r2 = pixel2->R;
-        g2 = pixel2->G;
-        b2 = pixel2->B;
-
-        if((r1 == r_seleccionado && g1 == g_seleccionado && b1 == b_seleccionado) || (r2 == r_seleccionado && g2 == g_seleccionado && b2 == b_seleccionado))
-        {
-            pintar_nivel = true;
-        }
-        minimo_x++;
-        i++;
-    }
-
-    minimo_x = minimo_x_fijo;
-    i = 0;
-
-    while(i <= lado)
-    {
-        Nodo_pixel *pixel1 = RGB_pixeles_imagen->busqueda_indice(minimo_y)->busqueda_indice(minimo_x);
-        r1 = pixel1->R;
-        g1 = pixel1->G;
-        b1 = pixel1->B;
-
-        Nodo_pixel *pixel2 = RGB_pixeles_imagen->busqueda_indice(minimo_y)->busqueda_indice(maximo_x);
-        r2 = pixel2->R;
-        g2 = pixel2->G;
-        b2 = pixel2->B;
-
-        if((r1 == r_seleccionado && g1 == g_seleccionado && b1 == b_seleccionado) || (r2 == r_seleccionado && g2 == g_seleccionado && b2 == b_seleccionado))
-        {
-            pintar_nivel = true;
-        }
-        minimo_y++;
-        i++;
-    }
-
-    if(pintar_nivel)
-    {
-        std::cout << "Pintar Nivel: " << nivel << std::endl;
-        breadthFirstSearch_Pintar(coordenada_x, coordenada_y, nivel);
-    }
-}
-
-void Ventana::breadthFirstSearch_Pintar(int coordenada_x, int coordenada_y, int nivel)
-{
-    Nodo_pixel *pixel_seleccionado = RGB_pixeles_imagen->busqueda_indice(coordenada_y)->busqueda_indice(coordenada_x);
-    int r_seleccionado, g_seleccionado, b_seleccionado, minimo_x, minimo_y, maximo_x, maximo_y, minimo_x_fijo, minimo_y_fijo, lado, i, r1, g1, b1, r2, g2, b2, red, green, blue;
-
-    r_seleccionado = pixel_seleccionado->R;
-    g_seleccionado = pixel_seleccionado->G;
-    b_seleccionado = pixel_seleccionado->B;
-
-    red = color_R;
-    green = color_G;
-    blue = color_B;
-
-    minimo_x = coordenada_x - nivel;
-    minimo_y = coordenada_y - nivel;
-    minimo_x_fijo = coordenada_x - nivel;
-    minimo_y_fijo = coordenada_y - nivel;
-
-    maximo_x = coordenada_x + nivel;
-    maximo_y = coordenada_y + nivel;
-
-    lado = (2 * nivel) + 1;
-    i = 0;
-
-    while(i <= lado)
-    {
-        Nodo_pixel *pixel1 = RGB_pixeles_imagen->busqueda_indice(minimo_y)->busqueda_indice(minimo_x);
-        r1 = pixel1->R;
-        g1 = pixel1->G;
-        b1 = pixel1->B;
-
-        if(r1 == r_seleccionado && g1 == g_seleccionado && b1 == b_seleccionado)
-        {
-            pixel1->rectangulo.setFillColor(sf::Color(red,green,blue,255));
-            ptrwindow->draw( pixel1->rectangulo);
-        }
-
-        Nodo_pixel *pixel2 = RGB_pixeles_imagen->busqueda_indice(maximo_y)->busqueda_indice(minimo_x);
-        r2 = pixel2->R;
-        g2 = pixel2->G;
-        b2 = pixel2->B;
-
-        if(r2 == r_seleccionado && g2 == g_seleccionado && b2 == b_seleccionado)
-        {
-            pixel2->rectangulo.setFillColor(sf::Color(red,green,blue,255));
-            ptrwindow->draw( pixel2->rectangulo);
-        }
-
-        minimo_x++;
-        i++;
-    }
-
-    minimo_x = minimo_x_fijo;
-    i = 0;
-
-    while(i <= lado)
-    {
-        Nodo_pixel *pixel1 = RGB_pixeles_imagen->busqueda_indice(minimo_y)->busqueda_indice(minimo_x);
-        r1 = pixel1->R;
-        g1 = pixel1->G;
-        b1 = pixel1->B;
-
-        if(r1 == r_seleccionado && g1 == g_seleccionado && b1 == b_seleccionado)
-        {
-            pixel1->rectangulo.setFillColor(sf::Color(red,green,blue,255));
-            ptrwindow->draw( pixel1->rectangulo);
-        }
-
-        Nodo_pixel *pixel2 = RGB_pixeles_imagen->busqueda_indice(minimo_y)->busqueda_indice(maximo_x);
-        r2 = pixel2->R;
-        g2 = pixel2->G;
-        b2 = pixel2->B;
-
-        if(r2 == r_seleccionado && g2 == g_seleccionado && b2 == b_seleccionado)
-        {
-            pixel2->rectangulo.setFillColor(sf::Color(red,green,blue,255));
-            ptrwindow->draw( pixel2->rectangulo);
-        }
-        minimo_y++;
-        i++;
-    }
-
-    nivel++;
-    breadthFirstSearch_Verificar(coordenada_x, coordenada_y, nivel);
 }
 
 void Ventana::ventana_guardando() {
