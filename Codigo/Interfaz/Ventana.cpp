@@ -13,7 +13,7 @@ using namespace std;
 
 Ventana::Ventana(sf::RenderWindow *window) {
     this->ptrwindow = window;
-
+    colorDeRellenoLienzo.ptrwindow = window;
 }
 
 void Ventana::ventana_principal() {
@@ -628,7 +628,6 @@ void Ventana::ventana_principal() {
                     if(modo_activo == "paintFill"){
                         int tempTrazo = multplicador_de_trazo;
                         multplicador_de_trazo = 0;
-                        colorDeRellenoLienzo.ptrwindow = ptrwindow;
                         colorDeRellenoLienzo.pintarArea(sf::Vector2f(mousex,mousey-100));
                         multplicador_de_trazo = tempTrazo;
                     }
@@ -1074,7 +1073,6 @@ void Ventana::creando_lienzo_nuevo(std::string dimensiones) {
 
 
 }
-
 
 void Ventana::crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2)
 {

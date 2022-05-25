@@ -7,10 +7,6 @@
 using namespace std;
 
 QueuePixels::QueuePixels() {
-    NodoPixel *NodoInicial = new NodoPixel();
-    NodoInicial->nextNodo = NULL;
-    head = NodoInicial;
-    tail = NodoInicial;
 }
 
 void QueuePixels::push(NodoPixel *nuevoNodoPixel) {
@@ -27,14 +23,12 @@ NodoPixel* QueuePixels::front() {
     return this->head;
 }
 
-NodoPixel* QueuePixels::pop() {
-    NodoPixel *tempHead = head;
+void QueuePixels::pop() {
     if (head == NULL){
-        return NULL;
+        return;
     }
     if(head == tail){tail =head->nextNodo;}
     head = head->nextNodo;
-    return tempHead;
 }
 
 bool QueuePixels::empty(){

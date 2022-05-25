@@ -15,7 +15,7 @@ struct NodoPixel{
 class QueuePixels {
 public:
     QueuePixels();
-    NodoPixel* pop();
+    void pop();
     NodoPixel* front();
     void push(NodoPixel *nuevoNodoPixel);
     bool empty();
