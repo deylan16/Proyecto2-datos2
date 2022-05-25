@@ -8,6 +8,8 @@
 #include "../lista doblemente enlazada/Lista_pixeles.h"
 #include <iostream>
 #include <unistd.h>
+#include <cmath>
+
 using namespace std;
 
 
@@ -576,21 +578,28 @@ void Ventana::ventana_principal() {
                         sleep(1);
                         if (clicks_linea_seleccion == 2)
                         {
-                            crear_rectangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
+                            int tempTrazo = multplicador_de_trazo;
+                            multplicador_de_trazo = 0;
+                            crear_circulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
                                              coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
                             clicks_linea_seleccion = 0;
+                            multplicador_de_trazo = tempTrazo;
                         }
                     }
                     if(modo_activo == "cuadrado"){
+
                         clicks_linea_seleccion += 1;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
                         sleep(1);
                         if (clicks_linea_seleccion == 2)
                         {
+                            int tempTrazo = multplicador_de_trazo;
+                            multplicador_de_trazo = 0;
                             crear_rectangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
                                              coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
                             clicks_linea_seleccion = 0;
+                            multplicador_de_trazo = tempTrazo;
                         }
                     }
                     if (modo_activo =="lapiz"){
@@ -1162,6 +1171,34 @@ void Ventana::ventana_guardando() {
             contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
         }
     }
-
 }
 
+void Ventana::crear_circulo(float coordenada_x_borde1, float coordenada_y_borde1, float coordenada_x_borde2, float coordenada_y_borde2)
+{
+    int minimo_x, maximo_x, minimo_y, maximo_y, coordenada_x_centro, coordenada_y_centro, r, g, b;
+    float radio, diametro;
+    r = color_R;
+    g = color_G;
+    b = color_B;
+    diametro = sqrt(pow(coordenada_x_borde1 - coordenada_x_borde2, 2) + pow(coordenada_y_borde1 - coordenada_y_borde2, 2));
+    radio = diametro / 2;
+    coordenada_x_centro = (coordenada_x_borde1 + coordenada_x_borde2) / 2;
+    coordenada_y_centro = (coordenada_y_borde1 + coordenada_y_borde2) / 2;
+    minimo_x = coordenada_x_centro - radio;
+    maximo_x = coordenada_x_centro + radio;
+
+    while(minimo_x <= maximo_x)
+    {
+        minimo_y = -sqrt(pow(radio, 2) - pow(minimo_x - coordenada_x_centro, 2)) + coordenada_y_centro;
+        maximo_y = sqrt(pow(radio, 2) - pow(minimo_x - coordenada_x_centro, 2)) + coordenada_y_centro;
+        if(minimo_y == maximo_y)
+        {
+            cambiar_color_pixel_lienzo(minimo_x, minimo_y - 100, r, g, b);
+        }
+        else
+        {
+            trazar_linea_recta(minimo_x, minimo_y, minimo_x, maximo_y);
+        }
+        minimo_x++;
+    }
+}

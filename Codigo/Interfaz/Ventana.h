@@ -83,6 +83,10 @@ public:
 
     void crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1,
                           float coordenada_x_pixel2, float coordenada_y_pixel2);
+
+    void
+    crear_circulo(float coordenada_x_borde1, float coordenada_y_borde1,
+                  float coordenada_x_borde2, float coordenada_y_borde2);
 };
 
 
