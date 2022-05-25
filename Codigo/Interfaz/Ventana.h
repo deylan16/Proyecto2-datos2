@@ -14,6 +14,7 @@
 #include "../Funcionalidades/Figuras.h"
 #include "../BMP/Bmp.h"
 #include "../Funcionalidades/PaintFill.h"
+#include "../Funcionalidades/Seleccion_magica.h"
 
 class Ventana {
 public:
@@ -32,6 +33,7 @@ public:
     Matriz *RGB_pixeles_imagen = new Matriz();
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
     PaintFill colorDeRellenoLienzo = PaintFill();
+    Seleccion_magica seleccion_magica = Seleccion_magica();
 
     Bmp *tre = new Bmp();
 

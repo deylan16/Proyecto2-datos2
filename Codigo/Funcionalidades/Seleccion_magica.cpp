@@ -1,12 +1,12 @@
 //
-// Created by deylan on 24/05/22.
+// Created by deylan on 25/05/22.
 //
 
-#include "PaintFill.h"
-PaintFill::PaintFill() {
+#include "Seleccion_magica.h"
+Seleccion_magica::Seleccion_magica() {
 }
 
-void PaintFill::pintarArea( sf::Vector2f coordsMouse) {
+void Seleccion_magica::pintarArea( sf::Vector2f coordsMouse) {
     colaDePixeles.clear();
 
     int coordMouseX = coordsMouse.x; int coordMouseY = coordsMouse.y;
@@ -33,7 +33,7 @@ void PaintFill::pintarArea( sf::Vector2f coordsMouse) {
     }
     liberarMemoriaDeListaEstados();
 }
-NodoPixel* PaintFill::crearNodoPixelVisitado(int coordMouseX, int coordMouseY) {
+NodoPixel* Seleccion_magica::crearNodoPixelVisitado(int coordMouseX, int coordMouseY) {
     NodoPixel *pixelVisitado = new NodoPixel();
     pixelVisitado->coordX = coordMouseX; pixelVisitado->coordY = coordMouseY;
     pixelVisitado->visitado = true;
@@ -41,7 +41,7 @@ NodoPixel* PaintFill::crearNodoPixelVisitado(int coordMouseX, int coordMouseY) {
     return pixelVisitado;
 }
 
-void PaintFill::verificarCoincidenciaColorPixel( int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente) {
+void Seleccion_magica::verificarCoincidenciaColorPixel( int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente) {
     NodoPixel *pixelAcomprobarSiFuePintado = listaDeEstadosPixeles.getHeatNodo();
     int coordX_pixelAverificar, coordY_pixelAverificar;
 
@@ -57,20 +57,17 @@ void PaintFill::verificarCoincidenciaColorPixel( int coord_X_PixelAdyacente, int
     pintarPixelDeIgualColor(coord_X_PixelAdyacente, coord_Y_PixelAdyacente);
 }
 
-void PaintFill::pintarPixelDeIgualColor( int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente) {
+void Seleccion_magica::pintarPixelDeIgualColor( int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente) {
     Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(coord_Y_PixelAdyacente)->busqueda_indice(coord_X_PixelAdyacente);
-
+    std::cout<<"holllaaa"<<std::endl;
     if(pixel != NULL){
         if(pixel->R == nodoPixelInicial->R && pixel->G == nodoPixelInicial->G && pixel->B == nodoPixelInicial->B){
 
-            int R = datos->getColor_R(), G = datos->getColor_G(),  B = datos->getColor_B();
 
-            Nodo_pixel *pixel_cambio = datos->RGB_pixeles_imagen->busqueda_indice(
-                    coord_Y_PixelAdyacente)->busqueda_indice(coord_X_PixelAdyacente);
-            pixel_cambio->R = R;
-            pixel_cambio->G  = G;
-            pixel_cambio->B = B;
-            pixel_cambio->rectangulo.setFillColor(sf::Color(R,G,B,255));
+
+            Nodo_pixel *pixel_cambio = datos->RGB_pixeles_imagen->busqueda_indice(coord_Y_PixelAdyacente)->busqueda_indice(coord_X_PixelAdyacente);
+
+            pixel_cambio->rectangulo.setFillColor(sf::Color(pixel_cambio->R ,pixel_cambio->G,pixel_cambio->B,0));
             ptrwindow->draw(pixel_cambio->rectangulo);
             ptrwindow->display();
 
@@ -85,19 +82,31 @@ void PaintFill::pintarPixelDeIgualColor( int coord_X_PixelAdyacente, int coord_Y
             colaDePixeles.push(pixelDeMismoColor);
         }
 
-        /*else{
+        else{
             Nodo_pixel *pixel_cambio = datos->RGB_pixeles_imagen->busqueda_indice(
                     coord_Y_PixelAdyacente)->busqueda_indice(coord_X_PixelAdyacente);
-
-            pixel_cambio->rectangulo.setFillColor(sf::Color(255,0,0,255));
+            int r = nodoPixelInicial->R;
+            int g = nodoPixelInicial->G;
+            int b = nodoPixelInicial->B;
+            if (r == 255 && g == 255 && b == 255)
+            {
+                pixel_cambio->rectangulo.setFillColor(sf::Color(0, 0, 0, 255));
+                ptrwindow->draw(pixel_cambio->rectangulo);
+            }
+            else
+            {
+                pixel_cambio->rectangulo.setFillColor(sf::Color(255, 255, 255, 255));
+                ptrwindow->draw(pixel_cambio->rectangulo);
+            }
+            //pixel_cambio->rectangulo.setFillColor(sf::Color(255,,0,255));
             ptrwindow->draw(pixel_cambio->rectangulo);
             ptrwindow->display();
 
-        }*/
+        }
     }
 }
 
-void PaintFill::liberarMemoriaDeListaEstados() {
+void Seleccion_magica::liberarMemoriaDeListaEstados() {
     NodoPixel *nodoAliberar = listaDeEstadosPixeles.getHeatNodo();
     NodoPixel *nextDeNodoAliberar = nodoAliberar->nextNodo;
 

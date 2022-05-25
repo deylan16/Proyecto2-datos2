@@ -16,6 +16,7 @@ using namespace std;
 Ventana::Ventana(sf::RenderWindow *window) {
     this->ptrwindow = window;
     colorDeRellenoLienzo.ptrwindow = window;
+    seleccion_magica.ptrwindow = window;
 }
 
 void Ventana::ventana_principal() {
@@ -641,6 +642,10 @@ void Ventana::ventana_principal() {
                         trazo_seleccion_libre_append(mousey);
                     }
                     if(modo_activo == "seleccion_magica"){
+                        int tempTrazo = multplicador_de_trazo;
+                        multplicador_de_trazo = 0;
+                        seleccion_magica.pintarArea(sf::Vector2f(mousex,mousey-100));
+                        multplicador_de_trazo = tempTrazo;
                     }
                     if(modo_activo == "paintFill"){
                         int tempTrazo = multplicador_de_trazo;
