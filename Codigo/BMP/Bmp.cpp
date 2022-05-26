@@ -102,6 +102,7 @@ void Bmp::SaveBMP(char *filename, bmpInfoHeader *info, unsigned char *imgdata) {
     for(int y = 0; y< height;y++){
         for(int x = 0;x<width;x++){
             Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
+
             image.SetColor(Color(pixel->R,pixel->G,pixel->B),x,height-1-y);
         }
     }

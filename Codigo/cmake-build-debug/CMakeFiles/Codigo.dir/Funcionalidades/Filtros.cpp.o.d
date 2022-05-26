@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o: \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/Filtros.h \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -123,7 +123,7 @@ CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/tuple \
  /usr/include/c++/9/utility /usr/include/c++/9/bits/stl_relops.h \
  /usr/include/c++/9/array /usr/include/c++/9/stdexcept \
@@ -135,10 +135,10 @@ CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -154,8 +154,8 @@ CMakeFiles/Codigo.dir/Funcionalidades/Filtros.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \

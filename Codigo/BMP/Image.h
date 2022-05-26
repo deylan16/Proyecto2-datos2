@@ -5,7 +5,7 @@
 #ifndef CODIGO_IMAGE_H
 #define CODIGO_IMAGE_H
 
-#include <vector>
+
 #include "../Interfaz/Datos_juego.h"
 
 struct Color{
@@ -13,6 +13,7 @@ struct Color{
     float a = 255;
     Color();
     Color(float r,float g,float b);
+    void setColor(float r_entrante,float g_entrante,float b_entrante);
     ~Color();
 };
 
@@ -30,7 +31,8 @@ public:
 private:
     int m_width;
     int m_heigth;
-    std::vector<Color> m_colors;
+    Lista_Doble<Color> *m_colors = new Lista_Doble<Color>();
+
 
 };
 

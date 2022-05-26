@@ -21,20 +21,31 @@ Color::~Color() {
 
 }
 
+void Color::setColor(float r_entrante, float g_entrante, float b_entrante) {
+    this->r = r_entrante;
+    this->g = g_entrante;
+    this->b = b_entrante;
+}
+
 Image::Image(int width, int height)
-        : m_width(width),m_heigth(height),m_colors(std::vector<Color>(width*height))
+        : m_width(width),m_heigth(height)//,m_colors(std::vector<Color>(width*height))
 {
 }
 
 Color Image::GetColor(int x, int y) const {
-    return m_colors[y*m_width+x];
+    return m_colors->busqueda_indice(y*m_width+x);
 }
 Image::~Image() {
 }
 void Image::SetColor(const Color &color, int x, int y) {
-    m_colors[y*m_width +x].r = color.r;
-    m_colors[y*m_width +x].g = color.g;
-    m_colors[y*m_width +x].b = color.b;
+    Color pixel = Color(color.r,color.g,color.b);
+    /*pixel.r = ;
+    pixel.g = ;
+    pixel.b = ;*/
+    m_colors->append(pixel);
+
+    //.setColor(color.r,color.g,color.b) ;
+
 
 }
 
@@ -133,6 +144,7 @@ void Image::Export(const char *path) {
 
     for(int y = 0; y< m_heigth ;y++){
         for(int x = 0; x< m_width;x++){
+            std::cout<<GetColor(x,y).r<<std::endl;
 
 
             unsigned char r = static_cast<unsigned char >(GetColor(x,y).r);

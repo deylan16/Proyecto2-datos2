@@ -1,8 +1,8 @@
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/LinkedListPixels.cpp.o: \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/LinkedListPixels.cpp \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/LinkedListPixels.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/LinkedListPixels.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/LinkedListPixels.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/QueuePixels.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

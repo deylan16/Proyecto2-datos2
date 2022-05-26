@@ -1,5 +1,5 @@
 CMakeFiles/Codigo.dir/main.cpp.o: \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/main.cpp \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -136,7 +136,7 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -220,35 +220,35 @@ CMakeFiles/Codigo.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Facade_funciones.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Figuras.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Facade_funciones.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Figuras.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
  /usr/include/c++/9/stdlib.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/PaintFill.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/LinkedListPixels.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Seleccion_magica.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/BMP/Bmp.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/PaintFill.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/LinkedListPixels.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Seleccion_magica.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/BMP/Bmp.h \
  /usr/include/c++/9/thread /usr/include/c++/9/memory \
  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \

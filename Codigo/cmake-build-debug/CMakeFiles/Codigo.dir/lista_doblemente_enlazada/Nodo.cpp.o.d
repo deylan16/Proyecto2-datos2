@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Nodo.cpp.o: \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.cpp \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo5/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

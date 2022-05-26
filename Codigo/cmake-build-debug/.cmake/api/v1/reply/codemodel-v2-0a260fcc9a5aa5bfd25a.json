@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Codigo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Codigo-Debug-752c02e81e0b66c58a2b.json",
+					"jsonFile" : "target-Codigo-Debug-c5dbc282d64e4e5f13cc.json",
 					"name" : "Codigo",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/luisale06/Datos 2/Proyecto2/Proyecto2-datos2/Codigo/cmake-build-debug",
-		"source" : "/home/luisale06/Datos 2/Proyecto2/Proyecto2-datos2/Codigo"
+		"build" : "/home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/cmake-build-debug",
+		"source" : "/home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo"
 	},
 	"version" : 
 	{
