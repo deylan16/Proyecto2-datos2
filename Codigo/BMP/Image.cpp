@@ -142,17 +142,20 @@ void Image::Export(const char *path) {
     f.write(reinterpret_cast<const char *>(fileHeader), fileHeaderSize);
     f.write(reinterpret_cast<const char *>(informationHeader), informationHeaderSize);
 
+    Nodo<Color> *pixel = m_colors->Final;
     for(int y = 0; y< m_heigth ;y++){
         for(int x = 0; x< m_width;x++){
-            std::cout<<GetColor(x,y).r<<std::endl;
 
 
-            unsigned char r = static_cast<unsigned char >(GetColor(x,y).r);
-            unsigned char g = static_cast<unsigned char >(GetColor(x,y).g);
-            unsigned char b = static_cast<unsigned char >(GetColor(x,y).b );
+
+
+            unsigned char r = static_cast<unsigned char >(pixel->dato.r);
+            unsigned char g = static_cast<unsigned char >(pixel->dato.g);
+            unsigned char b = static_cast<unsigned char >(pixel->dato.b );
 
             unsigned  char color[] = {b,g,r};
             f.write(reinterpret_cast<const char *>(color), 4);
+            pixel = pixel->prev;
 
 
 

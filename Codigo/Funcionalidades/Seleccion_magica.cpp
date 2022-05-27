@@ -59,7 +59,7 @@ void Seleccion_magica::verificarCoincidenciaColorPixel( int coord_X_PixelAdyacen
 
 void Seleccion_magica::pintarPixelDeIgualColor( int coord_X_PixelAdyacente, int coord_Y_PixelAdyacente) {
     Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(coord_Y_PixelAdyacente)->busqueda_indice(coord_X_PixelAdyacente);
-    std::cout<<"holllaaa"<<std::endl;
+
     if(pixel != NULL){
         if(pixel->R == nodoPixelInicial->R && pixel->G == nodoPixelInicial->G && pixel->B == nodoPixelInicial->B){
 
