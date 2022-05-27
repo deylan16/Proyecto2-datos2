@@ -21,15 +21,23 @@ class Zoom {
 public:
     Zoom();
     sf::RenderWindow *ptrWindow;
-    void zoom_in(sf::Vector2f coordsMouse, int numeroDeZoom);
-    void zoom_out(int numeroDeZoom);
+    void realizarZoom(sf::Vector2f coordsMouse, int numeroDeZoom, char tipoZoom);
 
 private:
     Datos_juego *datos = Datos_juego::GetInstance("Informacion");
-    sf::Vector2f getPositionZoom(sf::Vector2f mousePositionPressZoom,int numeroDeZoom);
+    void zoom_in(sf::Vector2f coordsMouse, int numeroDeZoom);
+    void zoom_out(int numeroDeZoom);
+    void logicZoom(sf::Vector2f coordsMouse,int numeroDeZoom);
+
+    sf::Vector2f getPosicionAjustadaZoomIn(sf::Vector2f mousePositionPressZoom,int numeroDeZoom);
+    sf::Vector2f getPosicionAjustadaZoomOut(sf::Vector2f mousePositionPressZoom,int numeroDeZoom);
+    void actualizarHistorialDeMovimientosZoom(sf::Vector2f coordsDeMovimientoZoom);
+
     int largo_columnas;
     int largo_filas;
     HistorialZoom historialZoom;
+    bool seLlama_A_zoomIn;
+    bool historialMovimientosZoomNulo;
 };
 
 

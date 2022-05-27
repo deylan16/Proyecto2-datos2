@@ -662,13 +662,15 @@ void Ventana::ventana_principal() {
                         colorDeRellenoLienzo.pintarArea(sf::Vector2f(mousex,mousey-100));
                         multplicador_de_trazo = tempTrazo;
                     }
-                    if(modo_activo == "zoom_positivo" and sizeZoom <=4){
+                    if(modo_activo == "zoom_positivo" && sizeZoom <=2){
                         sizeZoom+=2;
-                        zoom.zoom_in(sf::Vector2f(mousex,mousey-100),sizeZoom);
+                        char zoomPositivo = '+';
+                        zoom.realizarZoom(sf::Vector2f(mousex,mousey-100),sizeZoom,zoomPositivo);
                     }
-                    if(modo_activo == "zoom_negativo" and sizeZoom >=2){
+                    if(modo_activo == "zoom_negativo" && sizeZoom >=2){
                         sizeZoom-=2;
-                        zoom.zoom_out(sizeZoom);
+                        char zoomNegativo = '-';
+                        zoom.realizarZoom(sf::Vector2f(mousex,mousey-100),sizeZoom,zoomNegativo);
                     }
                 }
             }
@@ -691,7 +693,6 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
             }
         }
     }
-
     if(multplicador_de_trazo != 0){
         x -= multplicador_de_trazo;
         y -= multplicador_de_trazo;
@@ -713,7 +714,6 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
                 }
             }
         }
-
     }
 }
 
