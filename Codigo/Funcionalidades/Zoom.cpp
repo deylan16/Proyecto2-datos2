@@ -71,25 +71,7 @@ void Zoom::logicZoom(sf::Vector2f coordsMouse,int numeroDeZoom) {
         pixel = datos->RGB_pixeles_imagen->busqueda_indice(coordY_inicialZoom)->busqueda_indice(coordX_inicialZoom);
     }
     ptrWindow->display();
-<<<<<<< HEAD
     if(seLlama_A_zoomIn){ actualizarHistorialDeMovimientosZoom(coordsMouse);}
-=======
-
-
-    cout<<"sale"<<endl;
-
-    MovimientosZoom *nuevoMovimiento = new MovimientosZoom();
-    nuevoMovimiento->zoomSelectionPosicion_X = nuevasCoordenadasZoom.x; // se toman estas coordenadas pues no cambian
-    nuevoMovimiento->zoomSelectionPosicion_Y = nuevasCoordenadasZoom.y; // se toman estas coordenadas pues no cambian
-
-    if(historialZoom.ultimoMovimiento->anteriorMovimientoZoom == NULL){
-        historialZoom.ultimoMovimiento = nuevoMovimiento;
-        historialZoom.ultimoMovimiento->anteriorMovimientoZoom = NULL;
-    }else {
-        nuevoMovimiento->anteriorMovimientoZoom = historialZoom.ultimoMovimiento;
-        historialZoom.ultimoMovimiento = nuevoMovimiento;
-    }
->>>>>>> master
 }
 
 void Zoom::actualizarHistorialDeMovimientosZoom(sf::Vector2f coordsDeMovimientoZoom) {

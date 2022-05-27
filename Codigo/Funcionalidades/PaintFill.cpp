@@ -12,6 +12,9 @@ void PaintFill::pintarArea( sf::Vector2f coordsMouse) {
     int coordMouseX = coordsMouse.x; int coordMouseY = coordsMouse.y;
     Nodo_pixel *pixel = datos->RGB_pixeles_imagen->busqueda_indice(coordMouseY)->busqueda_indice(coordMouseX);
     nodoPixelInicial = colaDePixeles.front();
+    pixel->rectangulo.setFillColor(sf::Color(datos->getColor_R(),datos->getColor_G(),datos->getColor_B(),255));
+    ptrwindow->draw(pixel->rectangulo);
+    ptrwindow->display();
     nodoPixelInicial->R = pixel->R;
     nodoPixelInicial->G = pixel->G;
     nodoPixelInicial->B = pixel->B;

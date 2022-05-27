@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o: \
- /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.cpp \
  /usr/include/stdc-predef.h \
- /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
