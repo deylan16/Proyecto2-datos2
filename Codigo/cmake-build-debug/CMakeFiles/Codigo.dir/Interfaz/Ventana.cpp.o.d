@@ -1,5 +1,5 @@
 CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/Ventana.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/thread \
  /usr/include/c++/9/chrono /usr/include/c++/9/ratio \
  /usr/include/c++/9/type_traits \
@@ -142,7 +142,7 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/Ventana.h \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -235,31 +235,31 @@ CMakeFiles/Codigo.dir/Interfaz/Ventana.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/Componentes.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Facade_funciones.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Figuras.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Facade_funciones.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Figuras.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../BMP/Bmp.h \
  /usr/include/c++/9/stdlib.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/PaintFill.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/LinkedListPixels.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Seleccion_magica.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Zoom.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../BMP/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/PaintFill.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/LinkedListPixels.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Seleccion_magica.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../Funcionalidades/Zoom.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \

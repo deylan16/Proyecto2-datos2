@@ -262,7 +262,7 @@ void Ventana::ventana_principal() {
 
             ptrwindow->draw(rectangulo);
             std::string prefijo_ruta = "Imagenes/";
-            if(componentes->creaBoton_con_imagen(10, 10, 30, 30, prefijo_ruta + "Borrador.png")){
+            if(componentes->creaBoton_con_imagen(60, 10, 30, 30, prefijo_ruta + "Borrador.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -280,7 +280,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton_con_imagen(60, 10, 30, 30, prefijo_ruta + "picker.png")){
+            if(componentes->creaBoton_con_imagen(160, 60, 30, 30, prefijo_ruta + "picker.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -300,7 +300,7 @@ void Ventana::ventana_principal() {
             }
 
             }
-            if(componentes->creaBoton_con_imagen(110, 10, 30, 30, prefijo_ruta + "paint_fill.png")){
+            if(componentes->creaBoton_con_imagen(160, 10, 30, 30, prefijo_ruta + "paint_fill.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -309,7 +309,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton_con_imagen(110, 60, 30, 30, prefijo_ruta + "circulo.png")){
+            if(componentes->creaBoton_con_imagen(460, 10, 30, 30, prefijo_ruta + "circulo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -318,7 +318,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton_con_imagen(160, 10, 30, 30, prefijo_ruta + "Triangulo.png")){
+            if(componentes->creaBoton_con_imagen(410, 60, 30, 30, prefijo_ruta + "Triangulo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -327,7 +327,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton_con_imagen(160, 60, 30, 30, prefijo_ruta + "Cuadrado.png")){
+            if(componentes->creaBoton_con_imagen(460, 60, 30, 30, prefijo_ruta + "Cuadrado.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -442,7 +442,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton(410, 60, 30, 30, "Ma")){
+            if(componentes->creaBoton_con_imagen(110, 10, 30, 30, prefijo_ruta + "Gruezo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -451,7 +451,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton(460, 60, 30, 30, "Me")){
+            if(componentes->creaBoton_con_imagen(110, 60, 30, 30, prefijo_ruta + "Delgado.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -462,7 +462,7 @@ void Ventana::ventana_principal() {
                 }
             }
             //if(componentes->creaBoton_color(460, 10, 30, 30, datos->rgb_color_seleccionado[0],datos->rgb_color_seleccionado[1],datos->rgb_color_seleccionado[2] )){
-            if(componentes->creaBoton_color(460, 10, 30, 30, color_R,color_G,color_B )){
+            if(componentes->creaBoton_color(510, 10, 80, 80, color_R,color_G,color_B )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -471,7 +471,137 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton(510, 10, 30, 30, "N")){
+
+
+            if(componentes->creaBoton_color(610, 10, 15, 15, 255,0,0 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(255,0,0);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(610, 35, 15, 15, 0,255,0 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(0,255,0);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(610, 60, 15, 15, 255,0,255 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(255,0,255);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+
+            if(componentes->creaBoton_color(635, 10, 15, 15, 0,0,255 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(0,0,255);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(635, 35, 15, 15, 0,0,0 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(0,0,0);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(635, 60, 15, 15, 255,255,255 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(255,255,255);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+
+
+            if(componentes->creaBoton_color(660, 10, 15, 15, 0,255,255 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(0,255,255);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(660, 35, 15, 15, 255,255,0 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(255,255,0);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(660, 60, 15, 15, 255,128,0 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(255,128,0);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+
+            if(componentes->creaBoton_color(685, 10, 15, 15, 128,64,0 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(128,64,0);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(685, 35, 15, 15, 128,0,128 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(128,0,128);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(685, 60, 15, 15, 0,128,255 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(0,128,255);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+
+            if(componentes->creaBoton_color(710, 10, 15, 15, 165,42,42 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(165,42,42);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(710, 35, 15, 15, 169,169,169 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(169,169,169);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+            if(componentes->creaBoton_color(710, 60, 15, 15, 0,128,0 )){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    datos->setRGBcolor_seleccionado(0,128,0);
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+
+
+
+            if(componentes->creaBoton(890, 10, 100, 30, "Negrita")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -483,7 +613,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton(510, 60, 30, 30, "G")){
+            if(componentes->creaBoton(780, 10, 100, 30, "Grises")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -495,17 +625,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton(560, 10, 30, 30, "S")){
-                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
-                if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
-                    ptrwindow->clear();
-                    orden_abrir = "Guardando";
-
-                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
-                }
-            }
-            if(componentes->creaBoton(560, 60, 30, 30, "T")){
+            if(componentes->creaBoton(780, 60, 100, 30, "Cambio")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -517,7 +637,7 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            if(componentes->creaBoton(610, 60, 30, 30, "D")){
+            if(componentes->creaBoton(890, 60, 100, 30, "Oscura")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
                     std::cout<<"koka"<<std::endl;
@@ -539,6 +659,17 @@ void Ventana::ventana_principal() {
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
+            if(componentes->creaBoton_con_imagen(10, 10, 30, 30, prefijo_ruta + "Guardar.png")){
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
+                    std::cout<<"koka"<<std::endl;
+                    ptrwindow->clear();
+                    orden_abrir = "Guardando";
+
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
+            }
+
 
             if (yo){
 

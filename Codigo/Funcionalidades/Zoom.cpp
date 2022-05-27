@@ -30,13 +30,15 @@ void Zoom::zoom_in(sf::Vector2f coordsMouse,int numeroDeZoom) {
             nuevoRectangulo.setPosition(u,n);
             nuevoRectangulo.setFillColor(sf::Color(pixel->R,pixel->G,pixel->B,255));
             ptrWindow->draw(nuevoRectangulo);
-            ptrWindow->display();
             pixel = pixel->next;
         }
 
         coordY_inicialZoom++;
         pixel = datos->RGB_pixeles_imagen->busqueda_indice(coordY_inicialZoom)->busqueda_indice(coordX_inicialZoom);
     }
+    ptrWindow->display();
+
+
     cout<<"sale"<<endl;
 
     MovimientosZoom *nuevoMovimiento = new MovimientosZoom();
