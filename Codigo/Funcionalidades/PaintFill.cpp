@@ -34,6 +34,7 @@ void PaintFill::pintarArea( sf::Vector2f coordsMouse) {
                 verificarCoincidenciaColorPixel(coord_X_PixelAdyacente,coord_Y_PixelAdyacente);
         }
     }
+    ptrwindow->display();
     liberarMemoriaDeListaEstados();
 }
 NodoPixel* PaintFill::crearNodoPixelVisitado(int coordMouseX, int coordMouseY) {
@@ -75,7 +76,6 @@ void PaintFill::pintarPixelDeIgualColor( int coord_X_PixelAdyacente, int coord_Y
             pixel_cambio->B = B;
             pixel_cambio->rectangulo.setFillColor(sf::Color(R,G,B,255));
             ptrwindow->draw(pixel_cambio->rectangulo);
-            ptrwindow->display();
 
             NodoPixel *nodoVisitado = crearNodoPixelVisitado(coord_X_PixelAdyacente,coord_Y_PixelAdyacente);
             listaDeEstadosPixeles.insertNodo(nodoVisitado);
@@ -87,16 +87,6 @@ void PaintFill::pintarPixelDeIgualColor( int coord_X_PixelAdyacente, int coord_Y
 
             colaDePixeles.push(pixelDeMismoColor);
         }
-
-        /*else{
-            Nodo_pixel *pixel_cambio = datos->RGB_pixeles_imagen->busqueda_indice(
-                    coord_Y_PixelAdyacente)->busqueda_indice(coord_X_PixelAdyacente);
-
-            pixel_cambio->rectangulo.setFillColor(sf::Color(255,0,0,255));
-            ptrwindow->draw(pixel_cambio->rectangulo);
-            ptrwindow->display();
-
-        }*/
     }
 }
 

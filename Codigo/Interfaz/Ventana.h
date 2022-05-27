@@ -11,7 +11,6 @@
 #include "../lista doblemente enlazada/Matriz.h"
 #include "Datos_juego.h"
 #include "../Funcionalidades/Facade_funciones.h"
-#include "../Funcionalidades/Figuras.h"
 #include "../BMP/Bmp.h"
 #include "../Funcionalidades/PaintFill.h"
 #include "../Funcionalidades/Seleccion_magica.h"
@@ -51,7 +50,6 @@ public:
     bool figura_seleccionada = false;
     sf::CircleShape circuloActual = sf::CircleShape(0);
     sf::RectangleShape cuadradoActual = sf::RectangleShape(sf::Vector2f(0,0));
-    Figuras *figurasPredeterminadas;
 
     // Elementos visuales
     Componentes *componentes = new Componentes();

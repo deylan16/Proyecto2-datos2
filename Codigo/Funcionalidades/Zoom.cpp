@@ -95,7 +95,6 @@ sf::Vector2f Zoom::getPosicionAjustadaZoomIn(sf::Vector2f mousePositionPressZoom
     int coordX_zoom,  coordY_zoom ;
     sf::Vector2f nuevasCoordenadasZoom;
     int escalaDePixelesInicial = 2;
-    //if(historialZoom.ultimoMovimiento == NULL){ return nuevasCoordenadasZoom = sf::Vector2f(coordX_zoom,coordY_zoom);}
 
     if(numeroDeZoom == escalaDePixelesInicial){
         coordX_zoom = mousePositionPressZoom.x;

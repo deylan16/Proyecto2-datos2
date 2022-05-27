@@ -15,7 +15,6 @@ bool Cuadrado::logicCrearCuadrado(Datos_juego *datosJuego, sf::RectangleShape *c
 
     if (cuadradoActualSeleccionado->getSize().x == 0){
         crearCuadrado(datosJuego,cuadradoActualSeleccionado,coordsMouse);
-        //cout<<"primer cuadrado"<<endl;
         return SeSeleccionaElCuadrado;
     }
     float distanciaEntrePuntos_x = coordMouseX-cuadradoActualSeleccionado->getPosition().x;
@@ -23,13 +22,11 @@ bool Cuadrado::logicCrearCuadrado(Datos_juego *datosJuego, sf::RectangleShape *c
     int sizeDelLadoDelCuadrado = cuadradoActualSeleccionado->getSize().x;
 
     if (0<=distanciaEntrePuntos_x && distanciaEntrePuntos_x<=sizeDelLadoDelCuadrado && 0<=distanciaEntrePuntos_y && distanciaEntrePuntos_y <=sizeDelLadoDelCuadrado){
-        //cout<<"se presiona adentro"<<endl;
         SeSeleccionaElCuadrado = true;
         return SeSeleccionaElCuadrado;
     }
     else{
         crearCuadrado(datosJuego,cuadradoActualSeleccionado,coordsMouse);
-        //cout<<"se crea circulo al presionar afuera"<<endl;
         return SeSeleccionaElCuadrado;
     }
 }

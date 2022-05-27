@@ -26,13 +26,11 @@ bool Circulo::logicCrearCirculo(Datos_juego *datosJuego, sf::CircleShape *circul
     int radioCirculo = circuloActualSeleccionado->getRadius();
 
     if (0<=distanciaEntrePuntos_x && distanciaEntrePuntos_x<=2*radioCirculo && 0<=distanciaEntrePuntos_y && distanciaEntrePuntos_y <=2*radioCirculo){
-        //cout<<"se presiona adentro"<<endl;
         SeSeleccionaElCirculo = true;
         return SeSeleccionaElCirculo;
     }
     else{
         crearCirculo(datosJuego,circuloActualSeleccionado,coordsMouse);
-        //cout<<"se crea circulo al presionar afuera"<<endl;
         return SeSeleccionaElCirculo;
     }
 }
@@ -45,31 +43,4 @@ void Circulo::crearCirculo(Datos_juego *datosJuego,sf::CircleShape *circuloActua
     circuloActual->setFillColor(sf::Color::Transparent);
     circuloActual->setOutlineColor(sf::Color(datosJuego->getColor_R(),datosJuego->getColor_G(),datosJuego->getColor_B(),255));
     circuloActual->setOutlineThickness(5.0);
-}
-
-//no se esta implementando aun
-bool Circulo::movimientoCirculo(sf::RenderWindow *window, sf::CircleShape *ultima_figuraSeleccionada,sf::Event event){
-    //float x_posicionExactaMovimiento = sf::Mouse::getPosition(*window).x-ultima_figuraSeleccionada->getPosition().x;
-    //float y_posicionExactaMovimiento = sf::Mouse::getPosition(*window).y-ultima_figuraSeleccionada->getPosition().y;
-    bool seSeleccionaFigura = true;
-
-    ultima_figuraSeleccionada->setPosition(sf::Mouse::getPosition(*window).x/*-x_posicionExactaMovimiento*/,sf::Mouse::getPosition(*window).y/*-y_posicionExactaMovimiento*/);
-
-    /*switch (event.type) {
-        case sf::Event::MouseMoved:{
-            cout<<"se modifica la posicion"<<endl;
-            ultima_figuraSeleccionada->setPosition(sf::Mouse::getPosition(*window).x/*-x_posicionExactaMovimiento*///, sf::Mouse::getPosition(*window).y/*-y_posicionExactaMovimiento*/);
-           /* break;
-        }
-        case sf::Event::MouseButtonReleased:{
-            seSeleccionaFigura = false;
-            //ultima_figuraSeleccionada->setOutlineColor(sf::Color::Yellow);
-            break;
-        }
-        default:
-            break;
-    }*/
-    //printf("si pasa\n");
-    window->draw(*ultima_figuraSeleccionada);
-    return seSeleccionaFigura;
 }

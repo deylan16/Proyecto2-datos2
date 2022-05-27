@@ -14,7 +14,6 @@ public:
     Circulo();
     bool logicCrearCirculo(Datos_juego *datosJuego,sf::CircleShape *circuloActualSeleccionado, sf::Vector2f coordsMouse);
     void crearCirculo(Datos_juego *datosJuego,sf::CircleShape *circuloActual,sf::Vector2f coordsMouse);
-    bool movimientoCirculo(sf::RenderWindow *window,sf::CircleShape *ultima_figuraSeleccionada,sf::Event event);
 };
 
 

@@ -22,13 +22,10 @@ Ventana::Ventana(sf::RenderWindow *window) {
 
 void Ventana::ventana_principal() {
 
-    //tre->SaveBMP("res3.bmp", &tre->info, tre->img);
-
     bool yo = true;
 
     while (ptrwindow->isOpen()){
 
-        //componentes->setWindow(window);
         int mousex =sf::Mouse::getPosition(*ptrwindow).x;
         int mousey = sf::Mouse::getPosition( *ptrwindow).y;
         sf::Event Event{};
@@ -37,8 +34,6 @@ void Ventana::ventana_principal() {
         componentes->setevent(event);
         componentes->ptrescibiendo = &escribiendo;
         componentes->setposicion_mouse(mousex,mousey);
-
-        //sf::RenderWindow window(sf::VideoMode(tre->info.width, tre->info.height), "SFML works!");
 
         int contadorborrar = 1;
         while (ptrwindow->pollEvent(event)){
@@ -243,18 +238,16 @@ void Ventana::ventana_principal() {
                 }
             }
         }
-        //ptrwindow->clear();
+
         if(orden_abrir == "Escogiendo"){
             ptrwindow->clear();
             ventana_elije_nueva_o_cargar();
-
         }
 
         if(orden_abrir == "Guardando"){
             ventana_guardando();
-
-
         }
+
         if(orden_abrir == "paint"){
             sf::RectangleShape rectangulo(sf::Vector2f(1100.f, 100.f));
             rectangulo.setFillColor(sf::Color(146,151,158,255));
@@ -265,55 +258,53 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(60, 10, 30, 30, prefijo_ruta + "Borrador.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     modo_activo = "borrador";
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(10, 60, 30, 30, prefijo_ruta + "Lapiz.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     modo_activo = "lapiz";
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(160, 60, 30, 30, prefijo_ruta + "picker.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     modo_activo = "picker";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
+            }
 
-        }
             if(componentes->creaBoton_con_imagen(60, 60, 30, 30, prefijo_ruta + "Lapicero.png")){
-            contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
-            if (contador_botones == 0){
-                std::cout<<"koka"<<std::endl;
-                modo_activo = "lapicero";
-                //seleccionar_jugador2 = true;
-                contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
+                if (contador_botones == 0){
 
+                    modo_activo = "lapicero";
+
+                    contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
+                }
             }
 
-            }
             if(componentes->creaBoton_con_imagen(160, 10, 30, 30, prefijo_ruta + "paint_fill.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     modo_activo = "paintFill";
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(460, 10, 30, 30, prefijo_ruta + "circulo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
-                    //circulo
+
                     modo_activo = "circulo";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -321,16 +312,16 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(410, 60, 30, 30, prefijo_ruta + "Triangulo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     modo_activo = "triangulo";
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(460, 60, 30, 30, prefijo_ruta + "Cuadrado.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     modo_activo = "cuadrado";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -338,8 +329,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(210, 10, 30, 30, prefijo_ruta + "zoom_positivo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"sizeZoom es: "<<sizeZoom<<std::endl;
-                    //seleccionar_jugador2 = true;
+
                     modo_activo = "zoom_positivo";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -347,10 +337,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(210, 60, 30, 30, prefijo_ruta + "zoom_negativo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    /*if(sizeZoom >=2){
-                        sizeZoom-=2;
-                        zoom.zoom_out(sizeZoom);
-                    }*/
+
                     modo_activo = "zoom_negativo";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -358,7 +345,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(260, 10, 30, 30, prefijo_ruta + "flip_horizontal.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     funciones->giro("flipHorizontal");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -370,7 +357,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(260, 60, 30, 30, prefijo_ruta + "flip_vertical.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     funciones->giro("flipVertical");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -383,7 +370,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(310, 10, 30, 30, prefijo_ruta + "giro_derecha.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     funciones->giro("90derecha");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -395,7 +382,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(310, 60, 30, 30, prefijo_ruta + "giro_izquierda.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     funciones->giro("90izquierda");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -407,10 +394,9 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(360, 10, 30, 30, prefijo_ruta + "seleccion_libre.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
-                std::cout<<"koka"<<std::endl;
+
                 modo_activo = "seleccion_libre";
                 if(estado_seleccion_libre % 2 == 0){
-                    std::cout<<"Estado Par"<<std::endl;
 
                     seleccion_libre(trazo_seleccion_libre[0],
                                     trazo_seleccion_libre[1],
@@ -420,63 +406,60 @@ void Ventana::ventana_principal() {
                 }
                 estado_seleccion_libre++;
                 sleep(1);
-                //seleccionar_jugador2 = true;
+
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
             if(componentes->creaBoton_con_imagen(360, 60, 30, 30, prefijo_ruta + "seleccion_rectangular.png")){
             contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
             if (contador_botones == 0){
-                std::cout<<"koka"<<std::endl;
+
                 modo_activo = "seleccion_rectangular";
-                //seleccionar_jugador2 = true;
+
                 contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
             }
         }
             if(componentes->creaBoton_con_imagen(410, 10, 30, 30, prefijo_ruta + "seleccion_magica.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     modo_activo = "seleccion_magica";
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(110, 10, 30, 30, prefijo_ruta + "Gruezo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     multplicador_de_trazo += 3;
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(110, 60, 30, 30, prefijo_ruta + "Delgado.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     if(multplicador_de_trazo >= 0)
                         multplicador_de_trazo -= 3;
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-            //if(componentes->creaBoton_color(460, 10, 30, 30, datos->rgb_color_seleccionado[0],datos->rgb_color_seleccionado[1],datos->rgb_color_seleccionado[2] )){
+
             if(componentes->creaBoton_color(510, 10, 80, 80, color_R,color_G,color_B )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
 
-                    //seleccionar_jugador2 = true;
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-
 
             if(componentes->creaBoton_color(610, 10, 15, 15, 255,0,0 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(255,0,0);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -484,7 +467,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(610, 35, 15, 15, 0,255,0 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(0,255,0);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -492,7 +475,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(610, 60, 15, 15, 255,0,255 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(255,0,255);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -501,7 +484,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(635, 10, 15, 15, 0,0,255 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(0,0,255);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -509,7 +492,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(635, 35, 15, 15, 0,0,0 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(0,0,0);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -517,7 +500,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(635, 60, 15, 15, 255,255,255 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(255,255,255);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -527,7 +510,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(660, 10, 15, 15, 0,255,255 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(0,255,255);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -535,7 +518,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(660, 35, 15, 15, 255,255,0 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(255,255,0);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -543,7 +526,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(660, 60, 15, 15, 255,128,0 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(255,128,0);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -552,7 +535,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(685, 10, 15, 15, 128,64,0 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(128,64,0);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -560,7 +543,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(685, 35, 15, 15, 128,0,128 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(128,0,128);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -568,7 +551,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(685, 60, 15, 15, 0,128,255 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(0,128,255);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -577,7 +560,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(710, 10, 15, 15, 165,42,42 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(165,42,42);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -585,7 +568,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(710, 35, 15, 15, 169,169,169 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(169,169,169);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
@@ -593,18 +576,16 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_color(710, 60, 15, 15, 0,128,0 )){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     datos->setRGBcolor_seleccionado(0,128,0);
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
 
-
-
             if(componentes->creaBoton(890, 10, 100, 30, "Negrita")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     funciones->aplicar_filtro("negativo");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -616,7 +597,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton(780, 10, 100, 30, "Grises")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     funciones->aplicar_filtro("escala_grises");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -628,7 +609,7 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton(780, 60, 100, 30, "Cambio")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     funciones->aplicar_filtro("trueque");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -640,7 +621,6 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton(890, 60, 100, 30, "Oscura")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
                     funciones->aplicar_filtro("Dividir");
                     ptrwindow->clear();
                     RGB_pixeles_imagen = datos->RGB_pixeles_imagen;
@@ -652,24 +632,22 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton(1000, 10, 100, 30, "Render")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
-                    std::cout << "Redibujando..." << std::endl;
+
                     redibuja_la_imagen();
-                    //seleccionar_jugador2 = true;
+
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(10, 10, 30, 30, prefijo_ruta + "Guardar.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+
                     ptrwindow->clear();
                     orden_abrir = "Guardando";
 
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
-
 
             if (yo){
 
@@ -679,17 +657,13 @@ void Ventana::ventana_principal() {
                     for (int u=0; u<RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1) {
 
                         Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(n)->busqueda_indice(u);
-                        //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
                         ptrwindow->draw( pixel->rectangulo);
 
                     }
                 }
                 datos->RGB_pixeles_imagen = this->RGB_pixeles_imagen;
-
                 matriz_lista = true;
-
             }
-
         }
         if (modo_activo != "ninguno"){
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -813,13 +787,13 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
     if(multplicador_de_trazo == 0 ){
         if(RGB_pixeles_imagen->busqueda_indice(y) != NULL){
             Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
-            if(pixel != NULL)
-            {
+            if(pixel != NULL){
+
                 pixel->R = r;
                 pixel->B = b;
                 pixel->G = g;
                 pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
-                //redibuja_la_imagen();
+
                 ptrwindow->draw( pixel->rectangulo);
             }
         }
@@ -827,19 +801,18 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
     if(multplicador_de_trazo != 0){
         x -= multplicador_de_trazo;
         y -= multplicador_de_trazo;
-        for(int a = 0;a <3+multplicador_de_trazo; a++)
-        {
-            for(int l = 0;l <3+multplicador_de_trazo; l++)
-            {
+        for(int a = 0;a <3+multplicador_de_trazo; a++){
+
+            for(int l = 0;l <3+multplicador_de_trazo; l++){
+
                 if(RGB_pixeles_imagen->busqueda_indice(y+a) != NULL){
                     Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y+a)->busqueda_indice(x+l);
-                    if(pixel != NULL)
-                    {
+                    if(pixel != NULL){
+
                         pixel->R = r;
                         pixel->B = b;
                         pixel->G = g;
                         pixel->rectangulo.setFillColor(sf::Color(r,g,b,255));
-                        //redibuja_la_imagen();
                         ptrwindow->draw( pixel->rectangulo);
                     }
                 }
@@ -849,9 +822,6 @@ void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {
 }
 
 void Ventana::cambiar_color_seleccionado(int r, int g, int b) {
-    //datos->rgb_color_seleccionado[0] = r;
-    //datos->rgb_color_seleccionado[1] = g;
-    //datos->rgb_color_seleccionado[2] = b;
     datos->setRGBcolor_seleccionado(r,g,b);
 
 }
@@ -863,7 +833,6 @@ void Ventana::picker(int x, int y) {
             cambiar_color_seleccionado(pixel->R,pixel->G,pixel->B);
         }
     }
-
 }
 
 void Ventana::redibuja_la_imagen() {
@@ -873,10 +842,9 @@ void Ventana::redibuja_la_imagen() {
     Nodo_pixel *pixel = fila->Inicio;
     int largo_columnas = datos->RGB_pixeles_imagen->busqueda_indice(0)->largo;
 
-    for(int n = 0;n <datos->RGB_pixeles_imagen->largo-2; n++)
-    {
-        for (int u=0; u<largo_columnas ;u+=1)
-        {
+    for(int n = 0;n <datos->RGB_pixeles_imagen->largo-2; n++){
+
+        for (int u=0; u<largo_columnas ;u+=1){
 
             pixel->rectangulo.setFillColor(sf::Color(pixel->R,pixel->G,pixel->B,255));
             pixel->rectangulo.setPosition(u,n+100);
@@ -893,7 +861,6 @@ void Ventana::renderizar() {
     redibuja_la_imagen();
 
 }
-
 
 void Ventana::ventana_elije_nueva_o_cargar() {
     componentes->creaLabel(0,0,30,"Bienvenido a paint++");
@@ -916,7 +883,7 @@ void Ventana::ventana_elije_nueva_o_cargar_esta_elijiendo() {
     if(componentes->creaBoton(0, 80, 300, 30, "Nueva")){
         contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
         if (contador_botones == 0){
-            std::cout<<"koka"<<std::endl;
+
             orden_ventana_escogiendo = "Elijio nueva";
 
             contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
@@ -925,9 +892,7 @@ void Ventana::ventana_elije_nueva_o_cargar_esta_elijiendo() {
     if(componentes->creaBoton(0, 120, 300, 30, "Cargar")){
         contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
         if (contador_botones == 0){
-            std::cout<<"koka"<<std::endl;
             orden_ventana_escogiendo = "Escribiendo ruta";
-
 
             contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
         }
@@ -950,23 +915,23 @@ void Ventana::trazar_linea_recta(float coordenada_x_pixel1, float coordenada_y_p
     minimo_y = coordenada_y_centro - apotema_y;
     maximo_y = coordenada_y_centro + apotema_y;
 
-    if(abs(coordenada_x_pixel1 - coordenada_x_pixel2) < 75 && abs(coordenada_y_pixel1 - coordenada_y_pixel2) > 10)
-    {
+    if(abs(coordenada_x_pixel1 - coordenada_x_pixel2) < 75 && abs(coordenada_y_pixel1 - coordenada_y_pixel2) > 10){
+
         pendiente = ((coordenada_x_pixel1 - coordenada_x_pixel2) / (coordenada_y_pixel1 - coordenada_y_pixel2));
         origen = coordenada_x_pixel1 - (pendiente * coordenada_y_pixel1);
-        while(minimo_y <= maximo_y)
-        {
+        while(minimo_y <= maximo_y){
+
             dominio = (pendiente * minimo_y) + origen;
             cambiar_color_pixel_lienzo(dominio, minimo_y - 100, r, g, b);
             minimo_y++;
         }
     }
-    else
-    {
+    else{
+
         pendiente = ((coordenada_y_pixel1 - coordenada_y_pixel2) / (coordenada_x_pixel1 - coordenada_x_pixel2));
         origen = coordenada_y_pixel1 - (pendiente * coordenada_x_pixel1);
-        while(minimo_x <= maximo_x)
-        {
+        while(minimo_x <= maximo_x){
+
             ambito = (pendiente * minimo_x) + origen;
             cambiar_color_pixel_lienzo(minimo_x, ambito - 100, r, g, b);
             minimo_x++;
@@ -1003,19 +968,18 @@ void Ventana::seleccion_libre(float coordenada_x_pixel1, float coordenada_y_pixe
             minimo_y++;
         }
     }
-    else
-    {
+    else{
+
         pendiente = ((coordenada_y_pixel1 - coordenada_y_pixel2) / (coordenada_x_pixel1 - coordenada_x_pixel2));
         origen = coordenada_y_pixel1 - (pendiente * coordenada_x_pixel1);
-        while(minimo_x <= maximo_x)
-        {
+        while(minimo_x <= maximo_x) {
+
             ambito = (pendiente * minimo_x) + origen;
             cambiar_color_pixel_seleccion(minimo_x, ambito-100);
             minimo_x++;
         }
     }
 }
-
 
 void Ventana::ventana_elije_nueva_o_cargar_ruta_absoluta() {
     componentes->creaLabel(0,80,30,"Por favor escribe la ruta absoluta o el nombre en caso de estar en la carpeta predeterminada");
@@ -1024,18 +988,12 @@ void Ventana::ventana_elije_nueva_o_cargar_ruta_absoluta() {
     if(componentes->creaBoton(0, 160, 300, 30, "Aceptar")){
         contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
         if (contador_botones == 0){
-            std::cout<<"koka"<<std::endl;
-            std::cout<<entrada[0]<<std::endl;
-
-
 
             verificando_imagen_a_cargar(const_cast<char *>(entrada.c_str()));
-
 
             contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
         }
     }
-
 }
 
 void Ventana::verificando_imagen_a_cargar(char *ruta_entrante) {
@@ -1043,49 +1001,36 @@ void Ventana::verificando_imagen_a_cargar(char *ruta_entrante) {
     FILE *f;
     char ruta_n;
 
-    std::cout<<"***"<<ruta_entrante<<std::endl;
     f=fopen (ruta_entrante, "r");
-
 
     if (!f)
         componentes->creaLabel(0,200,30,"Error en la ruta");
     else{
 
-
         tre->img=tre->LoadBMP(ruta_entrante, &tre->info);
         tre->DisplayInfo(&tre->info);
         orden_abrir = "paint";
-        for (int y=tre->info.height; y>0; y-=1)
-        {
-            Lista_pixeles *fila = new Lista_pixeles();
-            for (int x=0; x<tre->info.width; x+=1)
-            {
-                //std::cout<<3*(x+y*info.width)<<std::endl;
+        for (int y=tre->info.height; y>0; y-=1) {
 
+            Lista_pixeles *fila = new Lista_pixeles();
+            for (int x=0; x<tre->info.width; x+=1){
 
                 int b=(tre->img[4*(x+y*tre->info.width)]);
                 int g=(tre->img[4*(x+y*tre->info.width)+1]);
                 int r=(tre->img[4*(x+y*tre->info.width)+2]);
                 int a = (tre->img[4*(x+y*tre->info.width)+3]);
-                //std::cout<<"["<<r<<","<<g<<","<<b<<"]"<<std::endl;
 
-                //printf("%c", colores[b+g*2+r*4]);
                 sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
                 rectangulo.setFillColor(sf::Color(r,g,b,255));
                 rectangulo.setPosition(x,(tre->info.height-y)+100);
                 lienzo->append(rectangulo);
                 fila->append(r,g,b,rectangulo);
                 fila->Final->A = a;
-                //ptrwindow->draw(rectangulo);
             }
             RGB_pixeles_imagen->append(fila);
-
-
         }
         ptrwindow->clear();
-
     }
-
 }
 
 void Ventana::ventana_elije_nueva_o_cargar_crear_nuevo_lienzo() {
@@ -1094,12 +1039,7 @@ void Ventana::ventana_elije_nueva_o_cargar_crear_nuevo_lienzo() {
     if(componentes->creaBoton(0, 160, 300, 30, "Aceptar")){
         contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
         if (contador_botones == 0){
-            std::cout<<"koka"<<std::endl;
             creando_lienzo_nuevo(entrada);
-
-
-
-
 
             contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
         }
@@ -1116,7 +1056,7 @@ void Ventana::creando_lienzo_nuevo(std::string dimensiones) {
 
         std::string letra;
         letra += dimensiones[i];
-        std::cout<<letra <<std::endl;
+
         if(letra != "x"){
             if(tracto == 1){
                 ancho +=dimensiones[i];
@@ -1129,42 +1069,32 @@ void Ventana::creando_lienzo_nuevo(std::string dimensiones) {
             tracto = 2;
 
     }
-    std::cout<<ancho<<"w"<<alto<<std::endl;
-    orden_abrir = "paint";
-    for (int y=0; y< std::stoi(alto); y++)
-    {
-        Lista_pixeles *fila = new Lista_pixeles();
-        for (int x=0; x<std::stoi(ancho) ;x+=1)
-        {
-            //std::cout<<3*(x+y*info.width)<<std::endl;
 
+    orden_abrir = "paint";
+    for (int y=0; y< std::stoi(alto); y++) {
+
+        Lista_pixeles *fila = new Lista_pixeles();
+        for (int x=0; x<std::stoi(ancho) ;x+=1) {
 
             int b=255;
             int g=255;
             int r=255;
             int a = 255;
-            //std::cout<<"["<<r<<","<<g<<","<<b<<"]"<<std::endl;
 
-            //printf("%c", colores[b+g*2+r*4]);
             sf::RectangleShape rectangulo(sf::Vector2f(1.f, 1.f));
             rectangulo.setFillColor(sf::Color(r,g,b,255));
             rectangulo.setPosition(x,y+100);
             lienzo->append(rectangulo);
             fila->append(r,g,b,rectangulo);
             fila->Final->A = a;
-            //ptrwindow->draw(rectangulo);
         }
         RGB_pixeles_imagen->append(fila);
-
-
     }
     ptrwindow->clear();
-
-
 }
 
-void Ventana::crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2)
-{
+void Ventana::crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2){
+
     int coordenada_x_centro, coordenada_y_centro, minimo_x, minimo_y, maximo_x, maximo_y, apotema_x, apotema_y;
 
     apotema_x = abs(coordenada_x_pixel1 - coordenada_x_pixel2) / 2;
@@ -1176,8 +1106,7 @@ void Ventana::crear_rectangulo(float coordenada_x_pixel1, float coordenada_y_pix
     minimo_y = coordenada_y_centro - apotema_y;
     maximo_y = coordenada_y_centro + apotema_y;
 
-    while(minimo_x <= maximo_x)
-    {
+    while(minimo_x <= maximo_x) {
         trazar_linea_recta(minimo_x, minimo_y, minimo_x, maximo_y);
         minimo_x++;
     }
@@ -1190,14 +1119,12 @@ void Ventana::ventana_guardando() {
     if(componentes->creaBoton(0, 160, 300, 30, "Aceptar")){
         contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
         if (contador_botones == 0){
-            std::cout<<"koka"<<std::endl;
-            std::cout<<entrada[0]<<std::endl;
+
             std::string nuevo = entrada + ".bmp";
             tre->SaveBMP(const_cast<char *>(nuevo.c_str()), &tre->info, tre->img);
             orden_abrir = "paint";
             ptrwindow->clear();
             redibuja_la_imagen();
-
 
             contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
         }
@@ -1218,39 +1145,39 @@ void Ventana::crear_circulo(float coordenada_x_borde1, float coordenada_y_borde1
     minimo_x = coordenada_x_centro - radio;
     maximo_x = coordenada_x_centro + radio;
 
-    while(minimo_x <= maximo_x)
-    {
+    while(minimo_x <= maximo_x) {
+
         minimo_y = -sqrt(pow(radio, 2) - pow(minimo_x - coordenada_x_centro, 2)) + coordenada_y_centro;
         maximo_y = sqrt(pow(radio, 2) - pow(minimo_x - coordenada_x_centro, 2)) + coordenada_y_centro;
-        if(minimo_y == maximo_y)
-        {
+        if(minimo_y == maximo_y){
+
             cambiar_color_pixel_lienzo(minimo_x, minimo_y - 100, r, g, b);
         }
-        else
-        {
+        else{
             trazar_linea_recta(minimo_x, minimo_y, minimo_x, maximo_y);
         }
+
         minimo_x++;
     }
 }
 
-void Ventana::cambiar_color_pixel_seleccion(int x, int y)
-{
+void Ventana::cambiar_color_pixel_seleccion(int x, int y) {
+
     int r, g, b;
     if(RGB_pixeles_imagen->busqueda_indice(y) != NULL) {
         Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(y)->busqueda_indice(x);
-        if (pixel != NULL)
-        {
+        if (pixel != NULL) {
+
             r = pixel->R;
             g = pixel->G;
             b = pixel->B;
-            if (r == 255 && g == 255 && b == 255)
-            {
+            if (r == 255 && g == 255 && b == 255){
+
                 pixel->rectangulo.setFillColor(sf::Color(0, 0, 0, 255));
                 ptrwindow->draw(pixel->rectangulo);
             }
-            else
-            {
+            else{
+
                 pixel->rectangulo.setFillColor(sf::Color(255, 255, 255, 255));
                 ptrwindow->draw(pixel->rectangulo);
             }
@@ -1258,8 +1185,8 @@ void Ventana::cambiar_color_pixel_seleccion(int x, int y)
     }
 }
 
-void Ventana::crear_triangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2)
-{
+void Ventana::crear_triangulo(float coordenada_x_pixel1, float coordenada_y_pixel1, float coordenada_x_pixel2, float coordenada_y_pixel2){
+
     int ambito, dominio, coordenada_x_centro, coordenada_y_centro, minimo_x, minimo_y, maximo_x, maximo_y, apotema_x, apotema_y;
     float pendiente, origen;
 
@@ -1272,25 +1199,23 @@ void Ventana::crear_triangulo(float coordenada_x_pixel1, float coordenada_y_pixe
     minimo_y = coordenada_y_centro - apotema_y;
     maximo_y = coordenada_y_centro + apotema_y;
 
-    if(abs(coordenada_x_pixel1 - coordenada_x_pixel2) < 75 && abs(coordenada_y_pixel1 - coordenada_y_pixel2) > 10)
-    {
-        std::cout << "Vertical" << std::endl;
+    if(abs(coordenada_x_pixel1 - coordenada_x_pixel2) < 75 && abs(coordenada_y_pixel1 - coordenada_y_pixel2) > 10) {
+
         pendiente = ((coordenada_x_pixel1 - coordenada_x_pixel2) / (coordenada_y_pixel1 - coordenada_y_pixel2));
         origen = coordenada_x_pixel1 - (pendiente * coordenada_y_pixel1);
-        while(minimo_y <= maximo_y)
-        {
+        while(minimo_y <= maximo_y){
+
             dominio = (pendiente * minimo_y) + origen;
             trazar_linea_recta(minimo_x, minimo_y, dominio, minimo_y);
             minimo_y++;
         }
     }
-    else
-    {
-        std::cout << "Horizontal" << std::endl;
+    else{
+
         pendiente = ((coordenada_y_pixel1 - coordenada_y_pixel2) / (coordenada_x_pixel1 - coordenada_x_pixel2));
         origen = coordenada_y_pixel1 - (pendiente * coordenada_x_pixel1);
-        while(minimo_x <= maximo_x)
-        {
+        while(minimo_x <= maximo_x){
+            
             ambito = (pendiente * minimo_x) + origen;
             trazar_linea_recta(minimo_x, maximo_y, minimo_x, ambito);
             minimo_x++;
