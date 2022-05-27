@@ -15,6 +15,7 @@
 #include "../BMP/Bmp.h"
 #include "../Funcionalidades/PaintFill.h"
 #include "../Funcionalidades/Seleccion_magica.h"
+#include "../Funcionalidades/Zoom.h"
 
 class Ventana {
 public:
@@ -27,6 +28,7 @@ public:
     int contador_original = 7;
     int multplicador_de_trazo = 2;
     bool matriz_lista = false;
+    int sizeZoom = 0;
     std::string modo_activo = "Ninguno";
     std::string orden_abrir = "Escogiendo";
     std::string orden_ventana_escogiendo = "Escogiendo";
@@ -34,6 +36,7 @@ public:
     Lista_Doble<sf::RectangleShape> *lienzo = new Lista_Doble<sf::RectangleShape>();
     PaintFill colorDeRellenoLienzo = PaintFill();
     Seleccion_magica seleccion_magica = Seleccion_magica();
+    Zoom zoom = Zoom();
 
     Bmp *tre = new Bmp();
 

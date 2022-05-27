@@ -57,10 +57,10 @@ RM = /snap/clion/190/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo
+CMAKE_SOURCE_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -368,6 +368,30 @@ Funcionalidades/Seleccion_magica.s: Funcionalidades/Seleccion_magica.cpp.s
 Funcionalidades/Seleccion_magica.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Seleccion_magica.cpp.s
 .PHONY : Funcionalidades/Seleccion_magica.cpp.s
+
+Funcionalidades/Zoom.o: Funcionalidades/Zoom.cpp.o
+.PHONY : Funcionalidades/Zoom.o
+
+# target to build an object file
+Funcionalidades/Zoom.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Zoom.cpp.o
+.PHONY : Funcionalidades/Zoom.cpp.o
+
+Funcionalidades/Zoom.i: Funcionalidades/Zoom.cpp.i
+.PHONY : Funcionalidades/Zoom.i
+
+# target to preprocess a source file
+Funcionalidades/Zoom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Zoom.cpp.i
+.PHONY : Funcionalidades/Zoom.cpp.i
+
+Funcionalidades/Zoom.s: Funcionalidades/Zoom.cpp.s
+.PHONY : Funcionalidades/Zoom.s
+
+# target to generate assembly for a file
+Funcionalidades/Zoom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codigo.dir/build.make CMakeFiles/Codigo.dir/Funcionalidades/Zoom.cpp.s
+.PHONY : Funcionalidades/Zoom.cpp.s
 
 Interfaz/Componentes.o: Interfaz/Componentes.cpp.o
 .PHONY : Interfaz/Componentes.o
@@ -696,6 +720,9 @@ help:
 	@echo "... Funcionalidades/Seleccion_magica.o"
 	@echo "... Funcionalidades/Seleccion_magica.i"
 	@echo "... Funcionalidades/Seleccion_magica.s"
+	@echo "... Funcionalidades/Zoom.o"
+	@echo "... Funcionalidades/Zoom.i"
+	@echo "... Funcionalidades/Zoom.s"
 	@echo "... Interfaz/Componentes.o"
 	@echo "... Interfaz/Componentes.i"
 	@echo "... Interfaz/Componentes.s"

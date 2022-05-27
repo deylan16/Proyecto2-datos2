@@ -17,6 +17,7 @@ Ventana::Ventana(sf::RenderWindow *window) {
     this->ptrwindow = window;
     colorDeRellenoLienzo.ptrwindow = window;
     seleccion_magica.ptrwindow = window;
+    zoom.ptrWindow = window;
 }
 
 void Ventana::ventana_principal() {
@@ -337,16 +338,20 @@ void Ventana::ventana_principal() {
             if(componentes->creaBoton_con_imagen(210, 10, 30, 30, prefijo_ruta + "zoom_positivo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
+                    std::cout<<"sizeZoom es: "<<sizeZoom<<std::endl;
                     //seleccionar_jugador2 = true;
+                    modo_activo = "zoom_positivo";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
             if(componentes->creaBoton_con_imagen(210, 60, 30, 30, prefijo_ruta + "zoom_negativo.png")){
                 contador_botones -= 1;//sintaxis porque sino lo envia 4 veces
                 if (contador_botones == 0){
-                    std::cout<<"koka"<<std::endl;
-                    //seleccionar_jugador2 = true;
+                    /*if(sizeZoom >=2){
+                        sizeZoom-=2;
+                        zoom.zoom_out(sizeZoom);
+                    }*/
+                    modo_activo = "zoom_negativo";
                     contador_botones = contador_original;//sintaxis porque sino lo envia 4 veces
                 }
             }
@@ -535,14 +540,13 @@ void Ventana::ventana_principal() {
                 }
             }
 
-
             if (yo){
 
                 yo = false;
-                for(int n = 0;n <RGB_pixeles_imagen->largo; n++)
-                {
-                    for (int u=0; u<RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1)
-                    {
+                for(int n = 0;n <RGB_pixeles_imagen->largo; n++) {
+
+                    for (int u=0; u<RGB_pixeles_imagen->busqueda_indice(n)->largo; u+=1) {
+
                         Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(n)->busqueda_indice(u);
                         //pixel->rectangulo.setFillColor(sf::Color(0,0,0,255));
                         ptrwindow->draw( pixel->rectangulo);
@@ -553,15 +557,7 @@ void Ventana::ventana_principal() {
 
                 matriz_lista = true;
 
-
-
             }
-
-
-
-
-
-
 
         }
         if (modo_activo != "ninguno"){
@@ -578,8 +574,7 @@ void Ventana::ventana_principal() {
                         coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
                         sleep(1);
-                        if (clicks_linea_seleccion == 2)
-                        {
+                        if (clicks_linea_seleccion == 2) {
                             int tempTrazo = multplicador_de_trazo;
                             multplicador_de_trazo = 0;
                             crear_triangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
@@ -592,8 +587,7 @@ void Ventana::ventana_principal() {
                         coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
                         sleep(1);
-                        if (clicks_linea_seleccion == 2)
-                        {
+                        if (clicks_linea_seleccion == 2) {
                             int tempTrazo = multplicador_de_trazo;
                             multplicador_de_trazo = 0;
                             crear_circulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
@@ -603,13 +597,12 @@ void Ventana::ventana_principal() {
                         }
                     }
                     if(modo_activo == "cuadrado"){
-
                         clicks_linea_seleccion += 1;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
                         sleep(1);
-                        if (clicks_linea_seleccion == 2)
-                        {
+
+                        if (clicks_linea_seleccion == 2) {
                             int tempTrazo = multplicador_de_trazo;
                             multplicador_de_trazo = 0;
                             crear_rectangulo(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
@@ -621,25 +614,26 @@ void Ventana::ventana_principal() {
                     if (modo_activo =="lapiz"){
                         cambiar_color_pixel_lienzo(mousex,mousey-100,color_R,color_G,color_B);
                     }
+
                     if(modo_activo == "lapicero"){
                         clicks_linea_seleccion += 1;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
                         sleep(1);
-                        if (clicks_linea_seleccion == 2)
-                        {
+                        if (clicks_linea_seleccion == 2) {
                             trazar_linea_recta(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
                                                coords_linea_seleccion[1][0], coords_linea_seleccion[1][1]);
                             clicks_linea_seleccion = 0;
                         }
                     }
+
                     if(modo_activo == "seleccion_rectangular"){
                         clicks_linea_seleccion += 1;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][0] = (float)mousex;
                         coords_linea_seleccion[clicks_linea_seleccion - 1][1] = (float)mousey;
                         sleep(1);
-                        if (clicks_linea_seleccion == 2)
-                        {
+                        if (clicks_linea_seleccion == 2) {
+
                             seleccion_libre(coords_linea_seleccion[0][0], coords_linea_seleccion[0][1],
                                             coords_linea_seleccion[1][0], coords_linea_seleccion[0][1]);
                             seleccion_libre(coords_linea_seleccion[1][0], coords_linea_seleccion[0][1],
@@ -668,18 +662,18 @@ void Ventana::ventana_principal() {
                         colorDeRellenoLienzo.pintarArea(sf::Vector2f(mousex,mousey-100));
                         multplicador_de_trazo = tempTrazo;
                     }
+                    if(modo_activo == "zoom_positivo" and sizeZoom <=4){
+                        sizeZoom+=2;
+                        zoom.zoom_in(sf::Vector2f(mousex,mousey-100),sizeZoom);
+                    }
+                    if(modo_activo == "zoom_negativo" and sizeZoom >=2){
+                        sizeZoom-=2;
+                        zoom.zoom_out(sizeZoom);
+                    }
                 }
             }
-        /*for (int z=0; z<RGB_pixeles_imagen->busqueda_indice(100)->largo; z+=1)
-        {
-            cambiar_color_pixel_lienzo(z,100);
-        }*/
-        /*Nodo_pixel *pixel = RGB_pixeles_imagen->busqueda_indice(RGB_pixeles_imagen->busqueda_indice(0)->largo/2)->busqueda_indice(0);
-        pixel->rectangulo.setFillColor(sf::Color(255,255,255,255));*/
-
         ptrwindow->display();
     }
-
 }
 
 void Ventana::cambiar_color_pixel_lienzo(int x, int y,int r,int g,int b) {

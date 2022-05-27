@@ -1,5 +1,5 @@
 CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o: \
- /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.cpp \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -136,5 +136,5 @@ CMakeFiles/Codigo.dir/lista_doblemente_enlazada/Lista_Doble.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/lista\ doblemente\ enlazada/Nodo.h

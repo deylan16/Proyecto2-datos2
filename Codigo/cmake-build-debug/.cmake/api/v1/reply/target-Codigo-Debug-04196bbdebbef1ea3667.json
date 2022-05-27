@@ -72,7 +72,7 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"
+					"path" : "/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/SFML_INCLUDE_DIR"
 				}
 			],
 			"language" : "CXX",
@@ -107,7 +107,8 @@
 				35,
 				37,
 				39,
-				41
+				41,
+				43
 			]
 		}
 	],
@@ -126,11 +127,11 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR",
+				"fragment" : "-L\"/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR\"",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/deylan/Escritorio/repo6/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR",
+				"fragment" : "-Wl,-rpath,\"/home/ludwinr/Escritorio/Proyectos/Proyecto 2/Proyecto2-datos2/Codigo/SFML_LIBRARY_DIR\"",
 				"role" : "libraries"
 			},
 			{
@@ -190,7 +191,8 @@
 				35,
 				37,
 				39,
-				41
+				41,
+				43
 			]
 		},
 		{
@@ -217,7 +219,8 @@
 				36,
 				38,
 				40,
-				42
+				42,
+				44
 			]
 		}
 	],
@@ -458,6 +461,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "Funcionalidades/Seleccion_magica.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Funcionalidades/Zoom.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Funcionalidades/Zoom.h",
 			"sourceGroupIndex" : 1
 		}
 	],

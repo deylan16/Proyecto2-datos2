@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o.d"
   "CMakeFiles/Codigo.dir/Funcionalidades/Seleccion_magica.cpp.o"
   "CMakeFiles/Codigo.dir/Funcionalidades/Seleccion_magica.cpp.o.d"
+  "CMakeFiles/Codigo.dir/Funcionalidades/Zoom.cpp.o"
+  "CMakeFiles/Codigo.dir/Funcionalidades/Zoom.cpp.o.d"
   "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o"
   "CMakeFiles/Codigo.dir/Interfaz/Componentes.cpp.o.d"
   "CMakeFiles/Codigo.dir/Interfaz/Datos_juego.cpp.o"
