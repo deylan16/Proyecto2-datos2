@@ -1,7 +1,7 @@
 CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o: \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.cpp \
  /usr/include/stdc-predef.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/PaintFill.h \
  /usr/include/SFML/Graphics/RenderWindow.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/RenderTarget.hpp \
@@ -182,23 +182,23 @@ CMakeFiles/Codigo.dir/Funcionalidades/PaintFill.cpp.o: \
  /usr/include/c++/9/bits/istream.tcc \
  /usr/include/c++/9/bits/stream_iterator.h \
  /usr/include/SFML/System/String.inl \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/Datos_juego.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Matriz.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_matriz.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_Doble.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo.h \
  /usr/include/c++/9/iostream \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Lista_pixeles.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../Interfaz/../lista\ doblemente\ enlazada/Nodo_pixel.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \
  /usr/include/SFML/Graphics/Drawable.hpp \
  /usr/include/SFML/Graphics/Transformable.hpp \
  /usr/include/SFML/Graphics/VertexArray.hpp \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/LinkedListPixels.h \
- /home/ludwinr/Escritorio/Proyectos/Proyecto\ 2/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/LinkedListPixels.h \
+ /home/deylan/Escritorio/repo7/Proyecto2-datos2/Codigo/Funcionalidades/../lista\ doblemente\ enlazada/QueuePixels.h
